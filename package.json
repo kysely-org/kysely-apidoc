@@ -1,0 +1,25 @@
+{
+  "name": "kysely-typedoc",
+  "version": "0.26.1",
+  "description": "Generated API documentation for Kysely",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kysely-org/kysely-typedoc.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf docs",
+    "build": "npm run clean && typedoc --excludePrivate --excludeInternal --customCss ./docs-theme.css --out docs --tsconfig ../kysely/tsconfig.json ../kysely/src/index.ts && npm run docs:postprocess",
+    "docs:postprocess": "node scripts/post-process-docs.js"
+  },
+  "author": "Sami Koskimäki <sami@jakso.me>",
+  "license": "MIT",
+  "contributors": [
+    "Igal Klebanov <igalklebanov@gmail.com>"
+  ],
+  "devDependencies": {
+    "typedoc": "^0.24.8"
+  }
+}
