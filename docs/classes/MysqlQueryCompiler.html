@@ -26,7 +26,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">MysqlQueryCompiler</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L5">kysely/src/dialect/mysql/mysql-query-compiler.ts:5</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L6">kysely/src/dialect/mysql/mysql-query-compiler.ts:6</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -48,9 +48,11 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="MysqlQueryCompiler.html#addParameter" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-2048"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)"></path></g></svg><span>add<wbr/>Parameter</span></a>
+<a href="MysqlQueryCompiler.html#announcesNewColumnDataType" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>announces<wbr/>New<wbr/>Column<wbr/>Data<wbr/>Type</span></a>
 <a href="MysqlQueryCompiler.html#append" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append</span></a>
 <a href="MysqlQueryCompiler.html#appendImmediateValue" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append<wbr/>Immediate<wbr/>Value</span></a>
 <a href="MysqlQueryCompiler.html#appendValue" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append<wbr/>Value</span></a>
+<a href="MysqlQueryCompiler.html#compileColumnAlterations" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>Column<wbr/>Alterations</span></a>
 <a href="MysqlQueryCompiler.html#compileDistinctOn" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>Distinct<wbr/>On</span></a>
 <a href="MysqlQueryCompiler.html#compileList" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>List</span></a>
 <a href="MysqlQueryCompiler.html#compileQuery" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>Query</span></a>
@@ -69,6 +71,7 @@
 <a href="MysqlQueryCompiler.html#sortSelectModifiers" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sort<wbr/>Select<wbr/>Modifiers</span></a>
 <a href="MysqlQueryCompiler.html#visitAddColumn" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Add<wbr/>Column</span></a>
 <a href="MysqlQueryCompiler.html#visitAddConstraint" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Add<wbr/>Constraint</span></a>
+<a href="MysqlQueryCompiler.html#visitAddIndex" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Add<wbr/>Index</span></a>
 <a href="MysqlQueryCompiler.html#visitAggregateFunction" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Aggregate<wbr/>Function</span></a>
 <a href="MysqlQueryCompiler.html#visitAlias" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Alias</span></a>
 <a href="MysqlQueryCompiler.html#visitAlterColumn" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Alter<wbr/>Column</span></a>
@@ -82,7 +85,7 @@
 <a href="MysqlQueryCompiler.html#visitColumnUpdate" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Column<wbr/>Update</span></a>
 <a href="MysqlQueryCompiler.html#visitCommonTableExpression" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Common<wbr/>Table<wbr/>Expression</span></a>
 <a href="MysqlQueryCompiler.html#visitCommonTableExpressionName" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Common<wbr/>Table<wbr/>Expression<wbr/>Name</span></a>
-<a href="MysqlQueryCompiler.html#visitCreateIndex" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Index</span></a>
+<a href="MysqlQueryCompiler.html#visitCreateIndex" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Index</span></a>
 <a href="MysqlQueryCompiler.html#visitCreateSchema" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Schema</span></a>
 <a href="MysqlQueryCompiler.html#visitCreateTable" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Table</span></a>
 <a href="MysqlQueryCompiler.html#visitCreateType" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Type</span></a>
@@ -171,7 +174,7 @@
 <div class="tsd-signature"><span class="tsd-kind-property">node<wbr/>Stack</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/OperationNode.html" class="tsd-signature-type tsd-kind-interface">OperationNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#nodeStack">nodeStack</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/operation-node/operation-node-visitor.ts#L94">kysely/src/operation-node/operation-node-visitor.ts:94</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/operation-node-visitor.ts#L95">kysely/src/operation-node/operation-node-visitor.ts:95</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="numParameters" class="tsd-anchor"></a>
@@ -182,7 +185,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Inherited from DefaultQueryCompiler.numParameters</p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L112">kysely/src/query-compiler/default-query-compiler.ts:112</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L116">kysely/src/query-compiler/default-query-compiler.ts:116</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="parentNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>parent<wbr/>Node</span><a href="#parentNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -191,7 +194,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/OperationNode.html" class="tsd-signature-type tsd-kind-interface">OperationNode</a></h4><aside class="tsd-sources">
 <p>Inherited from DefaultQueryCompiler.parentNode</p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/operation-node/operation-node-visitor.ts#L96">kysely/src/operation-node/operation-node-visitor.ts:96</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/operation-node-visitor.ts#L97">kysely/src/operation-node/operation-node-visitor.ts:97</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="addParameter" class="tsd-anchor"></a>
@@ -207,7 +210,20 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#addParameter">addParameter</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1455">kysely/src/query-compiler/default-query-compiler.ts:1455</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1514">kysely/src/query-compiler/default-query-compiler.ts:1514</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="announcesNewColumnDataType" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>announces<wbr/>New<wbr/>Column<wbr/>Data<wbr/>Type</span><a href="#announcesNewColumnDataType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="announcesNewColumnDataType.announcesNewColumnDataType-1"><span class="tsd-kind-call-signature">announces<wbr/>New<wbr/>Column<wbr/>Data<wbr/>Type</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#announcesNewColumnDataType.announcesNewColumnDataType-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>controls whether the dialect adds a &quot;type&quot; keyword before a column&#39;s new data
+type in an ALTER TABLE statement.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#announcesNewColumnDataType">announcesNewColumnDataType</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1557">kysely/src/query-compiler/default-query-compiler.ts:1557</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="append" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>append</span><a href="#append" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -221,7 +237,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#append">append</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1400">kysely/src/query-compiler/default-query-compiler.ts:1400</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1459">kysely/src/query-compiler/default-query-compiler.ts:1459</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="appendImmediateValue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>append<wbr/>Immediate<wbr/>Value</span><a href="#appendImmediateValue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -235,7 +251,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#appendImmediateValue">appendImmediateValue</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1459">kysely/src/query-compiler/default-query-compiler.ts:1459</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1518">kysely/src/query-compiler/default-query-compiler.ts:1518</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="appendValue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>append<wbr/>Value</span><a href="#appendValue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -249,7 +265,21 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#appendValue">appendValue</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1404">kysely/src/query-compiler/default-query-compiler.ts:1404</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1463">kysely/src/query-compiler/default-query-compiler.ts:1463</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="compileColumnAlterations" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>compile<wbr/>Column<wbr/>Alterations</span><a href="#compileColumnAlterations" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="compileColumnAlterations.compileColumnAlterations-1"><span class="tsd-kind-call-signature">compile<wbr/>Column<wbr/>Alterations</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">columnAlterations</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#compileColumnAlterations.compileColumnAlterations-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">columnAlterations</span>: <span class="tsd-signature-symbol">readonly </span><a href="../types/AlterTableColumnAlterationNode.html" class="tsd-signature-type tsd-kind-type-alias">AlterTableColumnAlterationNode</a><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#compileColumnAlterations">compileColumnAlterations</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1547">kysely/src/query-compiler/default-query-compiler.ts:1547</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="compileDistinctOn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>compile<wbr/>Distinct<wbr/>On</span><a href="#compileDistinctOn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -263,7 +293,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#compileDistinctOn">compileDistinctOn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L240">kysely/src/query-compiler/default-query-compiler.ts:240</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L245">kysely/src/query-compiler/default-query-compiler.ts:245</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="compileList" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>compile<wbr/>List</span><a href="#compileList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -279,7 +309,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#compileList">compileList</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L246">kysely/src/query-compiler/default-query-compiler.ts:246</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L251">kysely/src/query-compiler/default-query-compiler.ts:251</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="compileQuery" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>compile<wbr/>Query</span><a href="#compileQuery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -293,7 +323,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../variables/CompiledQuery-1.html" class="tsd-signature-type tsd-kind-variable">CompiledQuery</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#compileQuery">compileQuery</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L116">kysely/src/query-compiler/default-query-compiler.ts:116</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L120">kysely/src/query-compiler/default-query-compiler.ts:120</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="compileUnwrappedIdentifier" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>compile<wbr/>Unwrapped<wbr/>Identifier</span><a href="#compileUnwrappedIdentifier" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -307,7 +337,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#compileUnwrappedIdentifier">compileUnwrappedIdentifier</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L418">kysely/src/query-compiler/default-query-compiler.ts:418</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L423">kysely/src/query-compiler/default-query-compiler.ts:423</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="getAutoIncrement" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Auto<wbr/>Increment</span><a href="#getAutoIncrement" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -316,7 +346,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getAutoIncrement">getAutoIncrement</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L622">kysely/src/query-compiler/default-query-compiler.ts:622</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L637">kysely/src/query-compiler/default-query-compiler.ts:637</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getCurrentParameterPlaceholder" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Current<wbr/>Parameter<wbr/>Placeholder</span><a href="#getCurrentParameterPlaceholder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -325,7 +355,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getCurrentParameterPlaceholder">getCurrentParameterPlaceholder</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L6">kysely/src/dialect/mysql/mysql-query-compiler.ts:6</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L7">kysely/src/dialect/mysql/mysql-query-compiler.ts:7</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getExplainOptionAssignment" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Explain<wbr/>Option<wbr/>Assignment</span><a href="#getExplainOptionAssignment" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -334,7 +364,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getExplainOptionAssignment">getExplainOptionAssignment</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L14">kysely/src/dialect/mysql/mysql-query-compiler.ts:14</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L15">kysely/src/dialect/mysql/mysql-query-compiler.ts:15</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getExplainOptionsDelimiter" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Explain<wbr/>Options<wbr/>Delimiter</span><a href="#getExplainOptionsDelimiter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -343,7 +373,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getExplainOptionsDelimiter">getExplainOptionsDelimiter</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L18">kysely/src/dialect/mysql/mysql-query-compiler.ts:18</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L19">kysely/src/dialect/mysql/mysql-query-compiler.ts:19</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getLeftExplainOptionsWrapper" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Left<wbr/>Explain<wbr/>Options<wbr/>Wrapper</span><a href="#getLeftExplainOptionsWrapper" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -352,7 +382,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getLeftExplainOptionsWrapper">getLeftExplainOptionsWrapper</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L10">kysely/src/dialect/mysql/mysql-query-compiler.ts:10</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L11">kysely/src/dialect/mysql/mysql-query-compiler.ts:11</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getLeftIdentifierWrapper" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Left<wbr/>Identifier<wbr/>Wrapper</span><a href="#getLeftIdentifierWrapper" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -361,7 +391,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getLeftIdentifierWrapper">getLeftIdentifierWrapper</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L26">kysely/src/dialect/mysql/mysql-query-compiler.ts:26</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L27">kysely/src/dialect/mysql/mysql-query-compiler.ts:27</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getRightExplainOptionsWrapper" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Right<wbr/>Explain<wbr/>Options<wbr/>Wrapper</span><a href="#getRightExplainOptionsWrapper" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -370,7 +400,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getRightExplainOptionsWrapper">getRightExplainOptionsWrapper</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L22">kysely/src/dialect/mysql/mysql-query-compiler.ts:22</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L23">kysely/src/dialect/mysql/mysql-query-compiler.ts:23</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="getRightIdentifierWrapper" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Right<wbr/>Identifier<wbr/>Wrapper</span><a href="#getRightIdentifierWrapper" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -379,7 +409,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getRightIdentifierWrapper">getRightIdentifierWrapper</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L30">kysely/src/dialect/mysql/mysql-query-compiler.ts:30</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L31">kysely/src/dialect/mysql/mysql-query-compiler.ts:31</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="getSql" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Sql</span><a href="#getSql" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -388,7 +418,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#getSql">getSql</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L129">kysely/src/query-compiler/default-query-compiler.ts:129</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L133">kysely/src/query-compiler/default-query-compiler.ts:133</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="isMinusOperator" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>is<wbr/>Minus<wbr/>Operator</span><a href="#isMinusOperator" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -402,7 +432,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type ">OperatorNode</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#isMinusOperator">isMinusOperator</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1305">kysely/src/query-compiler/default-query-compiler.ts:1305</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1341">kysely/src/query-compiler/default-query-compiler.ts:1341</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="sanitizeIdentifier" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>sanitize<wbr/>Identifier</span><a href="#sanitizeIdentifier" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -416,7 +446,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#sanitizeIdentifier">sanitizeIdentifier</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/dialect/mysql/mysql-query-compiler.ts#L34">kysely/src/dialect/mysql/mysql-query-compiler.ts:34</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L35">kysely/src/dialect/mysql/mysql-query-compiler.ts:35</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="sortSelectModifiers" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>sort<wbr/>Select<wbr/>Modifiers</span><a href="#sortSelectModifiers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -430,7 +460,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type ">SelectModifierNode</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#sortSelectModifiers">sortSelectModifiers</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1475">kysely/src/query-compiler/default-query-compiler.ts:1475</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1534">kysely/src/query-compiler/default-query-compiler.ts:1534</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAddColumn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Add<wbr/>Column</span><a href="#visitAddColumn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -444,7 +474,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAddColumn">visitAddColumn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1004">kysely/src/query-compiler/default-query-compiler.ts:1004</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1037">kysely/src/query-compiler/default-query-compiler.ts:1037</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAddConstraint" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Add<wbr/>Constraint</span><a href="#visitAddConstraint" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -458,7 +488,21 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAddConstraint">visitAddConstraint</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1059">kysely/src/query-compiler/default-query-compiler.ts:1059</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1095">kysely/src/query-compiler/default-query-compiler.ts:1095</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAddIndex" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Add<wbr/>Index</span><a href="#visitAddIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="visitAddIndex.visitAddIndex-1"><span class="tsd-kind-call-signature">visit<wbr/>Add<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#visitAddIndex.visitAddIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type ">AddIndexNode</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAddIndex">visitAddIndex</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1436">kysely/src/query-compiler/default-query-compiler.ts:1436</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAggregateFunction" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Aggregate<wbr/>Function</span><a href="#visitAggregateFunction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -472,7 +516,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAggregateFunction">visitAggregateFunction</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1237">kysely/src/query-compiler/default-query-compiler.ts:1237</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1273">kysely/src/query-compiler/default-query-compiler.ts:1273</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAlias" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Alias</span><a href="#visitAlias" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -486,7 +530,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAlias">visitAlias</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L393">kysely/src/query-compiler/default-query-compiler.ts:393</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L398">kysely/src/query-compiler/default-query-compiler.ts:398</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAlterColumn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Alter<wbr/>Column</span><a href="#visitAlterColumn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -500,7 +544,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAlterColumn">visitAlterColumn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1021">kysely/src/query-compiler/default-query-compiler.ts:1021</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1054">kysely/src/query-compiler/default-query-compiler.ts:1054</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAlterTable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Alter<wbr/>Table</span><a href="#visitAlterTable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -514,7 +558,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAlterTable">visitAlterTable</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L976">kysely/src/query-compiler/default-query-compiler.ts:976</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1001">kysely/src/query-compiler/default-query-compiler.ts:1001</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitAnd" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>And</span><a href="#visitAnd" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -528,7 +572,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitAnd">visitAnd</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L428">kysely/src/query-compiler/default-query-compiler.ts:428</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L433">kysely/src/query-compiler/default-query-compiler.ts:433</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitBinaryOperation" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Binary<wbr/>Operation</span><a href="#visitBinaryOperation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -542,7 +586,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitBinaryOperation">visitBinaryOperation</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1287">kysely/src/query-compiler/default-query-compiler.ts:1287</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1323">kysely/src/query-compiler/default-query-compiler.ts:1323</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCase" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Case</span><a href="#visitCase" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -556,7 +600,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCase">visitCase</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1321">kysely/src/query-compiler/default-query-compiler.ts:1321</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1357">kysely/src/query-compiler/default-query-compiler.ts:1357</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCheckConstraint" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Check<wbr/>Constraint</span><a href="#visitCheckConstraint" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -570,7 +614,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCheckConstraint">visitCheckConstraint</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L896">kysely/src/query-compiler/default-query-compiler.ts:896</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L921">kysely/src/query-compiler/default-query-compiler.ts:921</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitColumn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Column</span><a href="#visitColumn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -584,7 +628,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitColumn">visitColumn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L236">kysely/src/query-compiler/default-query-compiler.ts:236</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L241">kysely/src/query-compiler/default-query-compiler.ts:241</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitColumnDefinition" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Column<wbr/>Definition</span><a href="#visitColumnDefinition" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -598,7 +642,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitColumnDefinition">visitColumnDefinition</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L564">kysely/src/query-compiler/default-query-compiler.ts:564</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L575">kysely/src/query-compiler/default-query-compiler.ts:575</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitColumnUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Column<wbr/>Update</span><a href="#visitColumnUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -612,7 +656,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitColumnUpdate">visitColumnUpdate</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L735">kysely/src/query-compiler/default-query-compiler.ts:735</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L750">kysely/src/query-compiler/default-query-compiler.ts:750</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCommonTableExpression" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Common<wbr/>Table<wbr/>Expression</span><a href="#visitCommonTableExpression" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -626,7 +670,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCommonTableExpression">visitCommonTableExpression</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L947">kysely/src/query-compiler/default-query-compiler.ts:947</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L972">kysely/src/query-compiler/default-query-compiler.ts:972</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCommonTableExpressionName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Common<wbr/>Table<wbr/>Expression<wbr/>Name</span><a href="#visitCommonTableExpressionName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -640,10 +684,10 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCommonTableExpressionName">visitCommonTableExpressionName</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L964">kysely/src/query-compiler/default-query-compiler.ts:964</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCreateIndex" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L989">kysely/src/query-compiler/default-query-compiler.ts:989</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="visitCreateIndex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Create<wbr/>Index</span><a href="#visitCreateIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
+<ul class="tsd-signatures tsd-is-protected">
 <li class="tsd-signature tsd-anchor-link" id="visitCreateIndex.visitCreateIndex-1"><span class="tsd-kind-call-signature">visit<wbr/>Create<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#visitCreateIndex.visitCreateIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -652,9 +696,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">node</span>: <span class="tsd-signature-type ">CreateIndexNode</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCreateIndex">visitCreateIndex</a></p>
+<p>Overrides <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCreateIndex">visitCreateIndex</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L790">kysely/src/query-compiler/default-query-compiler.ts:790</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/dialect/mysql/mysql-query-compiler.ts#L39">kysely/src/dialect/mysql/mysql-query-compiler.ts:39</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCreateSchema" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Create<wbr/>Schema</span><a href="#visitCreateSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -668,7 +712,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCreateSchema">visitCreateSchema</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L846">kysely/src/query-compiler/default-query-compiler.ts:846</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L865">kysely/src/query-compiler/default-query-compiler.ts:865</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCreateTable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Create<wbr/>Table</span><a href="#visitCreateTable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -682,7 +726,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCreateTable">visitCreateTable</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L530">kysely/src/query-compiler/default-query-compiler.ts:530</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L535">kysely/src/query-compiler/default-query-compiler.ts:535</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCreateType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Create<wbr/>Type</span><a href="#visitCreateType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -696,7 +740,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCreateType">visitCreateType</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1188">kysely/src/query-compiler/default-query-compiler.ts:1188</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1224">kysely/src/query-compiler/default-query-compiler.ts:1224</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitCreateView" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Create<wbr/>View</span><a href="#visitCreateView" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -710,7 +754,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitCreateView">visitCreateView</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1091">kysely/src/query-compiler/default-query-compiler.ts:1091</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1127">kysely/src/query-compiler/default-query-compiler.ts:1127</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDataType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Data<wbr/>Type</span><a href="#visitDataType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -724,7 +768,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDataType">visitDataType</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L658">kysely/src/query-compiler/default-query-compiler.ts:658</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L673">kysely/src/query-compiler/default-query-compiler.ts:673</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDefaultInsertValue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Default<wbr/>Insert<wbr/>Value</span><a href="#visitDefaultInsertValue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -738,7 +782,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDefaultInsertValue">visitDefaultInsertValue</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1233">kysely/src/query-compiler/default-query-compiler.ts:1233</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1269">kysely/src/query-compiler/default-query-compiler.ts:1269</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDefaultValue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Default<wbr/>Value</span><a href="#visitDefaultValue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -752,7 +796,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDefaultValue">visitDefaultValue</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1175">kysely/src/query-compiler/default-query-compiler.ts:1175</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1211">kysely/src/query-compiler/default-query-compiler.ts:1211</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDeleteQuery" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Delete<wbr/>Query</span><a href="#visitDeleteQuery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -766,7 +810,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDeleteQuery">visitDeleteQuery</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L333">kysely/src/query-compiler/default-query-compiler.ts:333</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L338">kysely/src/query-compiler/default-query-compiler.ts:338</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropColumn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>Column</span><a href="#visitDropColumn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -780,7 +824,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropColumn">visitDropColumn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1016">kysely/src/query-compiler/default-query-compiler.ts:1016</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1049">kysely/src/query-compiler/default-query-compiler.ts:1049</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropConstraint" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>Constraint</span><a href="#visitDropConstraint" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -794,7 +838,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropConstraint">visitDropConstraint</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1064">kysely/src/query-compiler/default-query-compiler.ts:1064</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1100">kysely/src/query-compiler/default-query-compiler.ts:1100</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropIndex" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>Index</span><a href="#visitDropIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -808,7 +852,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropIndex">visitDropIndex</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L827">kysely/src/query-compiler/default-query-compiler.ts:827</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L846">kysely/src/query-compiler/default-query-compiler.ts:846</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropSchema" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>Schema</span><a href="#visitDropSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -822,7 +866,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropSchema">visitDropSchema</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L856">kysely/src/query-compiler/default-query-compiler.ts:856</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L875">kysely/src/query-compiler/default-query-compiler.ts:875</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropTable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>Table</span><a href="#visitDropTable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -836,7 +880,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropTable">visitDropTable</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L644">kysely/src/query-compiler/default-query-compiler.ts:644</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L659">kysely/src/query-compiler/default-query-compiler.ts:659</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>Type</span><a href="#visitDropType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -850,7 +894,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropType">visitDropType</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1198">kysely/src/query-compiler/default-query-compiler.ts:1198</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1234">kysely/src/query-compiler/default-query-compiler.ts:1234</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitDropView" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Drop<wbr/>View</span><a href="#visitDropView" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -864,7 +908,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitDropView">visitDropView</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1127">kysely/src/query-compiler/default-query-compiler.ts:1127</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1163">kysely/src/query-compiler/default-query-compiler.ts:1163</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitExplain" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Explain</span><a href="#visitExplain" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -878,7 +922,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitExplain">visitExplain</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1208">kysely/src/query-compiler/default-query-compiler.ts:1208</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1244">kysely/src/query-compiler/default-query-compiler.ts:1244</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitForeignKeyConstraint" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Foreign<wbr/>Key<wbr/>Constraint</span><a href="#visitForeignKeyConstraint" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -892,7 +936,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitForeignKeyConstraint">visitForeignKeyConstraint</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L908">kysely/src/query-compiler/default-query-compiler.ts:908</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L933">kysely/src/query-compiler/default-query-compiler.ts:933</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitFrom" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>From</span><a href="#visitFrom" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -906,7 +950,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitFrom">visitFrom</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L227">kysely/src/query-compiler/default-query-compiler.ts:227</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L232">kysely/src/query-compiler/default-query-compiler.ts:232</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitFunction" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Function</span><a href="#visitFunction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -920,7 +964,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitFunction">visitFunction</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1314">kysely/src/query-compiler/default-query-compiler.ts:1314</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1350">kysely/src/query-compiler/default-query-compiler.ts:1350</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitGenerated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Generated</span><a href="#visitGenerated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -934,7 +978,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitGenerated">visitGenerated</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1147">kysely/src/query-compiler/default-query-compiler.ts:1147</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1183">kysely/src/query-compiler/default-query-compiler.ts:1183</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitGroupBy" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Group<wbr/>By</span><a href="#visitGroupBy" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -948,7 +992,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitGroupBy">visitGroupBy</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L676">kysely/src/query-compiler/default-query-compiler.ts:676</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L691">kysely/src/query-compiler/default-query-compiler.ts:691</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitGroupByItem" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Group<wbr/>By<wbr/>Item</span><a href="#visitGroupByItem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -962,7 +1006,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitGroupByItem">visitGroupByItem</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L681">kysely/src/query-compiler/default-query-compiler.ts:681</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L696">kysely/src/query-compiler/default-query-compiler.ts:696</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitHaving" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Having</span><a href="#visitHaving" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -976,7 +1020,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitHaving">visitHaving</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L266">kysely/src/query-compiler/default-query-compiler.ts:266</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L271">kysely/src/query-compiler/default-query-compiler.ts:271</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitIdentifier" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Identifier</span><a href="#visitIdentifier" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -990,7 +1034,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitIdentifier">visitIdentifier</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L412">kysely/src/query-compiler/default-query-compiler.ts:412</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L417">kysely/src/query-compiler/default-query-compiler.ts:417</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitInsertQuery" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Insert<wbr/>Query</span><a href="#visitInsertQuery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1004,7 +1048,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitInsertQuery">visitInsertQuery</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L271">kysely/src/query-compiler/default-query-compiler.ts:271</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L276">kysely/src/query-compiler/default-query-compiler.ts:276</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitJSONOperatorChain" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visitJSONOperator<wbr/>Chain</span><a href="#visitJSONOperatorChain" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1018,7 +1062,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitJSONOperatorChain">visitJSONOperatorChain</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1388">kysely/src/query-compiler/default-query-compiler.ts:1388</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1424">kysely/src/query-compiler/default-query-compiler.ts:1424</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitJSONPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visitJSONPath</span><a href="#visitJSONPath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1032,7 +1076,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitJSONPath">visitJSONPath</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1362">kysely/src/query-compiler/default-query-compiler.ts:1362</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1398">kysely/src/query-compiler/default-query-compiler.ts:1398</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitJSONPathLeg" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visitJSONPath<wbr/>Leg</span><a href="#visitJSONPathLeg" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1046,7 +1090,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitJSONPathLeg">visitJSONPathLeg</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1376">kysely/src/query-compiler/default-query-compiler.ts:1376</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1412">kysely/src/query-compiler/default-query-compiler.ts:1412</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitJSONReference" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visitJSONReference</span><a href="#visitJSONReference" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1060,7 +1104,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitJSONReference">visitJSONReference</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1357">kysely/src/query-compiler/default-query-compiler.ts:1357</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1393">kysely/src/query-compiler/default-query-compiler.ts:1393</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitJoin" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Join</span><a href="#visitJoin" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1074,7 +1118,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitJoin">visitJoin</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L483">kysely/src/query-compiler/default-query-compiler.ts:483</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L488">kysely/src/query-compiler/default-query-compiler.ts:488</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitLimit" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Limit</span><a href="#visitLimit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1088,7 +1132,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitLimit">visitLimit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L741">kysely/src/query-compiler/default-query-compiler.ts:741</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L756">kysely/src/query-compiler/default-query-compiler.ts:756</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitList" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>List</span><a href="#visitList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1102,7 +1146,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitList">visitList</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L933">kysely/src/query-compiler/default-query-compiler.ts:933</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L958">kysely/src/query-compiler/default-query-compiler.ts:958</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitModifyColumn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Modify<wbr/>Column</span><a href="#visitModifyColumn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1116,7 +1160,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitModifyColumn">visitModifyColumn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1054">kysely/src/query-compiler/default-query-compiler.ts:1054</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1090">kysely/src/query-compiler/default-query-compiler.ts:1090</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>visit<wbr/>Node</span><a href="#visitNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1130,7 +1174,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitNode">visitNode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/operation-node/operation-node-visitor.ts#L190">kysely/src/operation-node/operation-node-visitor.ts:190</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/operation-node-visitor.ts#L192">kysely/src/operation-node/operation-node-visitor.ts:192</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOffset" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Offset</span><a href="#visitOffset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1144,7 +1188,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOffset">visitOffset</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L746">kysely/src/query-compiler/default-query-compiler.ts:746</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L761">kysely/src/query-compiler/default-query-compiler.ts:761</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>On</span><a href="#visitOn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1158,7 +1202,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOn">visitOn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L494">kysely/src/query-compiler/default-query-compiler.ts:494</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L499">kysely/src/query-compiler/default-query-compiler.ts:499</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOnConflict" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>On<wbr/>Conflict</span><a href="#visitOnConflict" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1172,7 +1216,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOnConflict">visitOnConflict</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L751">kysely/src/query-compiler/default-query-compiler.ts:751</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L766">kysely/src/query-compiler/default-query-compiler.ts:766</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOnDuplicateKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>On<wbr/>Duplicate<wbr/>Key</span><a href="#visitOnDuplicateKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1186,7 +1230,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOnDuplicateKey">visitOnDuplicateKey</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L785">kysely/src/query-compiler/default-query-compiler.ts:785</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L800">kysely/src/query-compiler/default-query-compiler.ts:800</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOperator" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Operator</span><a href="#visitOperator" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1200,7 +1244,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOperator">visitOperator</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L511">kysely/src/query-compiler/default-query-compiler.ts:511</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L516">kysely/src/query-compiler/default-query-compiler.ts:516</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOr" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Or</span><a href="#visitOr" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1214,7 +1258,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOr">visitOr</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L434">kysely/src/query-compiler/default-query-compiler.ts:434</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L439">kysely/src/query-compiler/default-query-compiler.ts:439</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOrderBy" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Order<wbr/>By</span><a href="#visitOrderBy" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1228,7 +1272,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOrderBy">visitOrderBy</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L662">kysely/src/query-compiler/default-query-compiler.ts:662</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L677">kysely/src/query-compiler/default-query-compiler.ts:677</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOrderByItem" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Order<wbr/>By<wbr/>Item</span><a href="#visitOrderByItem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1242,7 +1286,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOrderByItem">visitOrderByItem</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L667">kysely/src/query-compiler/default-query-compiler.ts:667</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L682">kysely/src/query-compiler/default-query-compiler.ts:682</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitOver" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Over</span><a href="#visitOver" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1256,7 +1300,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitOver">visitOver</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1260">kysely/src/query-compiler/default-query-compiler.ts:1260</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1296">kysely/src/query-compiler/default-query-compiler.ts:1296</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitParens" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Parens</span><a href="#visitParens" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1270,7 +1314,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitParens">visitParens</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L477">kysely/src/query-compiler/default-query-compiler.ts:477</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L482">kysely/src/query-compiler/default-query-compiler.ts:482</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitPartitionBy" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Partition<wbr/>By</span><a href="#visitPartitionBy" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1284,7 +1328,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitPartitionBy">visitPartitionBy</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1278">kysely/src/query-compiler/default-query-compiler.ts:1278</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1314">kysely/src/query-compiler/default-query-compiler.ts:1314</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitPartitionByItem" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Partition<wbr/>By<wbr/>Item</span><a href="#visitPartitionByItem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1298,7 +1342,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitPartitionByItem">visitPartitionByItem</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1283">kysely/src/query-compiler/default-query-compiler.ts:1283</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1319">kysely/src/query-compiler/default-query-compiler.ts:1319</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitPrimaryKeyConstraint" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Primary<wbr/>Key<wbr/>Constraint</span><a href="#visitPrimaryKeyConstraint" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1312,7 +1356,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitPrimaryKeyConstraint">visitPrimaryKeyConstraint</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L870">kysely/src/query-compiler/default-query-compiler.ts:870</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L889">kysely/src/query-compiler/default-query-compiler.ts:889</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitPrimitiveValueList" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Primitive<wbr/>Value<wbr/>List</span><a href="#visitPrimitiveValueList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1326,7 +1370,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitPrimitiveValueList">visitPrimitiveValueList</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L460">kysely/src/query-compiler/default-query-compiler.ts:460</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L465">kysely/src/query-compiler/default-query-compiler.ts:465</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitRaw" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Raw</span><a href="#visitRaw" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1340,7 +1384,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitRaw">visitRaw</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L499">kysely/src/query-compiler/default-query-compiler.ts:499</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L504">kysely/src/query-compiler/default-query-compiler.ts:504</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitReference" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Reference</span><a href="#visitReference" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1354,7 +1398,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitReference">visitReference</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L399">kysely/src/query-compiler/default-query-compiler.ts:399</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L404">kysely/src/query-compiler/default-query-compiler.ts:404</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitReferences" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>References</span><a href="#visitReferences" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1368,7 +1412,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitReferences">visitReferences</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L626">kysely/src/query-compiler/default-query-compiler.ts:626</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L641">kysely/src/query-compiler/default-query-compiler.ts:641</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitRenameColumn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Rename<wbr/>Column</span><a href="#visitRenameColumn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1382,7 +1426,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitRenameColumn">visitRenameColumn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1009">kysely/src/query-compiler/default-query-compiler.ts:1009</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1042">kysely/src/query-compiler/default-query-compiler.ts:1042</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitReturning" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Returning</span><a href="#visitReturning" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1396,7 +1440,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitReturning">visitReturning</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L388">kysely/src/query-compiler/default-query-compiler.ts:388</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L393">kysely/src/query-compiler/default-query-compiler.ts:393</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitSchemableIdentifier" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Schemable<wbr/>Identifier</span><a href="#visitSchemableIdentifier" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1410,7 +1454,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitSchemableIdentifier">visitSchemableIdentifier</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L519">kysely/src/query-compiler/default-query-compiler.ts:519</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L524">kysely/src/query-compiler/default-query-compiler.ts:524</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitSelectAll" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Select<wbr/>All</span><a href="#visitSelectAll" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1424,7 +1468,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitSelectAll">visitSelectAll</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L408">kysely/src/query-compiler/default-query-compiler.ts:408</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L413">kysely/src/query-compiler/default-query-compiler.ts:413</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitSelectModifier" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Select<wbr/>Modifier</span><a href="#visitSelectModifier" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1438,7 +1482,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitSelectModifier">visitSelectModifier</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1180">kysely/src/query-compiler/default-query-compiler.ts:1180</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1216">kysely/src/query-compiler/default-query-compiler.ts:1216</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitSelectQuery" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Select<wbr/>Query</span><a href="#visitSelectQuery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1452,7 +1496,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitSelectQuery">visitSelectQuery</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L133">kysely/src/query-compiler/default-query-compiler.ts:133</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L137">kysely/src/query-compiler/default-query-compiler.ts:137</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitSelection" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Selection</span><a href="#visitSelection" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1466,7 +1510,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitSelection">visitSelection</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L232">kysely/src/query-compiler/default-query-compiler.ts:232</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L237">kysely/src/query-compiler/default-query-compiler.ts:237</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitSetOperation" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Set<wbr/>Operation</span><a href="#visitSetOperation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1480,7 +1524,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitSetOperation">visitSetOperation</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1080">kysely/src/query-compiler/default-query-compiler.ts:1080</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1116">kysely/src/query-compiler/default-query-compiler.ts:1116</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitTable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Table</span><a href="#visitTable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1494,7 +1538,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitTable">visitTable</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L515">kysely/src/query-compiler/default-query-compiler.ts:515</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L520">kysely/src/query-compiler/default-query-compiler.ts:520</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitTuple" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Tuple</span><a href="#visitTuple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1508,7 +1552,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitTuple">visitTuple</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L454">kysely/src/query-compiler/default-query-compiler.ts:454</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L459">kysely/src/query-compiler/default-query-compiler.ts:459</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitUnaryOperation" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Unary<wbr/>Operation</span><a href="#visitUnaryOperation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1522,7 +1566,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitUnaryOperation">visitUnaryOperation</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1295">kysely/src/query-compiler/default-query-compiler.ts:1295</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1331">kysely/src/query-compiler/default-query-compiler.ts:1331</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitUniqueConstraint" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Unique<wbr/>Constraint</span><a href="#visitUniqueConstraint" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1536,7 +1580,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitUniqueConstraint">visitUniqueConstraint</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L884">kysely/src/query-compiler/default-query-compiler.ts:884</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L903">kysely/src/query-compiler/default-query-compiler.ts:903</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitUpdateQuery" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Update<wbr/>Query</span><a href="#visitUpdateQuery" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1550,7 +1594,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitUpdateQuery">visitUpdateQuery</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L685">kysely/src/query-compiler/default-query-compiler.ts:685</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L700">kysely/src/query-compiler/default-query-compiler.ts:700</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitUsing" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Using</span><a href="#visitUsing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1564,7 +1608,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitUsing">visitUsing</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1309">kysely/src/query-compiler/default-query-compiler.ts:1309</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1345">kysely/src/query-compiler/default-query-compiler.ts:1345</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitValue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Value</span><a href="#visitValue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1578,7 +1622,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitValue">visitValue</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L440">kysely/src/query-compiler/default-query-compiler.ts:440</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L445">kysely/src/query-compiler/default-query-compiler.ts:445</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitValueList" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Value<wbr/>List</span><a href="#visitValueList" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1592,7 +1636,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitValueList">visitValueList</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L448">kysely/src/query-compiler/default-query-compiler.ts:448</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L453">kysely/src/query-compiler/default-query-compiler.ts:453</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitValues" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Values</span><a href="#visitValues" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1606,7 +1650,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitValues">visitValues</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L328">kysely/src/query-compiler/default-query-compiler.ts:328</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L333">kysely/src/query-compiler/default-query-compiler.ts:333</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitWhen" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>When</span><a href="#visitWhen" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1620,7 +1664,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitWhen">visitWhen</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L1346">kysely/src/query-compiler/default-query-compiler.ts:1346</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L1382">kysely/src/query-compiler/default-query-compiler.ts:1382</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitWhere" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>Where</span><a href="#visitWhere" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1634,7 +1678,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitWhere">visitWhere</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L261">kysely/src/query-compiler/default-query-compiler.ts:261</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L266">kysely/src/query-compiler/default-query-compiler.ts:266</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="visitWith" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>visit<wbr/>With</span><a href="#visitWith" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -1648,7 +1692,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DefaultQueryCompiler.html">DefaultQueryCompiler</a>.<a href="DefaultQueryCompiler.html#visitWith">visitWith</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/query-compiler/default-query-compiler.ts#L937">kysely/src/query-compiler/default-query-compiler.ts:937</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/query-compiler/default-query-compiler.ts#L962">kysely/src/query-compiler/default-query-compiler.ts:962</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -1672,9 +1716,11 @@
 <li><a href="#numParameters" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>num<wbr/>Parameters</span></a></li>
 <li><a href="#parentNode" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>parent<wbr/>Node</span></a></li>
 <li><a href="#addParameter" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Parameter</span></a></li>
+<li><a href="#announcesNewColumnDataType" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>announces<wbr/>New<wbr/>Column<wbr/>Data<wbr/>Type</span></a></li>
 <li><a href="#append" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append</span></a></li>
 <li><a href="#appendImmediateValue" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append<wbr/>Immediate<wbr/>Value</span></a></li>
 <li><a href="#appendValue" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>append<wbr/>Value</span></a></li>
+<li><a href="#compileColumnAlterations" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>Column<wbr/>Alterations</span></a></li>
 <li><a href="#compileDistinctOn" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>Distinct<wbr/>On</span></a></li>
 <li><a href="#compileList" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>List</span></a></li>
 <li><a href="#compileQuery" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>compile<wbr/>Query</span></a></li>
@@ -1693,6 +1739,7 @@
 <li><a href="#sortSelectModifiers" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sort<wbr/>Select<wbr/>Modifiers</span></a></li>
 <li><a href="#visitAddColumn" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Add<wbr/>Column</span></a></li>
 <li><a href="#visitAddConstraint" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Add<wbr/>Constraint</span></a></li>
+<li><a href="#visitAddIndex" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Add<wbr/>Index</span></a></li>
 <li><a href="#visitAggregateFunction" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Aggregate<wbr/>Function</span></a></li>
 <li><a href="#visitAlias" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Alias</span></a></li>
 <li><a href="#visitAlterColumn" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Alter<wbr/>Column</span></a></li>
@@ -1706,7 +1753,7 @@
 <li><a href="#visitColumnUpdate" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Column<wbr/>Update</span></a></li>
 <li><a href="#visitCommonTableExpression" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Common<wbr/>Table<wbr/>Expression</span></a></li>
 <li><a href="#visitCommonTableExpressionName" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Common<wbr/>Table<wbr/>Expression<wbr/>Name</span></a></li>
-<li><a href="#visitCreateIndex" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Index</span></a></li>
+<li><a href="#visitCreateIndex" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Index</span></a></li>
 <li><a href="#visitCreateSchema" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Schema</span></a></li>
 <li><a href="#visitCreateTable" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Table</span></a></li>
 <li><a href="#visitCreateType" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>visit<wbr/>Create<wbr/>Type</span></a></li>
@@ -1826,6 +1873,11 @@
 <li><a href="Kysely.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Kysely</span></a></li>
 <li><a href="Log.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Log</span></a></li>
 <li><a href="Migrator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Migrator</span></a></li>
+<li><a href="MssqlAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Adapter</span></a></li>
+<li><a href="MssqlDialect.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Dialect</span></a></li>
+<li><a href="MssqlDriver.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Driver</span></a></li>
+<li><a href="MssqlIntrospector.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Introspector</span></a></li>
+<li><a href="MssqlQueryCompiler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Query<wbr/>Compiler</span></a></li>
 <li><a href="MysqlAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Adapter</span></a></li>
 <li><a href="MysqlDialect.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Dialect</span></a></li>
 <li><a href="MysqlDriver.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Driver</span></a></li>
@@ -1853,6 +1905,8 @@
 <li><a href="SqliteDriver.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Sqlite<wbr/>Driver</span></a></li>
 <li><a href="SqliteIntrospector.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Sqlite<wbr/>Introspector</span></a></li>
 <li><a href="SqliteQueryCompiler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Sqlite<wbr/>Query<wbr/>Compiler</span></a></li>
+<li><a href="TarnPool.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Tarn<wbr/>Pool</span></a></li>
+<li><a href="TediousRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Tedious<wbr/>Request</span></a></li>
 <li><a href="Transaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Transaction</span></a></li>
 <li><a href="TransactionBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Transaction<wbr/>Builder</span></a></li>
 <li><a href="TraversedJSONPathBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>TraversedJSONPath<wbr/>Builder</span></a></li>
@@ -1960,6 +2014,7 @@
 <li><a href="../interfaces/MigrationResultSet.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migration<wbr/>Result<wbr/>Set</span></a></li>
 <li><a href="../interfaces/MigratorProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migrator<wbr/>Props</span></a></li>
 <li><a href="../interfaces/ModifyColumnNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Modify<wbr/>Column<wbr/>Node</span></a></li>
+<li><a href="../interfaces/MssqlDialectConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mssql<wbr/>Dialect<wbr/>Config</span></a></li>
 <li><a href="../interfaces/MysqlDialectConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mysql<wbr/>Dialect<wbr/>Config</span></a></li>
 <li><a href="../interfaces/MysqlOkPacket.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mysql<wbr/>Ok<wbr/>Packet</span></a></li>
 <li><a href="../interfaces/MysqlPool.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mysql<wbr/>Pool</span></a></li>
@@ -2019,6 +2074,13 @@
 <li><a href="../interfaces/Streamable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Streamable</span></a></li>
 <li><a href="../interfaces/TableMetadata.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Table<wbr/>Metadata</span></a></li>
 <li><a href="../interfaces/TableNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Table<wbr/>Node</span></a></li>
+<li><a href="../interfaces/Tarn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tarn</span></a></li>
+<li><a href="../interfaces/TarnPendingRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tarn<wbr/>Pending<wbr/>Request</span></a></li>
+<li><a href="../interfaces/TarnPoolOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tarn<wbr/>Pool<wbr/>Options</span></a></li>
+<li><a href="../interfaces/Tedious.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious</span></a></li>
+<li><a href="../interfaces/TediousColumnValue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Column<wbr/>Value</span></a></li>
+<li><a href="../interfaces/TediousConnection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Connection</span></a></li>
+<li><a href="../interfaces/TediousType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Type</span></a></li>
 <li><a href="../interfaces/TransactionSettings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Transaction<wbr/>Settings</span></a></li>
 <li><a href="../interfaces/TupleNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tuple<wbr/>Node</span></a></li>
 <li><a href="../interfaces/UnaryOperationNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Unary<wbr/>Operation<wbr/>Node</span></a></li>
@@ -2041,9 +2103,9 @@
 <li><a href="../types/AnyAliasedColumnWithTable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Aliased<wbr/>Column<wbr/>With<wbr/>Table</span></a></li>
 <li><a href="../types/AnyColumn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Column</span></a></li>
 <li><a href="../types/AnyColumnWithTable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Column<wbr/>With<wbr/>Table</span></a></li>
-<li><a href="../types/AnySelectQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Select<wbr/>Query<wbr/>Builder</span></a></li>
 <li><a href="../types/ArithmeticOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Arithmetic<wbr/>Operator</span></a></li>
 <li><a href="../types/BinaryOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Operator</span></a></li>
+<li><a href="../types/CallbackSelection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Callback<wbr/>Selection</span></a></li>
 <li><a href="../types/ColumnBuilderCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Column<wbr/>Builder<wbr/>Callback</span></a></li>
 <li><a href="../types/ColumnDataType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Column<wbr/>Data<wbr/>Type</span></a></li>
 <li><a href="../types/ColumnDefinitionBuilderCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Column<wbr/>Definition<wbr/>Builder<wbr/>Callback</span></a></li>
@@ -2101,6 +2163,8 @@
 <li><a href="../types/MysqlQueryResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Mysql<wbr/>Query<wbr/>Result</span></a></li>
 <li><a href="../types/NoResultErrorConstructor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>No<wbr/>Result<wbr/>Error<wbr/>Constructor</span></a></li>
 <li><a href="../types/NonNullableInsertKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Non<wbr/>Nullable<wbr/>Insert<wbr/>Keys</span></a></li>
+<li><a href="../types/NotNull.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Not<wbr/>Null</span></a></li>
+<li><a href="../types/Nullable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Nullable</span></a></li>
 <li><a href="../types/NullableInsertKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Nullable<wbr/>Insert<wbr/>Keys</span></a></li>
 <li><a href="../types/OnCommitAction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>On<wbr/>Commit<wbr/>Action</span></a></li>
 <li><a href="../types/OnConflictDatabase.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>On<wbr/>Conflict<wbr/>Database</span></a></li>
@@ -2122,6 +2186,7 @@
 <li><a href="../types/ReferenceExpressionOrList.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Reference<wbr/>Expression<wbr/>Or<wbr/>List</span></a></li>
 <li><a href="../types/RootOperationNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Root<wbr/>Operation<wbr/>Node</span></a></li>
 <li><a href="../types/SelectArg.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Arg</span></a></li>
+<li><a href="../types/SelectCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Callback</span></a></li>
 <li><a href="../types/SelectExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Expression</span></a></li>
 <li><a href="../types/SelectQueryBuilderWithFullJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Full<wbr/>Join</span></a></li>
 <li><a href="../types/SelectQueryBuilderWithInnerJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Inner<wbr/>Join</span></a></li>
@@ -2137,8 +2202,11 @@
 <li><a href="../types/StringReference.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>String<wbr/>Reference</span></a></li>
 <li><a href="../types/TableExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Table<wbr/>Expression</span></a></li>
 <li><a href="../types/TableExpressionOrList.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Table<wbr/>Expression<wbr/>Or<wbr/>List</span></a></li>
+<li><a href="../types/TediousIsolationLevel.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tedious<wbr/>Isolation<wbr/>Level</span></a></li>
+<li><a href="../types/TediousTypes.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tedious<wbr/>Types</span></a></li>
 <li><a href="../types/UnaryFilterOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unary<wbr/>Filter<wbr/>Operator</span></a></li>
 <li><a href="../types/UnaryOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unary<wbr/>Operator</span></a></li>
+<li><a href="../types/UniqueConstraintNodeProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unique<wbr/>Constraint<wbr/>Node<wbr/>Props</span></a></li>
 <li><a href="../types/UnknownRow.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unknown<wbr/>Row</span></a></li>
 <li><a href="../types/UpdateKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Update<wbr/>Keys</span></a></li>
 <li><a href="../types/UpdateObject.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Update<wbr/>Object</span></a></li>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AnySelectQueryBuilder | kysely</title><meta name="description" content="Documentation for kysely"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>CallbackSelection | kysely</title><meta name="description" content="Documentation for kysely"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,14 +13,23 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">kysely</a></li>
-<li><a href="AnySelectQueryBuilder.html">AnySelectQueryBuilder</a></li></ul>
-<h1>Type alias AnySelectQueryBuilder</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Any<wbr/>Select<wbr/>Query<wbr/>Builder</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/SelectQueryBuilder.html" class="tsd-signature-type tsd-kind-interface">SelectQueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-<div class="tsd-comment tsd-typography"><p>Any select query builder.</p>
+<li><a href="CallbackSelection.html">CallbackSelection</a></li></ul>
+<h1>Type alias CallbackSelection&lt;DB, TB, CB&gt;</h1></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Callback<wbr/>Selection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">DB</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">TB</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">CB</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type tsd-kind-type-parameter">CB</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">eb</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type ">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">infer </span> <span class="tsd-kind-type-parameter">SE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><br/><span>    </span><span class="tsd-signature-symbol">? </span><a href="Selection.html" class="tsd-signature-type tsd-kind-type-alias">Selection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">DB</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">TB</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type tsd-kind-type-parameter">SE</span><span class="tsd-signature-symbol">&gt;</span><br/><span>    </span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span></div>
+<div class="tsd-comment tsd-typography"><p>Turns a SelectCallback into a selection object.</p>
 </div>
+<section class="tsd-panel">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameter-list">
+<li>
+<h4><span class="tsd-kind-type-parameter">DB</span></h4></li>
+<li>
+<h4><span class="tsd-kind-type-parameter">TB</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type tsd-kind-type-parameter">DB</span></h4></li>
+<li>
+<h4><span class="tsd-kind-type-parameter">CB</span></h4></li></ul></section>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/1538485c/src/util/type-utils.ts#L132">kysely/src/util/type-utils.ts:132</a></li></ul></aside></div>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/parser/select-parser.ts#L61">kysely/src/parser/select-parser.ts:61</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -83,6 +92,11 @@
 <li><a href="../classes/Kysely.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Kysely</span></a></li>
 <li><a href="../classes/Log.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Log</span></a></li>
 <li><a href="../classes/Migrator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Migrator</span></a></li>
+<li><a href="../classes/MssqlAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Adapter</span></a></li>
+<li><a href="../classes/MssqlDialect.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Dialect</span></a></li>
+<li><a href="../classes/MssqlDriver.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Driver</span></a></li>
+<li><a href="../classes/MssqlIntrospector.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Introspector</span></a></li>
+<li><a href="../classes/MssqlQueryCompiler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Query<wbr/>Compiler</span></a></li>
 <li><a href="../classes/MysqlAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Adapter</span></a></li>
 <li><a href="../classes/MysqlDialect.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Dialect</span></a></li>
 <li><a href="../classes/MysqlDriver.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Driver</span></a></li>
@@ -110,6 +124,8 @@
 <li><a href="../classes/SqliteDriver.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Sqlite<wbr/>Driver</span></a></li>
 <li><a href="../classes/SqliteIntrospector.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Sqlite<wbr/>Introspector</span></a></li>
 <li><a href="../classes/SqliteQueryCompiler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Sqlite<wbr/>Query<wbr/>Compiler</span></a></li>
+<li><a href="../classes/TarnPool.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Tarn<wbr/>Pool</span></a></li>
+<li><a href="../classes/TediousRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Tedious<wbr/>Request</span></a></li>
 <li><a href="../classes/Transaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Transaction</span></a></li>
 <li><a href="../classes/TransactionBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Transaction<wbr/>Builder</span></a></li>
 <li><a href="../classes/TraversedJSONPathBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>TraversedJSONPath<wbr/>Builder</span></a></li>
@@ -217,6 +233,7 @@
 <li><a href="../interfaces/MigrationResultSet.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migration<wbr/>Result<wbr/>Set</span></a></li>
 <li><a href="../interfaces/MigratorProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migrator<wbr/>Props</span></a></li>
 <li><a href="../interfaces/ModifyColumnNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Modify<wbr/>Column<wbr/>Node</span></a></li>
+<li><a href="../interfaces/MssqlDialectConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mssql<wbr/>Dialect<wbr/>Config</span></a></li>
 <li><a href="../interfaces/MysqlDialectConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mysql<wbr/>Dialect<wbr/>Config</span></a></li>
 <li><a href="../interfaces/MysqlOkPacket.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mysql<wbr/>Ok<wbr/>Packet</span></a></li>
 <li><a href="../interfaces/MysqlPool.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Mysql<wbr/>Pool</span></a></li>
@@ -276,6 +293,13 @@
 <li><a href="../interfaces/Streamable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Streamable</span></a></li>
 <li><a href="../interfaces/TableMetadata.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Table<wbr/>Metadata</span></a></li>
 <li><a href="../interfaces/TableNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Table<wbr/>Node</span></a></li>
+<li><a href="../interfaces/Tarn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tarn</span></a></li>
+<li><a href="../interfaces/TarnPendingRequest.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tarn<wbr/>Pending<wbr/>Request</span></a></li>
+<li><a href="../interfaces/TarnPoolOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tarn<wbr/>Pool<wbr/>Options</span></a></li>
+<li><a href="../interfaces/Tedious.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious</span></a></li>
+<li><a href="../interfaces/TediousColumnValue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Column<wbr/>Value</span></a></li>
+<li><a href="../interfaces/TediousConnection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Connection</span></a></li>
+<li><a href="../interfaces/TediousType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Type</span></a></li>
 <li><a href="../interfaces/TransactionSettings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Transaction<wbr/>Settings</span></a></li>
 <li><a href="../interfaces/TupleNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tuple<wbr/>Node</span></a></li>
 <li><a href="../interfaces/UnaryOperationNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Unary<wbr/>Operation<wbr/>Node</span></a></li>
@@ -298,9 +322,9 @@
 <li><a href="AnyAliasedColumnWithTable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Aliased<wbr/>Column<wbr/>With<wbr/>Table</span></a></li>
 <li><a href="AnyColumn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Column</span></a></li>
 <li><a href="AnyColumnWithTable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Column<wbr/>With<wbr/>Table</span></a></li>
-<li><a href="AnySelectQueryBuilder.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Any<wbr/>Select<wbr/>Query<wbr/>Builder</span></a></li>
 <li><a href="ArithmeticOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Arithmetic<wbr/>Operator</span></a></li>
 <li><a href="BinaryOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Binary<wbr/>Operator</span></a></li>
+<li><a href="CallbackSelection.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Callback<wbr/>Selection</span></a></li>
 <li><a href="ColumnBuilderCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Column<wbr/>Builder<wbr/>Callback</span></a></li>
 <li><a href="ColumnDataType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Column<wbr/>Data<wbr/>Type</span></a></li>
 <li><a href="ColumnDefinitionBuilderCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Column<wbr/>Definition<wbr/>Builder<wbr/>Callback</span></a></li>
@@ -358,6 +382,8 @@
 <li><a href="MysqlQueryResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Mysql<wbr/>Query<wbr/>Result</span></a></li>
 <li><a href="NoResultErrorConstructor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>No<wbr/>Result<wbr/>Error<wbr/>Constructor</span></a></li>
 <li><a href="NonNullableInsertKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Non<wbr/>Nullable<wbr/>Insert<wbr/>Keys</span></a></li>
+<li><a href="NotNull.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Not<wbr/>Null</span></a></li>
+<li><a href="Nullable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Nullable</span></a></li>
 <li><a href="NullableInsertKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Nullable<wbr/>Insert<wbr/>Keys</span></a></li>
 <li><a href="OnCommitAction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>On<wbr/>Commit<wbr/>Action</span></a></li>
 <li><a href="OnConflictDatabase.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>On<wbr/>Conflict<wbr/>Database</span></a></li>
@@ -379,6 +405,7 @@
 <li><a href="ReferenceExpressionOrList.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Reference<wbr/>Expression<wbr/>Or<wbr/>List</span></a></li>
 <li><a href="RootOperationNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Root<wbr/>Operation<wbr/>Node</span></a></li>
 <li><a href="SelectArg.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Arg</span></a></li>
+<li><a href="SelectCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Callback</span></a></li>
 <li><a href="SelectExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Expression</span></a></li>
 <li><a href="SelectQueryBuilderWithFullJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Full<wbr/>Join</span></a></li>
 <li><a href="SelectQueryBuilderWithInnerJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Inner<wbr/>Join</span></a></li>
@@ -394,8 +421,11 @@
 <li><a href="StringReference.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>String<wbr/>Reference</span></a></li>
 <li><a href="TableExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Table<wbr/>Expression</span></a></li>
 <li><a href="TableExpressionOrList.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Table<wbr/>Expression<wbr/>Or<wbr/>List</span></a></li>
+<li><a href="TediousIsolationLevel.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tedious<wbr/>Isolation<wbr/>Level</span></a></li>
+<li><a href="TediousTypes.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tedious<wbr/>Types</span></a></li>
 <li><a href="UnaryFilterOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unary<wbr/>Filter<wbr/>Operator</span></a></li>
 <li><a href="UnaryOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unary<wbr/>Operator</span></a></li>
+<li><a href="UniqueConstraintNodeProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unique<wbr/>Constraint<wbr/>Node<wbr/>Props</span></a></li>
 <li><a href="UnknownRow.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unknown<wbr/>Row</span></a></li>
 <li><a href="UpdateKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Update<wbr/>Keys</span></a></li>
 <li><a href="UpdateObject.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Update<wbr/>Object</span></a></li>
