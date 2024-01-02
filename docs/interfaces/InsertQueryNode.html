@@ -22,8 +22,8 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">InsertQueryNode</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L13">kysely/src/operation-node/insert-query-node.ts:13</a></li>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L30">kysely/src/operation-node/insert-query-node.ts:30</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L13">kysely/src/operation-node/insert-query-node.ts:13</a></li>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L31">kysely/src/operation-node/insert-query-node.ts:31</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -32,6 +32,7 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="InsertQueryNode.html#columns" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>columns?</span></a>
+<a href="InsertQueryNode.html#defaultValues" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>default<wbr/>Values?</span></a>
 <a href="InsertQueryNode.html#explain" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>explain?</span></a>
 <a href="InsertQueryNode.html#ignore" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>ignore?</span></a>
 <a href="InsertQueryNode.html#into" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>into</span></a>
@@ -49,58 +50,63 @@
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>columns</span><a href="#columns" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">columns</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type ">ColumnNode</span><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L16">kysely/src/operation-node/insert-query-node.ts:16</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L16">kysely/src/operation-node/insert-query-node.ts:16</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="defaultValues" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>default<wbr/>Values</span><a href="#defaultValues" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">default<wbr/>Values</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L25">kysely/src/operation-node/insert-query-node.ts:25</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="explain" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>explain</span><a href="#explain" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">explain</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">ExplainNode</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L24">kysely/src/operation-node/insert-query-node.ts:24</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L24">kysely/src/operation-node/insert-query-node.ts:24</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="ignore" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>ignore</span><a href="#ignore" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">ignore</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L22">kysely/src/operation-node/insert-query-node.ts:22</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L22">kysely/src/operation-node/insert-query-node.ts:22</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="into" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>into</span><a href="#into" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">into</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">TableNode</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L15">kysely/src/operation-node/insert-query-node.ts:15</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L15">kysely/src/operation-node/insert-query-node.ts:15</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="kind" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>kind</span><a href="#kind" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">kind</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;InsertQueryNode&quot;</span></div><aside class="tsd-sources">
 <p>Overrides <a href="OperationNode.html">OperationNode</a>.<a href="OperationNode.html#kind">kind</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L14">kysely/src/operation-node/insert-query-node.ts:14</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L14">kysely/src/operation-node/insert-query-node.ts:14</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="onConflict" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>on<wbr/>Conflict</span><a href="#onConflict" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">on<wbr/>Conflict</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">OnConflictNode</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L19">kysely/src/operation-node/insert-query-node.ts:19</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L19">kysely/src/operation-node/insert-query-node.ts:19</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="onDuplicateKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>on<wbr/>Duplicate<wbr/>Key</span><a href="#onDuplicateKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">on<wbr/>Duplicate<wbr/>Key</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">OnDuplicateKeyNode</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L20">kysely/src/operation-node/insert-query-node.ts:20</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L20">kysely/src/operation-node/insert-query-node.ts:20</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="replace" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>replace</span><a href="#replace" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">replace</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L23">kysely/src/operation-node/insert-query-node.ts:23</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L23">kysely/src/operation-node/insert-query-node.ts:23</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="returning" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>returning</span><a href="#returning" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">returning</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">ReturningNode</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L18">kysely/src/operation-node/insert-query-node.ts:18</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L18">kysely/src/operation-node/insert-query-node.ts:18</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="values" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>values</span><a href="#values" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">values</span><span class="tsd-signature-symbol">?:</span> <a href="OperationNode.html" class="tsd-signature-type tsd-kind-interface">OperationNode</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L17">kysely/src/operation-node/insert-query-node.ts:17</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L17">kysely/src/operation-node/insert-query-node.ts:17</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="with" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>with</span><a href="#with" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">with</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">WithNode</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/04f9a9e2/src/operation-node/insert-query-node.ts#L21">kysely/src/operation-node/insert-query-node.ts:21</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/operation-node/insert-query-node.ts#L21">kysely/src/operation-node/insert-query-node.ts:21</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -120,6 +126,7 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#columns" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>columns</span></a></li>
+<li><a href="#defaultValues" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>default<wbr/>Values</span></a></li>
 <li><a href="#explain" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>explain</span></a></li>
 <li><a href="#ignore" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>ignore</span></a></li>
 <li><a href="#into" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>into</span></a></li>
