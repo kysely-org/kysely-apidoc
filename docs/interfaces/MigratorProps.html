@@ -20,7 +20,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">MigratorProps</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/migration/migrator.ts#L610">kysely/src/migration/migrator.ts:610</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L667">kysely/src/migration/migrator.ts:667</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -28,7 +28,8 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="MigratorProps.html#db" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>db</span></a>
+<div class="tsd-index-list"><a href="MigratorProps.html#allowUnorderedMigrations" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>allow<wbr/>Unordered<wbr/>Migrations?</span></a>
+<a href="MigratorProps.html#db" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>db</span></a>
 <a href="MigratorProps.html#migrationLockTableName" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>migration<wbr/>Lock<wbr/>Table<wbr/>Name?</span></a>
 <a href="MigratorProps.html#migrationTableName" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>migration<wbr/>Table<wbr/>Name?</span></a>
 <a href="MigratorProps.html#migrationTableSchema" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>migration<wbr/>Table<wbr/>Schema?</span></a>
@@ -36,11 +37,27 @@
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
+<section class="tsd-panel tsd-member"><a id="allowUnorderedMigrations" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>allow<wbr/>Unordered<wbr/>Migrations</span><a href="#allowUnorderedMigrations" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">allow<wbr/>Unordered<wbr/>Migrations</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Enforces whether or not migrations must be run in alpha-numeric order.</p>
+<p>When false, migrations must be run in their exact alpha-numeric order.
+This is checked against the migrations already run in the database
+(`migrationTableName&#39;). This ensures your migrations are always run in
+the same order and is the safest option.</p>
+<p>When true, migrations are still run in alpha-numeric order, but
+the order is not checked against already-run migrations in the database.
+Kysely will simply run all migrations that haven&#39;t run yet, in alpha-numeric
+order.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L731">kysely/src/migration/migrator.ts:731</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="db" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>db</span><a href="#db" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>db</span><a href="#db" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">db</span><span class="tsd-signature-symbol">:</span> <a href="../classes/Kysely.html" class="tsd-signature-type tsd-kind-class">Kysely</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/migration/migrator.ts#L611">kysely/src/migration/migrator.ts:611</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L668">kysely/src/migration/migrator.ts:668</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="migrationLockTableName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>migration<wbr/>Lock<wbr/>Table<wbr/>Name</span><a href="#migrationLockTableName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">migration<wbr/>Lock<wbr/>Table<wbr/>Name</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -55,7 +72,7 @@ tables.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/migration/migrator.ts#L641">kysely/src/migration/migrator.ts:641</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L698">kysely/src/migration/migrator.ts:698</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="migrationTableName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>migration<wbr/>Table<wbr/>Name</span><a href="#migrationTableName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">migration<wbr/>Table<wbr/>Name</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -71,7 +88,7 @@ tables.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/migration/migrator.ts#L627">kysely/src/migration/migrator.ts:627</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L684">kysely/src/migration/migrator.ts:684</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="migrationTableSchema" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>migration<wbr/>Table<wbr/>Schema</span><a href="#migrationTableSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">migration<wbr/>Table<wbr/>Schema</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -89,12 +106,12 @@ tables.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/migration/migrator.ts#L659">kysely/src/migration/migrator.ts:659</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L716">kysely/src/migration/migrator.ts:716</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="provider" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>provider</span><a href="#provider" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">provider</span><span class="tsd-signature-symbol">:</span> <a href="MigrationProvider.html" class="tsd-signature-type tsd-kind-interface">MigrationProvider</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/20e91306/src/migration/migrator.ts#L612">kysely/src/migration/migrator.ts:612</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/migration/migrator.ts#L669">kysely/src/migration/migrator.ts:669</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -113,6 +130,7 @@ tables.</p>
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
+<li><a href="#allowUnorderedMigrations" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>allow<wbr/>Unordered<wbr/>Migrations</span></a></li>
 <li><a href="#db" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>db</span></a></li>
 <li><a href="#migrationLockTableName" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>migration<wbr/>Lock<wbr/>Table<wbr/>Name</span></a></li>
 <li><a href="#migrationTableName" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>migration<wbr/>Table<wbr/>Name</span></a></li>
@@ -518,6 +536,7 @@ tables.</p>
 <li><a href="../variables/BINARY_OPERATORS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>BINARY_<wbr/>OPERATORS</span></a></li>
 <li><a href="../variables/COMPARISON_OPERATORS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>COMPARISON_<wbr/>OPERATORS</span></a></li>
 <li><a href="../variables/CompiledQuery-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>Compiled<wbr/>Query</span></a></li>
+<li><a href="../variables/DEFAULT_ALLOW_UNORDERED_MIGRATIONS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>DEFAULT_<wbr/>ALLOW_<wbr/>UNORDERED_<wbr/>MIGRATIONS</span></a></li>
 <li><a href="../variables/DEFAULT_MIGRATION_LOCK_TABLE.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>DEFAULT_<wbr/>MIGRATION_<wbr/>LOCK_<wbr/>TABLE</span></a></li>
 <li><a href="../variables/DEFAULT_MIGRATION_TABLE.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>DEFAULT_<wbr/>MIGRATION_<wbr/>TABLE</span></a></li>
 <li><a href="../variables/JSON_OPERATORS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>JSON_<wbr/>OPERATORS</span></a></li>
