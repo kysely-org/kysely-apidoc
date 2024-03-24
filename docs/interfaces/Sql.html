@@ -38,7 +38,7 @@ lists of things, see the <a href="Sql.html#ref" class="tsd-kind-method">ref</a>,
 something can&#39;t be done using the Kysely API, you should be able to drop down to
 raw SQL using the <code>sql</code> tag. Here&#39;s an example query that uses raw sql in a bunch
 of methods:</p>
-<pre><code class="language-ts"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">persons</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-4">db</span><br/><span class="hl-1">  .</span><span class="hl-5">selectFrom</span><span class="hl-1">(</span><span class="hl-6">&#39;person&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">select</span><span class="hl-1">(</span><br/><span class="hl-1">    </span><span class="hl-8">// If you use `sql` in a select statement, remember to call the `as`</span><br/><span class="hl-1">    </span><span class="hl-8">// method to give it an alias.</span><br/><span class="hl-1">    </span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">string</span><span class="hl-1">&gt;</span><span class="hl-6">`concat(first_name, &#39; &#39;, last_name)`</span><span class="hl-1">.</span><span class="hl-5">as</span><span class="hl-1">(</span><span class="hl-6">&#39;full_name&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">  )</span><br/><span class="hl-1">  .</span><span class="hl-5">where</span><span class="hl-1">(</span><span class="hl-5">sql</span><span class="hl-6">`birthdate between </span><span class="hl-0">${</span><span class="hl-4">date1</span><span class="hl-0">}</span><span class="hl-6"> and </span><span class="hl-0">${</span><span class="hl-4">date2</span><span class="hl-0">}</span><span class="hl-6">`</span><span class="hl-1">)</span><br/><span class="hl-1">  </span><span class="hl-8">// Here we assume we have list of nicknames for the person</span><br/><span class="hl-1">  </span><span class="hl-8">// (a list of strings) and we use the PostgreSQL `@&gt;` operator</span><br/><span class="hl-1">  </span><span class="hl-8">// to test if all of them are valid nicknames for the user.</span><br/><span class="hl-1">  .</span><span class="hl-5">where</span><span class="hl-1">(</span><span class="hl-6">&#39;nicknames&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;@&gt;&#39;</span><span class="hl-1">, </span><span class="hl-5">sql</span><span class="hl-6">`ARRAY[</span><span class="hl-0">${</span><span class="hl-4">sql</span><span class="hl-10">.</span><span class="hl-5">join</span><span class="hl-10">(</span><span class="hl-4">nicknames</span><span class="hl-10">)</span><span class="hl-0">}</span><span class="hl-6">]`</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">orderBy</span><span class="hl-1">(</span><span class="hl-5">sql</span><span class="hl-6">`concat(first_name, &#39; &#39;, last_name)`</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">execute</span><span class="hl-1">()</span>
+<pre><code class="language-ts"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">persons</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-4">db</span><br/><span class="hl-1">  .</span><span class="hl-5">selectFrom</span><span class="hl-1">(</span><span class="hl-6">&#39;person&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">select</span><span class="hl-1">(</span><br/><span class="hl-1">    </span><span class="hl-8">// If you use `sql` in a select statement, remember to call the `as`</span><br/><span class="hl-1">    </span><span class="hl-8">// method to give it an alias.</span><br/><span class="hl-1">    </span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">string</span><span class="hl-1">&gt;</span><span class="hl-6">`concat(first_name, &#39; &#39;, last_name)`</span><span class="hl-1">.</span><span class="hl-5">as</span><span class="hl-1">(</span><span class="hl-6">&#39;full_name&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">  )</span><br/><span class="hl-1">  .</span><span class="hl-5">where</span><span class="hl-1">(</span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">boolean</span><span class="hl-1">&gt;</span><span class="hl-6">`birthdate between </span><span class="hl-0">${</span><span class="hl-4">date1</span><span class="hl-0">}</span><span class="hl-6"> and </span><span class="hl-0">${</span><span class="hl-4">date2</span><span class="hl-0">}</span><span class="hl-6">`</span><span class="hl-1">)</span><br/><span class="hl-1">  </span><span class="hl-8">// Here we assume we have list of nicknames for the person</span><br/><span class="hl-1">  </span><span class="hl-8">// (a list of strings) and we use the PostgreSQL `@&gt;` operator</span><br/><span class="hl-1">  </span><span class="hl-8">// to test if all of them are valid nicknames for the user.</span><br/><span class="hl-1">  .</span><span class="hl-5">where</span><span class="hl-1">(</span><span class="hl-6">&#39;nicknames&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;@&gt;&#39;</span><span class="hl-1">, </span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">string</span><span class="hl-1">[]&gt;</span><span class="hl-6">`ARRAY[</span><span class="hl-0">${</span><span class="hl-4">sql</span><span class="hl-10">.</span><span class="hl-5">join</span><span class="hl-10">(</span><span class="hl-4">nicknames</span><span class="hl-10">)</span><span class="hl-0">}</span><span class="hl-6">]`</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">orderBy</span><span class="hl-1">(</span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">string</span><span class="hl-1">&gt;</span><span class="hl-6">`concat(first_name, &#39; &#39;, last_name)`</span><span class="hl-1">)</span><br/><span class="hl-1">  .</span><span class="hl-5">execute</span><span class="hl-1">()</span>
 </code><button>Copy</button></pre>
 <p>The generated SQL (PostgreSQL):</p>
 <pre><code class="language-sql"><span class="hl-0">select</span><span class="hl-1"> </span><span class="hl-5">concat</span><span class="hl-1">(first_name, </span><span class="hl-6">&#39; &#39;</span><span class="hl-1">, last_name) </span><span class="hl-0">as</span><span class="hl-1"> </span><span class="hl-6">&quot;full_name&quot;</span><br/><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-6">&quot;person&quot;</span><br/><span class="hl-0">where</span><span class="hl-1"> birthdate </span><span class="hl-0">between</span><span class="hl-1"> $</span><span class="hl-9">1</span><span class="hl-1"> </span><span class="hl-0">and</span><span class="hl-1"> $</span><span class="hl-9">2</span><br/><span class="hl-0">and</span><span class="hl-1"> </span><span class="hl-6">&quot;nicknames&quot;</span><span class="hl-1"> @&gt; </span><span class="hl-0">ARRAY</span><span class="hl-1">[$3, $4, $5, $6, $7, $8, $9, $10]</span><br/><span class="hl-0">order by</span><span class="hl-1"> </span><span class="hl-5">concat</span><span class="hl-1">(first_name, </span><span class="hl-6">&#39; &#39;</span><span class="hl-1">, last_name)</span>
@@ -48,7 +48,7 @@ instance as the only argument:</p>
 <pre><code class="language-ts"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">result</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">Person</span><span class="hl-1">[]&gt;</span><span class="hl-6">`select * from person`</span><span class="hl-1">.</span><span class="hl-5">execute</span><span class="hl-1">(</span><span class="hl-4">db</span><span class="hl-1">)</span>
 </code><button>Copy</button></pre>
 <p>You can merge other <code>sql</code> expressions and queries using substitutions:</p>
-<pre><code class="language-ts"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">petName</span><span class="hl-1"> = </span><span class="hl-4">db</span><span class="hl-1">.</span><span class="hl-5">selectFrom</span><span class="hl-1">(</span><span class="hl-6">&#39;pet&#39;</span><span class="hl-1">).</span><span class="hl-5">select</span><span class="hl-1">(</span><span class="hl-6">&#39;name&#39;</span><span class="hl-1">).</span><span class="hl-5">limit</span><span class="hl-1">(</span><span class="hl-9">1</span><span class="hl-1">)</span><br/><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">fullName</span><span class="hl-1"> = </span><span class="hl-5">sql</span><span class="hl-6">`concat(first_name, &#39; &#39;, last_name)`</span><br/><br/><span class="hl-5">sql</span><span class="hl-6">`</span><br/><span class="hl-6">  select </span><span class="hl-0">${</span><span class="hl-4">fullName</span><span class="hl-0">}</span><span class="hl-6"> as full_name, </span><span class="hl-0">${</span><span class="hl-4">petName</span><span class="hl-0">}</span><span class="hl-6"> as pet_name</span><br/><span class="hl-6">  from person</span><br/><span class="hl-6">`</span>
+<pre><code class="language-ts"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">petName</span><span class="hl-1"> = </span><span class="hl-4">db</span><span class="hl-1">.</span><span class="hl-5">selectFrom</span><span class="hl-1">(</span><span class="hl-6">&#39;pet&#39;</span><span class="hl-1">).</span><span class="hl-5">select</span><span class="hl-1">(</span><span class="hl-6">&#39;name&#39;</span><span class="hl-1">).</span><span class="hl-5">limit</span><span class="hl-1">(</span><span class="hl-9">1</span><span class="hl-1">)</span><br/><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">fullName</span><span class="hl-1"> = </span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">string</span><span class="hl-1">&gt;</span><span class="hl-6">`concat(first_name, &#39; &#39;, last_name)`</span><br/><br/><span class="hl-5">sql</span><span class="hl-6">`</span><br/><span class="hl-6">  select </span><span class="hl-0">${</span><span class="hl-4">fullName</span><span class="hl-0">}</span><span class="hl-6"> as full_name, </span><span class="hl-0">${</span><span class="hl-4">petName</span><span class="hl-0">}</span><span class="hl-6"> as pet_name</span><br/><span class="hl-6">  from person</span><br/><span class="hl-6">`</span>
 </code><button>Copy</button></pre>
 <p>Substitutions also handle <a href="ExpressionBuilder.html#ref" class="tsd-kind-method">ref</a>,
 <a href="../classes/DynamicModule.html#ref" class="tsd-kind-method">ref</a> and pretty much anything else you
@@ -74,7 +74,7 @@ type-safety though... But it&#39;s possible.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L109">kysely/src/raw-builder/sql.ts:109</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L109">kysely/src/raw-builder/sql.ts:109</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -127,14 +127,14 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L259">kysely/src/raw-builder/sql.ts:259</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L259">kysely/src/raw-builder/sql.ts:259</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="join" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>join</span><a href="#join" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="join.join-1"><span class="tsd-kind-call-signature">join</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">array</span>, <span class="tsd-kind-parameter">separator</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><a href="#join.join-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>This can be used to add lists of things to SQL snippets.</p>
-<a id="md:examples" class="tsd-anchor"></a><h3><a href="#md:examples">Examples</a></h3><pre><code class="language-ts"><span class="hl-0">function</span><span class="hl-1"> </span><span class="hl-5">findByNicknames</span><span class="hl-1">(</span><span class="hl-4">nicknames</span><span class="hl-1">: </span><span class="hl-7">string</span><span class="hl-1">[]): </span><span class="hl-7">Promise</span><span class="hl-1">&lt;</span><span class="hl-7">Person</span><span class="hl-1">[]&gt; {</span><br/><span class="hl-1">  </span><span class="hl-3">return</span><span class="hl-1"> </span><span class="hl-4">db</span><br/><span class="hl-1">    .</span><span class="hl-5">selectFrom</span><span class="hl-1">(</span><span class="hl-6">&#39;person&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">    .</span><span class="hl-5">selectAll</span><span class="hl-1">()</span><br/><span class="hl-1">    .</span><span class="hl-5">where</span><span class="hl-1">(</span><span class="hl-6">&#39;nicknames&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;@&gt;&#39;</span><span class="hl-1">, </span><span class="hl-5">sql</span><span class="hl-6">`ARRAY[</span><span class="hl-0">${</span><span class="hl-4">sql</span><span class="hl-10">.</span><span class="hl-5">join</span><span class="hl-10">(</span><span class="hl-4">nicknames</span><span class="hl-10">)</span><span class="hl-0">}</span><span class="hl-6">]`</span><span class="hl-1">)</span><br/><span class="hl-1">    .</span><span class="hl-5">execute</span><span class="hl-1">()</span><br/><span class="hl-1">}</span>
+<a id="md:examples" class="tsd-anchor"></a><h3><a href="#md:examples">Examples</a></h3><pre><code class="language-ts"><span class="hl-0">function</span><span class="hl-1"> </span><span class="hl-5">findByNicknames</span><span class="hl-1">(</span><span class="hl-4">nicknames</span><span class="hl-1">: </span><span class="hl-7">string</span><span class="hl-1">[]): </span><span class="hl-7">Promise</span><span class="hl-1">&lt;</span><span class="hl-7">Person</span><span class="hl-1">[]&gt; {</span><br/><span class="hl-1">  </span><span class="hl-3">return</span><span class="hl-1"> </span><span class="hl-4">db</span><br/><span class="hl-1">    .</span><span class="hl-5">selectFrom</span><span class="hl-1">(</span><span class="hl-6">&#39;person&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">    .</span><span class="hl-5">selectAll</span><span class="hl-1">()</span><br/><span class="hl-1">    .</span><span class="hl-5">where</span><span class="hl-1">(</span><span class="hl-6">&#39;nicknames&#39;</span><span class="hl-1">, </span><span class="hl-6">&#39;@&gt;&#39;</span><span class="hl-1">, </span><span class="hl-5">sql</span><span class="hl-1">&lt;</span><span class="hl-7">string</span><span class="hl-1">[]&gt;</span><span class="hl-6">`ARRAY[</span><span class="hl-0">${</span><span class="hl-4">sql</span><span class="hl-10">.</span><span class="hl-5">join</span><span class="hl-10">(</span><span class="hl-4">nicknames</span><span class="hl-10">)</span><span class="hl-0">}</span><span class="hl-6">]`</span><span class="hl-1">)</span><br/><span class="hl-1">    .</span><span class="hl-5">execute</span><span class="hl-1">()</span><br/><span class="hl-1">}</span>
 </code><button>Copy</button></pre>
 <p>The generated SQL (PostgreSQL):</p>
 <pre><code class="language-sql"><span class="hl-0">select</span><span class="hl-1"> * </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-6">&quot;person&quot;</span><br/><span class="hl-0">where</span><span class="hl-1"> </span><span class="hl-6">&quot;nicknames&quot;</span><span class="hl-1"> @&gt; </span><span class="hl-0">ARRAY</span><span class="hl-1">[$1, $2, $3, $4, $5, $6, $7, $8]</span>
@@ -162,7 +162,7 @@ support:</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L367">kysely/src/raw-builder/sql.ts:367</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L367">kysely/src/raw-builder/sql.ts:367</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="lit" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>lit</span><a href="#lit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -195,7 +195,7 @@ something can&#39;t be sent as a parameter.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L285">kysely/src/raw-builder/sql.ts:285</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L285">kysely/src/raw-builder/sql.ts:285</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="literal" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>literal</span><a href="#literal" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -216,7 +216,7 @@ something can&#39;t be sent as a parameter.</p>
 <h4>Deprecated</h4><p>Use <a href="Sql.html#lit" class="tsd-kind-method">lit</a> instead.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L290">kysely/src/raw-builder/sql.ts:290</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L290">kysely/src/raw-builder/sql.ts:290</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="raw" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>raw</span><a href="#raw" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -247,7 +247,7 @@ can be any sql and it&#39;s simply glued to the parent string as-is.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L314">kysely/src/raw-builder/sql.ts:314</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L314">kysely/src/raw-builder/sql.ts:314</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ref" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ref</span><a href="#ref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -290,7 +290,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L178">kysely/src/raw-builder/sql.ts:178</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L178">kysely/src/raw-builder/sql.ts:178</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="table" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>table</span><a href="#table" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -322,7 +322,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L216">kysely/src/raw-builder/sql.ts:216</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L216">kysely/src/raw-builder/sql.ts:216</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="val" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>val</span><a href="#val" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -345,7 +345,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <h4 class="tsd-returns-title">Returns <a href="RawBuilder.html" class="tsd-signature-type tsd-kind-interface">RawBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">V</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L121">kysely/src/raw-builder/sql.ts:121</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L121">kysely/src/raw-builder/sql.ts:121</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="value" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>value</span><a href="#value" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -366,7 +366,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <h4>Deprecated</h4><p>Use <a href="Sql.html#val" class="tsd-kind-method">val</a> instead.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/koskimas/kysely/blob/5091048d/src/raw-builder/sql.ts#L126">kysely/src/raw-builder/sql.ts:126</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/koskimas/kysely/blob/e84863d4/src/raw-builder/sql.ts#L126">kysely/src/raw-builder/sql.ts:126</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -444,6 +444,9 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../classes/JoinBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Join<wbr/>Builder</span></a></li>
 <li><a href="../classes/Kysely.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Kysely</span></a></li>
 <li><a href="../classes/Log.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Log</span></a></li>
+<li><a href="../classes/MatchedThenableMergeQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Matched<wbr/>Thenable<wbr/>Merge<wbr/>Query<wbr/>Builder</span></a></li>
+<li><a href="../classes/MergeQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Merge<wbr/>Query<wbr/>Builder</span></a></li>
+<li><a href="../classes/MergeResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Merge<wbr/>Result</span></a></li>
 <li><a href="../classes/Migrator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Migrator</span></a></li>
 <li><a href="../classes/MssqlAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Adapter</span></a></li>
 <li><a href="../classes/MssqlDialect.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mssql<wbr/>Dialect</span></a></li>
@@ -457,6 +460,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../classes/MysqlQueryCompiler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Mysql<wbr/>Query<wbr/>Compiler</span></a></li>
 <li><a href="../classes/NoResultError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>No<wbr/>Result<wbr/>Error</span></a></li>
 <li><a href="../classes/NoopQueryExecutor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Noop<wbr/>Query<wbr/>Executor</span></a></li>
+<li><a href="../classes/NotMatchedThenableMergeQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Not<wbr/>Matched<wbr/>Thenable<wbr/>Merge<wbr/>Query<wbr/>Builder</span></a></li>
 <li><a href="../classes/OnConflictBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>On<wbr/>Conflict<wbr/>Builder</span></a></li>
 <li><a href="../classes/OnConflictDoNothingBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>On<wbr/>Conflict<wbr/>Do<wbr/>Nothing<wbr/>Builder</span></a></li>
 <li><a href="../classes/OnConflictUpdateBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>On<wbr/>Conflict<wbr/>Update<wbr/>Builder</span></a></li>
@@ -484,6 +488,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../classes/TraversedJSONPathBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>TraversedJSONPath<wbr/>Builder</span></a></li>
 <li><a href="../classes/UpdateQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Update<wbr/>Query<wbr/>Builder</span></a></li>
 <li><a href="../classes/UpdateResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Update<wbr/>Result</span></a></li>
+<li><a href="../classes/WheneableMergeQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Wheneable<wbr/>Merge<wbr/>Query<wbr/>Builder</span></a></li>
 <li><a href="../classes/WithSchemaPlugin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>With<wbr/>Schema<wbr/>Plugin</span></a></li>
 <li><a href="AddColumnNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>Add<wbr/>Column<wbr/>Node</span></a></li>
 <li><a href="AddConstraintNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Add<wbr/>Constraint<wbr/>Node</span></a></li>
@@ -552,6 +557,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="Explainable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Explainable</span></a></li>
 <li><a href="Expression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Expression</span></a></li>
 <li><a href="ExpressionBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Expression<wbr/>Builder</span></a></li>
+<li><a href="FetchNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Fetch<wbr/>Node</span></a></li>
 <li><a href="FileMigrationProviderFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>File<wbr/>Migration<wbr/>ProviderFS</span></a></li>
 <li><a href="FileMigrationProviderPath.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>File<wbr/>Migration<wbr/>Provider<wbr/>Path</span></a></li>
 <li><a href="FileMigrationProviderProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>File<wbr/>Migration<wbr/>Provider<wbr/>Props</span></a></li>
@@ -578,6 +584,9 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="KyselyProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Kysely<wbr/>Props</span></a></li>
 <li><a href="LimitNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Limit<wbr/>Node</span></a></li>
 <li><a href="ListNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>List<wbr/>Node</span></a></li>
+<li><a href="MatchedNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Matched<wbr/>Node</span></a></li>
+<li><a href="MergeQueryBuilderProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Merge<wbr/>Query<wbr/>Builder<wbr/>Props</span></a></li>
+<li><a href="MergeQueryNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Merge<wbr/>Query<wbr/>Node</span></a></li>
 <li><a href="Migration.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migration</span></a></li>
 <li><a href="MigrationInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migration<wbr/>Info</span></a></li>
 <li><a href="MigrationLockOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Migration<wbr/>Lock<wbr/>Options</span></a></li>
@@ -605,6 +614,8 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="OrNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Or<wbr/>Node</span></a></li>
 <li><a href="OrderByItemNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Order<wbr/>By<wbr/>Item<wbr/>Node</span></a></li>
 <li><a href="OrderByNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Order<wbr/>By<wbr/>Node</span></a></li>
+<li><a href="OutputInterface.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Output<wbr/>Interface</span></a></li>
+<li><a href="OutputNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Output<wbr/>Node</span></a></li>
 <li><a href="OverNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Over<wbr/>Node</span></a></li>
 <li><a href="ParensNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Parens<wbr/>Node</span></a></li>
 <li><a href="PartitionByItemNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Partition<wbr/>By<wbr/>Item<wbr/>Node</span></a></li>
@@ -653,6 +664,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="TediousColumnValue.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Column<wbr/>Value</span></a></li>
 <li><a href="TediousConnection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Connection</span></a></li>
 <li><a href="TediousType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tedious<wbr/>Type</span></a></li>
+<li><a href="TopNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Top<wbr/>Node</span></a></li>
 <li><a href="TransactionSettings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Transaction<wbr/>Settings</span></a></li>
 <li><a href="TupleNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Tuple<wbr/>Node</span></a></li>
 <li><a href="UnaryOperationNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Unary<wbr/>Operation<wbr/>Node</span></a></li>
@@ -708,6 +720,8 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../types/ExpressionOrFactory.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Expression<wbr/>Or<wbr/>Factory</span></a></li>
 <li><a href="../types/ExtractTypeFromReferenceExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Extract<wbr/>Type<wbr/>From<wbr/>Reference<wbr/>Expression</span></a></li>
 <li><a href="../types/ExtractTypeFromStringReference.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Extract<wbr/>Type<wbr/>From<wbr/>String<wbr/>Reference</span></a></li>
+<li><a href="../types/ExtractWheneableMergeQueryBuilder.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Extract<wbr/>Wheneable<wbr/>Merge<wbr/>Query<wbr/>Builder</span></a></li>
+<li><a href="../types/FetchModifier.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Fetch<wbr/>Modifier</span></a></li>
 <li><a href="../types/FilterObject.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Filter<wbr/>Object</span></a></li>
 <li><a href="../types/ForeignKeyConstraintBuilderCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Foreign<wbr/>Key<wbr/>Constraint<wbr/>Builder<wbr/>Callback</span></a></li>
 <li><a href="../types/ForeignKeyConstraintNodeProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Foreign<wbr/>Key<wbr/>Constraint<wbr/>Node<wbr/>Props</span></a></li>
@@ -751,6 +765,10 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../types/Operator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Operator</span></a></li>
 <li><a href="../types/OrderByDirectionExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Order<wbr/>By<wbr/>Direction<wbr/>Expression</span></a></li>
 <li><a href="../types/OrderByExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Order<wbr/>By<wbr/>Expression</span></a></li>
+<li><a href="../types/OutputCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Output<wbr/>Callback</span></a></li>
+<li><a href="../types/OutputDatabase.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Output<wbr/>Database</span></a></li>
+<li><a href="../types/OutputExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Output<wbr/>Expression</span></a></li>
+<li><a href="../types/OutputPrefix.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Output<wbr/>Prefix</span></a></li>
 <li><a href="../types/OverBuilderCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Over<wbr/>Builder<wbr/>Callback</span></a></li>
 <li><a href="../types/PostgresCursorConstructor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Postgres<wbr/>Cursor<wbr/>Constructor</span></a></li>
 <li><a href="../types/QueryNode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Query<wbr/>Node</span></a></li>
@@ -760,6 +778,8 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../types/SelectArg.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Arg</span></a></li>
 <li><a href="../types/SelectCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Callback</span></a></li>
 <li><a href="../types/SelectExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Expression</span></a></li>
+<li><a href="../types/SelectExpressionFromOutputCallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Expression<wbr/>From<wbr/>Output<wbr/>Callback</span></a></li>
+<li><a href="../types/SelectExpressionFromOutputExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Expression<wbr/>From<wbr/>Output<wbr/>Expression</span></a></li>
 <li><a href="../types/SelectQueryBuilderWithFullJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Full<wbr/>Join</span></a></li>
 <li><a href="../types/SelectQueryBuilderWithInnerJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Inner<wbr/>Join</span></a></li>
 <li><a href="../types/SelectQueryBuilderWithLeftJoin.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Select<wbr/>Query<wbr/>Builder<wbr/>With<wbr/>Left<wbr/>Join</span></a></li>
@@ -769,6 +789,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../types/Selection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Selection</span></a></li>
 <li><a href="../types/SetOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Set<wbr/>Operator</span></a></li>
 <li><a href="../types/SimpleReferenceExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Simple<wbr/>Reference<wbr/>Expression</span></a></li>
+<li><a href="../types/SimpleTableReference.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Simple<wbr/>Table<wbr/>Reference</span></a></li>
 <li><a href="../types/Simplify.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Simplify</span></a></li>
 <li><a href="../types/SqlBool.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Sql<wbr/>Bool</span></a></li>
 <li><a href="../types/StringReference.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>String<wbr/>Reference</span></a></li>
@@ -776,6 +797,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../types/TableExpressionOrList.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Table<wbr/>Expression<wbr/>Or<wbr/>List</span></a></li>
 <li><a href="../types/TediousIsolationLevel.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tedious<wbr/>Isolation<wbr/>Level</span></a></li>
 <li><a href="../types/TediousTypes.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Tedious<wbr/>Types</span></a></li>
+<li><a href="../types/TopModifier.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Top<wbr/>Modifier</span></a></li>
 <li><a href="../types/UnaryFilterOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unary<wbr/>Filter<wbr/>Operator</span></a></li>
 <li><a href="../types/UnaryOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unary<wbr/>Operator</span></a></li>
 <li><a href="../types/UniqueConstraintNodeProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Unique<wbr/>Constraint<wbr/>Node<wbr/>Props</span></a></li>
@@ -818,6 +840,7 @@ vulnerabilities. The input is not checked or escaped by Kysely in any way.</p>
 <li><a href="../functions/isAliasedExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Aliased<wbr/>Expression</span></a></li>
 <li><a href="../functions/isArithmeticOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Arithmetic<wbr/>Operator</span></a></li>
 <li><a href="../functions/isBinaryOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Binary<wbr/>Operator</span></a></li>
+<li><a href="../functions/isColumnDataType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Column<wbr/>Data<wbr/>Type</span></a></li>
 <li><a href="../functions/isComparisonOperator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Comparison<wbr/>Operator</span></a></li>
 <li><a href="../functions/isCompilable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Compilable</span></a></li>
 <li><a href="../functions/isExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Expression</span></a></li>
