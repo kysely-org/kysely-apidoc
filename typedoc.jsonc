@@ -1,0 +1,29 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "cleanOutputDir": true,
+    "customCss": "./docs-theme.css",
+    "entryPoints": ["../kysely/src/index.ts", "../kysely/src/helpers/*.ts"],
+    "entryPointStrategy": "expand",
+    "excludeInternal": true,
+    "excludePrivate": true,
+    "highlightLanguages": [
+        "bash",
+        "console",
+        "css",
+        "html",
+        "javascript",
+        "json",
+        "jsonc",
+        "json5",
+        "yaml",
+        "tsx",
+        "typescript",
+        "sql"
+    ],
+    "navigation": {
+        "includeFolders": false
+    },
+    "out": "./docs",
+    // "treatWarningsAsErrors": true,
+    "tsconfig": "../kysely/tsconfig.json"
+}

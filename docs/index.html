@@ -1,19 +1,25 @@
 <!DOCTYPE html><html class="default" lang="en" data-base="./"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>kysely</title><meta name="description" content="Documentation for kysely"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><link rel="stylesheet" href="assets/custom.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script><script async src="assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="index.html" class="title">kysely</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>kysely</h1></div><div class="tsd-panel tsd-typography"><p><a href="https://stand-with-ukraine.pp.ua"><img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg" alt="Stand With Ukraine"></a></p>
 <p><a href="https://github.com/kysely-org/kysely/releases/latest"><img src="https://img.shields.io/npm/v/kysely?style=flat&amp;label=latest" alt="NPM Version"></a>
+<a href="https://socket.dev/npm/package/kysely/overview/0.28.15"><img src="https://badge.socket.dev/npm/package/kysely/0.28.15" alt="Socket Badge"></a>
 <a href="https://github.com/kysely-org/kysely"><img src="https://github.com/kysely-org/kysely/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
 <a href="https://github.com/kysely-org/kysely/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kysely-org/kysely?style=flat" alt="License"></a>
 <a href="https://github.com/kysely-org/kysely/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"><img src="https://img.shields.io/github/issues-closed/kysely-org/kysely?logo=github" alt="Issues"></a>
 <a href="https://github.com/kysely-org/kysely/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc"><img src="https://img.shields.io/github/issues-pr-closed/kysely-org/kysely?label=PRs&amp;logo=github&amp;style=flat" alt="Pull Requests"></a>
 <img src="https://img.shields.io/github/contributors/kysely-org/kysely" alt="GitHub contributors">
-<a href="https://www.npmjs.com/package/kysely"><img src="https://img.shields.io/npm/dw/kysely?logo=npm" alt="Downloads"></a></p>
-<h6 id="join-the-discussion-⠀⠀⠀⠀⠀⠀⠀" class="tsd-anchor-link">Join the discussion ⠀⠀⠀⠀⠀⠀⠀<a href="#join-the-discussion-⠀⠀⠀⠀⠀⠀⠀" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h6><p><a href="https://discord.gg/xyBJ3GwvAm"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=flat&amp;logo=discord&amp;logoColor=white" alt="Discord"></a>
+<a href="https://www.npmjs.com/package/kysely"><img src="https://img.shields.io/npm/dw/kysely?logo=npm" alt="NPM Downloads"></a>
+<a href="https://jsr.io/@kysely/kysely"><img src="https://jsr.io/badges/@kysely/kysely/weekly-downloads" alt="JSR Downloads"></a>
+<a href="https://jsr.io/@kysely/kysely"><img src="https://jsr.io/badges/@kysely/kysely/score" alt="JSR Score"></a></p>
+<h6 id="join-the-discussion-⠀⠀⠀⠀⠀⠀⠀" class="tsd-anchor-link">Join the discussion ⠀⠀⠀⠀⠀⠀⠀<a href="#join-the-discussion-⠀⠀⠀⠀⠀⠀⠀" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h6>
+<p><a href="https://discord.gg/xyBJ3GwvAm"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=flat&amp;logo=discord&amp;logoColor=white" alt="Discord"></a>
 <a href="https://bsky.app/profile/kysely.dev"><img src="https://img.shields.io/badge/Bluesky-0285FF?style=flat&amp;logo=Bluesky&amp;logoColor=white" alt="Bluesky"></a></p>
-<h6 id="get-started" class="tsd-anchor-link">Get started<a href="#get-started" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h6><p><a href="https://kysely.dev/docs/getting-started?dialect=postgresql"><img src="https://img.shields.io/badge/postgres-%23316192.svg?style=flat&amp;logo=postgresql&amp;logoColor=white" alt="Postgres"></a>
+<h6 id="get-started" class="tsd-anchor-link">Get started<a href="#get-started" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h6>
+<p><a href="https://kysely.dev/docs/getting-started?dialect=postgresql"><img src="https://img.shields.io/badge/postgres-%23316192.svg?style=flat&amp;logo=postgresql&amp;logoColor=white" alt="Postgres"></a>
 <a href="https://kysely.dev/docs/getting-started?dialect=mysql"><img src="https://img.shields.io/badge/mysql-4479A1.svg?style=flat&amp;logo=mysql&amp;logoColor=white" alt="MySQL"></a>
 <a href="https://kysely.dev/docs/getting-started?dialect=mssql"><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=flat&amp;logo=microsoft%20sql%20server&amp;logoColor=white" alt="MicrosoftSQLServer"></a>
 <a href="https://kysely.dev/docs/getting-started?dialect=sqlite"><img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat&amp;logo=sqlite&amp;logoColor=white" alt="SQLite"></a>
 &amp; more!</p>
-<h1 id="kysely" class="tsd-anchor-link"><a href="https://kysely.dev">Kysely</a><a href="#kysely" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>Kysely (pronounce “Key-Seh-Lee”) is a type-safe and autocompletion-friendly <a href="https://www.typescriptlang.org/">TypeScript</a> <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> query builder.
+<h1 id="kysely" class="tsd-anchor-link"><a href="https://kysely.dev">Kysely</a><a href="#kysely" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p>Kysely (pronounce “Key-Seh-Lee”) is a type-safe and autocompletion-friendly <a href="https://www.typescriptlang.org/">TypeScript</a> <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> query builder.
 Inspired by <a href="http://knexjs.org/">Knex.js</a>. Mainly developed for <a href="https://nodejs.org/en/">Node.js</a> but also
 runs on all other <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> environments like <a href="https://deno.com/">Deno</a>, <a href="https://bun.sh/">Bun</a>, <a href="https://workers.cloudflare.com/">Cloudflare Workers</a>
 and web browsers.</p>
@@ -32,10 +38,13 @@ and the <a href="https://kysely-org.github.io/kysely-apidoc/classes/DynamicModul
 or method you're using to see it in your IDE. The same documentation is also hosted <a href="https://kysely-org.github.io/kysely-apidoc/">here</a>.</p>
 <p>If you start using Kysely and can't find something you'd want to use, please open an issue or join our
 <a href="https://discord.gg/xyBJ3GwvAm">Discord server</a>.</p>
-<h1 id="getting-started" class="tsd-anchor-link">Getting started<a href="#getting-started" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>Please visit our documentation site <a href="https://kysely.dev">kysely.dev</a> to get started. We also have a comprehensive
+<h1 id="getting-started" class="tsd-anchor-link">Getting started<a href="#getting-started" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p>Please visit our documentation site <a href="https://kysely.dev">kysely.dev</a> to get started. We also have a comprehensive
 API documentation hosted <a href="https://kysely-org.github.io/kysely-apidoc/">here</a>, but you can access the same
 documentation in your IDE by hovering over a class/method/property/whatever.</p>
-<h1 id="core-team" class="tsd-anchor-link">Core team<a href="#core-team" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><h2 id="project-leads" class="tsd-anchor-link">Project leads<a href="#project-leads" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>Responsible for project direction, API design, maintenance, code reviews, community support, documentation, and working on some of the most
+<h1 id="core-team" class="tsd-anchor-link">Core team<a href="#core-team" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<h2 id="project-leads" class="tsd-anchor-link">Project leads<a href="#project-leads" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Responsible for project direction, API design, maintenance, code reviews, community support, documentation, and working on some of the most
 impactful/challenging things.</p>
 <table>
     <tbody>
@@ -61,7 +70,8 @@ impactful/challenging things.</p>
         </tr>
     </tbody>
 </table>
-<h2 id="honorable-mentions" class="tsd-anchor-link">Honorable mentions<a href="#honorable-mentions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>People who had special impact on the project and its growth.</p>
+<h2 id="honorable-mentions" class="tsd-anchor-link">Honorable mentions<a href="#honorable-mentions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>People who had special impact on the project and its growth.</p>
 <table>
     <tbody>
         <tr>
@@ -193,7 +203,8 @@ impactful/challenging things.</p>
         </tr> -->
     </tbody>
 </table>
-<h2 id="all-contributors" class="tsd-anchor-link">All contributors<a href="#all-contributors" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p align="center">
+<h2 id="all-contributors" class="tsd-anchor-link">All contributors<a href="#all-contributors" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p align="center">
     <a href="https://github.com/kysely-org/kysely/graphs/contributors">
         <img src="https://contrib.rocks/image?repo=kysely-org/kysely" />
     </a>
