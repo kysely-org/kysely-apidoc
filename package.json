@@ -1,6 +1,6 @@
 {
   "name": "kysely-typedoc",
-  "version": "0.28.5",
+  "version": "0.28.15",
   "description": "Generated API documentation for Kysely",
   "repository": {
     "type": "git",
@@ -10,10 +10,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "clean": "rm -rf docs",
-    "build:typedoc": "typedoc --excludePrivate --excludeInternal --customCss ./docs-theme.css --out docs --tsconfig ../kysely/tsconfig.json ../kysely/src/index.ts",
-    "build": "pnpm clean && pnpm build:typedoc && pnpm docs:postprocess",
-    "docs:postprocess": "node scripts/post-process-docs.js"
+    "build": "typedoc && node scripts/post-process-docs.js"
   },
   "author": "Sami Koskimäki <sami@jakso.me>",
   "license": "MIT",
@@ -21,7 +18,7 @@
     "Igal Klebanov <igalklebanov@gmail.com>"
   ],
   "devDependencies": {
-    "typedoc": "^0.28.13"
+    "typedoc": "0.28.18"
   },
-  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
 }
