@@ -20,9 +20,6 @@
         "typescript",
         "sql"
     ],
-    "navigation": {
-        "includeFolders": false
-    },
     "out": "./docs",
     // "treatWarningsAsErrors": true,
     "tsconfig": "../kysely/tsconfig.json"
