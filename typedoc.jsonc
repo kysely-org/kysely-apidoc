@@ -2,6 +2,8 @@
     "$schema": "https://typedoc.org/schema.json",
     "cleanOutputDir": true,
     "customCss": "./docs-theme.css",
+    "disableGit": true,
+    "displayBasePath": "../kysely",
     "entryPoints": ["../kysely/src/index.ts", "../kysely/src/helpers/*.ts"],
     "entryPointStrategy": "expand",
     "excludeInternal": true,
@@ -21,6 +23,7 @@
         "sql"
     ],
     "out": "./docs",
+    "sourceLinkTemplate": "https://github.com/kysely-org/kysely/blob/master/{path}#L{line}",
     // "treatWarningsAsErrors": true,
     "tsconfig": "../kysely/tsconfig.json"
 }
