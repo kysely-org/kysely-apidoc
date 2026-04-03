@@ -12,6 +12,9 @@ importers:
       typedoc:
         specifier: 0.28.18
         version: 0.28.18(typescript@5.9.2)
+      typedoc-plugin-missing-exports:
+        specifier: 4.1.2
+        version: 4.1.2(typedoc@0.28.18)
 
 packages:
 
@@ -74,6 +77,11 @@ packages:
   punycode.js@2.3.1:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
     engines: {node: '>=6'}
+
+  typedoc-plugin-missing-exports@4.1.2:
+    resolution: {integrity: sha512-WNoeWX9+8X3E3riuYPduilUTFefl1K+Z+5bmYqNeH5qcWjtnTRMbRzGdEQ4XXn1WEO4WCIlU0vf46Ca2y/mspg==}
+    peerDependencies:
+      typedoc: ^0.28.1
 
   typedoc@0.28.18:
     resolution: {integrity: sha512-NTWTUOFRQ9+SGKKTuWKUioUkjxNwtS3JDRPVKZAXGHZy2wCA8bdv2iJiyeePn0xkmK+TCCqZFT0X7+2+FLjngA==}
@@ -163,6 +171,10 @@ snapshots:
       brace-expansion: 5.0.5
 
   punycode.js@2.3.1: {}
+
+  typedoc-plugin-missing-exports@4.1.2(typedoc@0.28.18):
+    dependencies:
+      typedoc: 0.28.18(typescript@5.9.2)
 
   typedoc@0.28.18(typescript@5.9.2):
     dependencies:
