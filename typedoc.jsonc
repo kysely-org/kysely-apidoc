@@ -23,6 +23,7 @@
         "sql"
     ],
     "out": "./docs",
+    "sourceLinkExternal": true,
     "sourceLinkTemplate": "https://github.com/kysely-org/kysely/blob/master/{path}#L{line}",
     // "treatWarningsAsErrors": true,
     "tsconfig": "../kysely/tsconfig.json"
