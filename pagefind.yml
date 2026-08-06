@@ -1,0 +1,12 @@
+site: docs
+
+# Index only the content column of each typedoc page, and skip markup that
+# pollutes search excerpts: "Defined in" source links, type signatures, the
+# per-page member index, modifier tags (Readonly etc.) and hierarchy lists.
+root_selector: .col-content
+exclude_selectors:
+  - .tsd-sources
+  - .tsd-signature
+  - .tsd-index-group
+  - .tsd-tag
+  - .tsd-hierarchy
