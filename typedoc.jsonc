@@ -10,6 +10,7 @@
     "../kysely/src/migration/index.ts",
   ],
   "entryPointStrategy": "expand",
+  "excludeExternals": true,
   "excludeInternal": true,
   "excludePrivate": true,
   "highlightLanguages": [
