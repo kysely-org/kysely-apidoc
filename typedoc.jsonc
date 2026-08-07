@@ -8,6 +8,7 @@
     "../kysely/src/index.ts",
     "../kysely/src/helpers/*.ts",
     "../kysely/src/migration/index.ts",
+    "../kysely/src/readonly/index.ts",
   ],
   "entryPointStrategy": "expand",
   "excludeExternals": true,
