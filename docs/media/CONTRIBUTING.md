@@ -40,13 +40,15 @@ issue is only somewhat relevant, please submit a new issue and reference the old
 on the existing one. Let us label your new issue as `duplicate` if it is the same thing - it's fine! If it's not 
 the same thing and you commented on another issue, it makes it harder to track on our end.
 
-If possible/relevant, please provide a [playground link](https://kyse.link), Stackblitz OR a public git repository that 
+If possible/relevant, please provide a [playground link](https://play.kysely.dev), Stackblitz OR a public git repository that 
 reproduces the issue.
 
 Please provide the exact error/warning texts you're getting. "this doesn't work" or "this throws an error"
 are not helping us help you.
 
 Don't be an asshole. Don't demand support/service from us.
+
+Please write in your own human voice. LLM-generated walls of text hide the actual signal and waste our time. Three rough sentences from you beat three paragraphs of AI slop.
 
 ## ⌨️ With Code!
 
@@ -115,6 +117,8 @@ assigned to the issue.
 We will close pull requests where the changes are too far from acceptable. Such cases are a waste of time for us to
 even begin to comment on. You can ask for quick informal feedback on Discord in such cases and submit another pull
 request with better changes later.
+
+Please write in your own human voice. LLM-generated walls of text in PR descriptions, reviews, or comments hide the actual signal and waste our time. Three rough sentences from you beat three paragraphs of AI slop.
 
 #### Style/Design Philosophy
 
