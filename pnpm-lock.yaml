@@ -5,6 +5,11 @@ settings:
   dedupePeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  typedoc-plugin-markdown@4.13.1:
+    hash: abc74cbb2a71e8ab1f21879edd3968d1a878d8ae7d382da70754829f751e5930
+    path: patches/typedoc-plugin-markdown@4.13.1.patch
+
 importers:
 
   .:
@@ -15,6 +20,9 @@ importers:
       typedoc:
         specifier: 0.28.18
         version: 0.28.18(typescript@5.9.2)
+      typedoc-plugin-markdown:
+        specifier: 4.13.1
+        version: 4.13.1(patch_hash=abc74cbb2a71e8ab1f21879edd3968d1a878d8ae7d382da70754829f751e5930)(typedoc@0.28.18)
       typedoc-plugin-missing-exports:
         specifier: 4.1.2
         version: 4.1.2(typedoc@0.28.18)
@@ -119,6 +127,12 @@ packages:
   punycode.js@2.3.1:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
     engines: {node: '>=6'}
+
+  typedoc-plugin-markdown@4.13.1:
+    resolution: {integrity: sha512-d3jchJ4CyIrV9w9uozTSkfMYG8IEM1RvvGOaybJ/3rRporzoX7p0lprffo95GOGUviQqP0phjHJE3bY8PQbilA==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      typedoc: 0.28.x
 
   typedoc-plugin-missing-exports@4.1.2:
     resolution: {integrity: sha512-WNoeWX9+8X3E3riuYPduilUTFefl1K+Z+5bmYqNeH5qcWjtnTRMbRzGdEQ4XXn1WEO4WCIlU0vf46Ca2y/mspg==}
@@ -244,6 +258,10 @@ snapshots:
       '@pagefind/windows-x64': 1.5.2
 
   punycode.js@2.3.1: {}
+
+  typedoc-plugin-markdown@4.13.1(patch_hash=abc74cbb2a71e8ab1f21879edd3968d1a878d8ae7d382da70754829f751e5930)(typedoc@0.28.18):
+    dependencies:
+      typedoc: 0.28.18(typescript@5.9.2)
 
   typedoc-plugin-missing-exports@4.1.2(typedoc@0.28.18):
     dependencies:

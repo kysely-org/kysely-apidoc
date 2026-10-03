@@ -7,7 +7,9 @@ const DOCS_ASSET_PATH = path.join(DOCS_PATH, 'assets')
 const ASSET_PATH = path.join(__dirname, '..', '..', 'kysely', 'assets')
 
 // Files to go through and replace ASSET_URL_BASE with FIXED_ASSET_URL_BASE.
-const ASSET_FIX_FILES = [path.join(DOCS_PATH, 'index.html')]
+const ASSET_FIX_FILES = ['index.html', 'index.md'].map((file) =>
+  path.join(DOCS_PATH, file)
+)
 const FIXED_ASSET_URL_BASE = 'assets'
 
 // Copy all assets to doc assets.

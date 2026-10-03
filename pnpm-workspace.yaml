@@ -27,6 +27,10 @@ minimumReleaseAge: 1440 # 1 day old in minutes.
 # https://pnpm.io/settings#optimisticrepeatinstall
 optimisticRepeatInstall: true
 
+# Match TypeDoc's asset handling: skip links to directories in the source README.
+patchedDependencies:
+  typedoc-plugin-markdown@4.13.1: patches/typedoc-plugin-markdown@4.13.1.patch
+
 # Fail when a dependency tries running a script and it is not in `allowBuilds`.
 # https://pnpm.io/settings#strictdepbuilds
 strictDepBuilds: true
