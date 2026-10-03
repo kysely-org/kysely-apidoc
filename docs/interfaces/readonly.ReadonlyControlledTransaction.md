@@ -70,7 +70,7 @@ Defined in: [kysely.ts:163](https://github.com/kysely-org/kysely/blob/master/src
 
 > **isCommitted**: `boolean`
 
-Defined in: [kysely.ts:1004](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1004)
+Defined in: [kysely.ts:999](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L999)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [kysely.ts:1004](https://github.com/kysely-org/kysely/blob/master/sr
 
 > **isRolledBack**: `boolean`
 
-Defined in: [kysely.ts:1008](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1008)
+Defined in: [kysely.ts:1003](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1003)
 
 #### Inherited from
 
@@ -242,7 +242,7 @@ See [ExpressionBuilder.case](ExpressionBuilder.md#case) for more information.
 
 > **commit**(): [`Command`](../classes/Command.md)\<`void`\>
 
-Defined in: [kysely.ts:1036](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1036)
+Defined in: [kysely.ts:1031](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1031)
 
 Commits the transaction.
 
@@ -537,7 +537,7 @@ not allowed with a read-only Kysely instance.
 
 > **rollback**(): [`Command`](../classes/Command.md)\<`void`\>
 
-Defined in: [kysely.ts:1072](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1072)
+Defined in: [kysely.ts:1067](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1067)
 
 Rolls back the transaction.
 

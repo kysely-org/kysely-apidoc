@@ -8,7 +8,7 @@
 
 > **jsonBuildObject**\<`O`\>(`obj`): [`RawBuilder`](../interfaces/RawBuilder.md)\<[`Simplify`](../types/Simplify.md)\<\{ \[K in string \| number \| symbol\]: O\[K\] extends Expression\<V\> ? ShallowDehydrateValue\<V\> : never \}\>\>
 
-Defined in: [helpers/mssql.ts:228](https://github.com/kysely-org/kysely/blob/master/src/helpers/mssql.ts#L228)
+Defined in: [helpers/mssql.ts:226](https://github.com/kysely-org/kysely/blob/master/src/helpers/mssql.ts#L226)
 
 The MS SQL Server `json_query` function, single argument variant.
 
@@ -64,9 +64,7 @@ The generated SQL (MS SQL Server):
 
 ```sql
 select "id", json_query(
-  '{"'+string_escape(N'first', 'json')+'":"'+string_escape("first_name", 'json')+
-  '","'+string_escape(N'last', 'json')+'":"'+string_escape("last_name", 'json')+
-  '","'+string_escape(N'full', 'json')+'":"'+string_escape(concat("first_name", ' ', "last_name"), 'json')+'"}'
+  '{"first":"'+"first_name"+',"last":"'+"last_name"+',"full":"'+concat("first_name", ' ', "last_name")+'"}'
 ) as "name"
 from "person"
 ```

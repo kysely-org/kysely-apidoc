@@ -6,7 +6,7 @@
 
 # Interface: ControlledTransctionState
 
-Defined in: [kysely.ts:1288](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1288)
+Defined in: [kysely.ts:1283](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1283)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [kysely.ts:1288](https://github.com/kysely-org/kysely/blob/master/sr
 
 > **isCommitted**: `boolean`
 
-Defined in: [kysely.ts:1289](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1289)
+Defined in: [kysely.ts:1284](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1284)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [kysely.ts:1289](https://github.com/kysely-org/kysely/blob/master/sr
 
 > **isRolledBack**: `boolean`
 
-Defined in: [kysely.ts:1290](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1290)
+Defined in: [kysely.ts:1285](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1285)

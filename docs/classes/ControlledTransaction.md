@@ -6,7 +6,7 @@
 
 # Class: ControlledTransaction\<DB, S\>
 
-Defined in: [kysely.ts:977](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L977)
+Defined in: [kysely.ts:972](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L972)
 
 The main Kysely class.
 
@@ -64,7 +64,7 @@ The database interface type. Keys of this type must be table names
 
 > **new ControlledTransaction**\<`DB`, `S`\>(`props`): `ControlledTransaction`\<`DB`, `S`\>
 
-Defined in: [kysely.ts:985](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L985)
+Defined in: [kysely.ts:980](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L980)
 
 #### Parameters
 
@@ -196,7 +196,7 @@ Returns a [database introspector](../interfaces/DatabaseIntrospector.md).
 
 > **get** **isCommitted**(): `boolean`
 
-Defined in: [kysely.ts:1004](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1004)
+Defined in: [kysely.ts:999](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L999)
 
 ##### Returns
 
@@ -210,7 +210,7 @@ Defined in: [kysely.ts:1004](https://github.com/kysely-org/kysely/blob/master/sr
 
 > **get** **isRolledBack**(): `boolean`
 
-Defined in: [kysely.ts:1008](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1008)
+Defined in: [kysely.ts:1003](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1003)
 
 ##### Returns
 
@@ -280,7 +280,7 @@ Defined in: [kysely.ts:640](https://github.com/kysely-org/kysely/blob/master/src
 
 > **$extendTables**\<`T`\>(): `ControlledTransaction`\<[`DrainOuterGeneric`](../types/DrainOuterGeneric.md)\<`DB` & `T`\>, `S`\>
 
-Defined in: [kysely.ts:1267](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1267)
+Defined in: [kysely.ts:1262](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1262)
 
 Similar to [Kysely.$extendTables](Kysely.md#extendtables) but returns the transaction.
 
@@ -304,7 +304,7 @@ Similar to [Kysely.$extendTables](Kysely.md#extendtables) but returns the transa
 
 > **$omitTables**\<`T`\>(): `ControlledTransaction`\<`DB` *extends* `object` ? `Omit`\<`DB`, `T`\> : `DB`, `S`\>
 
-Defined in: [kysely.ts:1273](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1273)
+Defined in: [kysely.ts:1268](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1268)
 
 Similar to [Kysely.$omitTables](Kysely.md#omittables) but returns the transaction.
 
@@ -328,7 +328,7 @@ Similar to [Kysely.$omitTables](Kysely.md#omittables) but returns the transactio
 
 > **$pickTables**\<`T`\>(): `ControlledTransaction`\<`DB` *extends* `object` ? `Pick`\<`DB`, `T`\> : `DB`, `S`\>
 
-Defined in: [kysely.ts:1280](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1280)
+Defined in: [kysely.ts:1275](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1275)
 
 Similar to [Kysely.$pickTables](Kysely.md#picktables) but returns the transaction.
 
@@ -404,7 +404,7 @@ See [ExpressionBuilder.case](../interfaces/ExpressionBuilder.md#case) for more i
 
 > **commit**(): [`Command`](Command.md)\<`void`\>
 
-Defined in: [kysely.ts:1036](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1036)
+Defined in: [kysely.ts:1031](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1031)
 
 Commits the transaction.
 
@@ -766,7 +766,7 @@ then delete
 
 > **releaseSavepoint**\<`SN`\>(`savepointName`): [`ReleaseSavepoint`](../types/readonly.ReleaseSavepoint.md)\<`S`, `SN`\> *extends* `string`[] ? [`Command`](Command.md)\<`ControlledTransaction`\<`DB`, [`ReleaseSavepoint`](../types/readonly.ReleaseSavepoint.md)\>\> : `never`
 
-Defined in: [kysely.ts:1218](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1218)
+Defined in: [kysely.ts:1213](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1213)
 
 Releases a savepoint with a given name.
 
@@ -887,7 +887,7 @@ replace into `person` (`first_name`, `last_name`) values (?, ?)
 
 > **rollback**(): [`Command`](Command.md)\<`void`\>
 
-Defined in: [kysely.ts:1072](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1072)
+Defined in: [kysely.ts:1067](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1067)
 
 Rolls back the transaction.
 
@@ -922,7 +922,7 @@ async function doSomething(kysely: Kysely<Database>) {}
 
 > **rollbackToSavepoint**\<`SN`\>(`savepointName`): [`RollbackToSavepoint`](../types/readonly.RollbackToSavepoint.md)\<`S`, `SN`\> *extends* `string`[] ? [`Command`](Command.md)\<`ControlledTransaction`\<`DB`, [`RollbackToSavepoint`](../types/readonly.RollbackToSavepoint.md)\>\> : `never`
 
-Defined in: [kysely.ts:1161](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1161)
+Defined in: [kysely.ts:1156](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1156)
 
 Rolls back to a savepoint with a given name.
 
@@ -975,7 +975,7 @@ async function doSomething(kysely: Kysely<Database>) {}
 
 > **savepoint**\<`SN`\>(`savepointName`): [`Command`](Command.md)\<`ControlledTransaction`\<`DB`, \[`...S[]`, `SN`\]\>\>
 
-Defined in: [kysely.ts:1113](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1113)
+Defined in: [kysely.ts:1108](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1108)
 
 Creates a savepoint with a given name.
 
@@ -1615,7 +1615,7 @@ await db
 
 > **withoutPlugins**(): `ControlledTransaction`\<`DB`, `S`\>
 
-Defined in: [kysely.ts:1245](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1245)
+Defined in: [kysely.ts:1240](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1240)
 
 Similar to [Kysely.withoutPlugins](Kysely.md#withoutplugins) but returns the transaction.
 
@@ -1633,7 +1633,7 @@ Similar to [Kysely.withoutPlugins](Kysely.md#withoutplugins) but returns the tra
 
 > **withPlugin**(`plugin`): `ControlledTransaction`\<`DB`, `S`\>
 
-Defined in: [kysely.ts:1238](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1238)
+Defined in: [kysely.ts:1233](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1233)
 
 Similar to [Kysely.withPlugin](Kysely.md#withplugin) but returns the transaction.
 
@@ -1702,7 +1702,7 @@ See the [with](#with) method for examples and more documentation.
 
 > **withSchema**(`schema`): `ControlledTransaction`\<`DB`, `S`\>
 
-Defined in: [kysely.ts:1252](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1252)
+Defined in: [kysely.ts:1247](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1247)
 
 Similar to [Kysely.withSchema](Kysely.md#withschema) but returns the transaction.
 
@@ -1726,7 +1726,7 @@ Similar to [Kysely.withSchema](Kysely.md#withschema) but returns the transaction
 
 > **withTables**\<`T`\>(): `ControlledTransaction`\<[`DrainOuterGeneric`](../types/DrainOuterGeneric.md)\<`DB` & `T`\>, `S`\>
 
-Defined in: [kysely.ts:1261](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1261)
+Defined in: [kysely.ts:1256](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1256)
 
 Similar to [Kysely.withTables](Kysely.md#withtables) but returns the transaction.
 
