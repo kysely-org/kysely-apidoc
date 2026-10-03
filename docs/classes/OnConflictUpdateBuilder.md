@@ -6,7 +6,7 @@
 
 # Class: OnConflictUpdateBuilder\<DB, TB\>
 
-Defined in: [query-builder/on-conflict-builder.ts:300](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L300)
+Defined in: [query-builder/on-conflict-builder.ts:306](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L306)
 
 ## Type Parameters
 
@@ -29,7 +29,7 @@ Defined in: [query-builder/on-conflict-builder.ts:300](https://github.com/kysely
 
 > **new OnConflictUpdateBuilder**\<`DB`, `TB`\>(`props`): `OnConflictUpdateBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/on-conflict-builder.ts:305](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L305)
+Defined in: [query-builder/on-conflict-builder.ts:311](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L311)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [query-builder/on-conflict-builder.ts:305](https://github.com/kysely
 
 > **$call**\<`T`\>(`func`): `T`
 
-Defined in: [query-builder/on-conflict-builder.ts:372](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L372)
+Defined in: [query-builder/on-conflict-builder.ts:378](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L378)
 
 Simply calls the provided function passing `this` as the only argument. `$call` returns
 what the provided function returns.
@@ -74,7 +74,7 @@ what the provided function returns.
 
 > **clearWhere**(): `OnConflictUpdateBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/on-conflict-builder.ts:359](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L359)
+Defined in: [query-builder/on-conflict-builder.ts:365](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L365)
 
 Clears all where expressions from the query.
 
@@ -107,7 +107,7 @@ select * from "person"
 
 > **toOperationNode**(): [`OnConflictNode`](../interfaces/OnConflictNode.md)
 
-Defined in: [query-builder/on-conflict-builder.ts:376](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L376)
+Defined in: [query-builder/on-conflict-builder.ts:382](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L382)
 
 #### Returns
 
@@ -125,7 +125,7 @@ Defined in: [query-builder/on-conflict-builder.ts:376](https://github.com/kysely
 
 > **where**\<`RE`, `VE`\>(`lhs`, `op`, `rhs`): `OnConflictUpdateBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/on-conflict-builder.ts:314](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L314)
+Defined in: [query-builder/on-conflict-builder.ts:320](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L320)
 
 Specify a where condition for the update operation.
 
@@ -167,7 +167,7 @@ See [WhereInterface.where](../interfaces/WhereInterface.md#where) for more info.
 
 > **where**\<`E`\>(`expression`): `OnConflictUpdateBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/on-conflict-builder.ts:323](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L323)
+Defined in: [query-builder/on-conflict-builder.ts:329](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L329)
 
 Specify a where condition for the update operation.
 
@@ -199,7 +199,7 @@ See [WhereInterface.where](../interfaces/WhereInterface.md#where) for more info.
 
 > **whereRef**\<`LRE`, `RRE`\>(`lhs`, `op`, `rhs`): `OnConflictUpdateBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/on-conflict-builder.ts:342](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L342)
+Defined in: [query-builder/on-conflict-builder.ts:348](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L348)
 
 Specify a where condition for the update operation.
 

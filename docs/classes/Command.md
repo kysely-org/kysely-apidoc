@@ -6,7 +6,7 @@
 
 # Class: Command\<T\>
 
-Defined in: [kysely.ts:1292](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1292)
+Defined in: [kysely.ts:1297](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1297)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [kysely.ts:1292](https://github.com/kysely-org/kysely/blob/master/sr
 
 > **new Command**\<`T`\>(`cb`): `Command`\<`T`\>
 
-Defined in: [kysely.ts:1295](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1295)
+Defined in: [kysely.ts:1300](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1300)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [kysely.ts:1295](https://github.com/kysely-org/kysely/blob/master/sr
 
 > **execute**(): `Promise`\<`T`\>
 
-Defined in: [kysely.ts:1302](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1302)
+Defined in: [kysely.ts:1307](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1307)
 
 Executes the command.
 

@@ -8,7 +8,7 @@
 
 > **LeftJoinedDB**\<`DB`, `A`, `R`\> = [`DrainOuterGeneric`](DrainOuterGeneric.md)\<\{ \[C in keyof DB \| A\]: C extends A ? Nullable\<R\> : C extends keyof DB ? DB\[C\] : never \}\>
 
-Defined in: [query-builder/delete-query-builder.ts:1217](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1217)
+Defined in: [query-builder/delete-query-builder.ts:1222](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1222)
 
 ## Type Parameters
 

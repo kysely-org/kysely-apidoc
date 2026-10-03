@@ -6,7 +6,7 @@
 
 # Interface: ControlledTransactionProps
 
-Defined in: [kysely.ts:1288](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1288)
+Defined in: [kysely.ts:1293](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1293)
 
 ## Hierarchy
 
@@ -34,7 +34,7 @@ Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **connection**: [`ControlledConnection`](ControlledConnection.md)
 
-Defined in: [kysely.ts:1289](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1289)
+Defined in: [kysely.ts:1294](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1294)
 
 ***
 

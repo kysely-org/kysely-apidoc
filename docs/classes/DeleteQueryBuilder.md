@@ -58,7 +58,7 @@ Defined in: [query-builder/delete-query-builder.ts:100](https://github.com/kysel
 
 > **$assertType**\<`T`\>(): `O` *extends* `T` ? `DeleteQueryBuilder`\<`DB`, `TB`, `T`\> : [`KyselyTypeError`](../interfaces/KyselyTypeError.md)\<`"$assertType() call failed: The type passed in is not equal to the output type of the query."`\>
 
-Defined in: [query-builder/delete-query-builder.ts:1026](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1026)
+Defined in: [query-builder/delete-query-builder.ts:1031](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1031)
 
 Asserts that query's output row type equals the given type `T`.
 
@@ -120,7 +120,7 @@ async function deletePersonAndPets(personId: number) {
 
 > **$call**\<`T`\>(`func`): `T`
 
-Defined in: [query-builder/delete-query-builder.ts:862](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L862)
+Defined in: [query-builder/delete-query-builder.ts:864](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L864)
 
 Simply calls the provided function passing `this` as the only argument. `$call` returns
 what the provided function returns.
@@ -167,7 +167,7 @@ await db.deleteFrom('person')
 
 > **$castTo**\<`C`\>(): `DeleteQueryBuilder`\<`DB`, `TB`, `C`\>
 
-Defined in: [query-builder/delete-query-builder.ts:924](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L924)
+Defined in: [query-builder/delete-query-builder.ts:929](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L929)
 
 Change the output type of the query.
 
@@ -188,9 +188,9 @@ returns a copy of this `DeleteQueryBuilder` with a new output type.
 
 ### $if()
 
-> **$if**\<`O2`\>(`condition`, `func`): `O2` *extends* [`DeleteResult`](DeleteResult.md) ? `DeleteQueryBuilder`\<`DB`, `TB`, [`DeleteResult`](DeleteResult.md)\> : `O2` *extends* `O` & `E` ? `DeleteQueryBuilder`\<`DB`, `TB`, `O` & `Partial`\<`E`\>\> : `DeleteQueryBuilder`\<`DB`, `TB`, `Partial`\<`O2`\>\>
+> **$if**\<`O2`\>(`condition`, `func`): `unknown` *extends* `O2` ? `DeleteQueryBuilder`\<`any`, `any`, `O2`\> : `O2` *extends* [`DeleteResult`](DeleteResult.md) ? `DeleteQueryBuilder`\<`DB`, `TB`, [`DeleteResult`](DeleteResult.md)\> : `O2` *extends* `O` & `E` ? `DeleteQueryBuilder`\<`DB`, `TB`, `O` & `Partial`\<`E`\>\> : `DeleteQueryBuilder`\<`DB`, `TB`, `Partial`\<`O2`\>\>
 
-Defined in: [query-builder/delete-query-builder.ts:901](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L901)
+Defined in: [query-builder/delete-query-builder.ts:903](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L903)
 
 Call `func(this)` if `condition` is true.
 
@@ -244,7 +244,7 @@ Promise<{
 
 #### Returns
 
-`O2` *extends* [`DeleteResult`](DeleteResult.md) ? `DeleteQueryBuilder`\<`DB`, `TB`, [`DeleteResult`](DeleteResult.md)\> : `O2` *extends* `O` & `E` ? `DeleteQueryBuilder`\<`DB`, `TB`, `O` & `Partial`\<`E`\>\> : `DeleteQueryBuilder`\<`DB`, `TB`, `Partial`\<`O2`\>\>
+`unknown` *extends* `O2` ? `DeleteQueryBuilder`\<`any`, `any`, `O2`\> : `O2` *extends* [`DeleteResult`](DeleteResult.md) ? `DeleteQueryBuilder`\<`DB`, `TB`, [`DeleteResult`](DeleteResult.md)\> : `O2` *extends* `O` & `E` ? `DeleteQueryBuilder`\<`DB`, `TB`, `O` & `Partial`\<`E`\>\> : `DeleteQueryBuilder`\<`DB`, `TB`, `Partial`\<`O2`\>\>
 
 ***
 
@@ -252,7 +252,7 @@ Promise<{
 
 > **$narrowType**\<`T`\>(): `DeleteQueryBuilder`\<`DB`, `TB`, [`NarrowPartial`](../types/NarrowPartial.md)\<`O`, `T`\>\>
 
-Defined in: [query-builder/delete-query-builder.ts:977](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L977)
+Defined in: [query-builder/delete-query-builder.ts:982](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L982)
 
 Narrows (parts of) the output type of the query.
 
@@ -451,7 +451,7 @@ select * from "person"
 
 > **compile**(): [`CompiledQuery`](../interfaces/CompiledQuery.md)\<[`SimplifyResult`](../types/SimplifyResult.md)\<`O`\>\>
 
-Defined in: [query-builder/delete-query-builder.ts:1049](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1049)
+Defined in: [query-builder/delete-query-builder.ts:1054](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1054)
 
 #### Returns
 
@@ -467,7 +467,7 @@ Defined in: [query-builder/delete-query-builder.ts:1049](https://github.com/kyse
 
 > **execute**(`options?`): `Promise`\<[`SimplifyResult`](../types/SimplifyResult.md)\<`O`\>[]\>
 
-Defined in: [query-builder/delete-query-builder.ts:1056](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1056)
+Defined in: [query-builder/delete-query-builder.ts:1061](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1061)
 
 Executes the query and returns an array of rows.
 
@@ -493,7 +493,7 @@ Also see the [executeTakeFirst](../interfaces/Executable.md#executetakefirst) an
 
 > **executeTakeFirst**(`options?`): `Promise`\<[`SimplifySingleResult`](../types/SimplifySingleResult.md)\<`O`\>\>
 
-Defined in: [query-builder/delete-query-builder.ts:1077](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1077)
+Defined in: [query-builder/delete-query-builder.ts:1082](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1082)
 
 Executes the query and returns the first result or undefined if
 the query returned no result.
@@ -518,7 +518,7 @@ the query returned no result.
 
 > **executeTakeFirstOrThrow**(`errorConstructorOrOptions?`): `Promise`\<[`SimplifyResult`](../types/SimplifyResult.md)\<`O`\>\>
 
-Defined in: [query-builder/delete-query-builder.ts:1085](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1085)
+Defined in: [query-builder/delete-query-builder.ts:1090](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1090)
 
 Executes the query and returns the first result or throws if
 the query returned no result.
@@ -547,7 +547,7 @@ error.
 
 > **explain**\<`ER`\>(`format?`, `options?`): `Promise`\<`ER`[]\>
 
-Defined in: [query-builder/delete-query-builder.ts:1134](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1134)
+Defined in: [query-builder/delete-query-builder.ts:1139](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1139)
 
 Executes query with `explain` statement before the main query.
 
@@ -1051,7 +1051,7 @@ Just like [innerJoin](#innerjoin) but adds a left join instead of an inner join.
 
 ### limit()
 
-> **limit**(`limit`): `DeleteQueryBuilder`\<`DB`, `TB`, `O`\>
+> **limit**\<`VE`\>(`limit`): `DeleteQueryBuilder`\<`DB`, `TB`, `O`\>
 
 Defined in: [query-builder/delete-query-builder.ts:797](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L797)
 
@@ -1078,11 +1078,17 @@ The generated SQL (MySQL):
 delete from `pet` order by `created_at` limit ?
 ```
 
+#### Type Parameters
+
+##### VE
+
+`VE` *extends* [`ValueExpression`](../types/ValueExpression.md)\<`DB`, `TB`, `number`\>
+
 #### Parameters
 
 ##### limit
 
-[`ValueExpression`](../types/ValueExpression.md)\<`DB`, `TB`, `number`\>
+`VE`
 
 #### Returns
 
@@ -1094,7 +1100,7 @@ delete from `pet` order by `created_at` limit ?
 
 > **modifyEnd**(`modifier`): `DeleteQueryBuilder`\<`DB`, `TB`, `O`\>
 
-Defined in: [query-builder/delete-query-builder.ts:828](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L828)
+Defined in: [query-builder/delete-query-builder.ts:830](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L830)
 
 This can be used to add any additional SQL to the end of the query.
 
@@ -2052,7 +2058,7 @@ Just like [innerJoin](#innerjoin) but adds a right join instead of an inner join
 
 > **stream**(`chunkSizeOrOptions?`): `AsyncIterableIterator`\<`O`\>
 
-Defined in: [query-builder/delete-query-builder.ts:1112](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1112)
+Defined in: [query-builder/delete-query-builder.ts:1117](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1117)
 
 Executes the query and streams the rows.
 
@@ -2099,7 +2105,7 @@ for await (const person of stream) {
 
 > **toOperationNode**(): [`DeleteQueryNode`](../interfaces/DeleteQueryNode.md)
 
-Defined in: [query-builder/delete-query-builder.ts:1042](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1042)
+Defined in: [query-builder/delete-query-builder.ts:1047](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1047)
 
 #### Returns
 
@@ -2829,7 +2835,7 @@ from "person"
 
 > **withPlugin**(`plugin`): `DeleteQueryBuilder`\<`DB`, `TB`, `O`\>
 
-Defined in: [query-builder/delete-query-builder.ts:1035](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1035)
+Defined in: [query-builder/delete-query-builder.ts:1040](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1040)
 
 Returns a copy of this DeleteQueryBuilder instance with the given plugin installed.
 

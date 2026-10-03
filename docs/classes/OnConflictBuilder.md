@@ -279,7 +279,7 @@ do update set
 
 ##### update
 
-[`UpdateObjectExpression`](../types/UpdateObjectExpression.md)\<[`OnConflictDatabase`](../types/OnConflictDatabase.md)\<`DB`, `TB`\>, [`OnConflictTables`](../types/OnConflictTables.md)\<`TB`\>, [`OnConflictTables`](../types/OnConflictTables.md)\<`TB`\>\>
+[`UpdateObjectExpression`](../types/UpdateObjectExpression.md)\<[`OnConflictUpdateDatabase`](../types/OnConflictUpdateDatabase.md)\<`DB`, `TB`\>, [`OnConflictTables`](../types/OnConflictTables.md)\<`TB`\>, [`OnConflictTables`](../types/OnConflictTables.md)\<`TB`\>\>
 
 #### Returns
 

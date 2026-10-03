@@ -8,7 +8,7 @@
 
 > **TableOrList**\<`TB`\> = `TB` & `string` \| `ReadonlyArray`\<`TB` & `string`\>
 
-Defined in: [query-builder/select-query-builder.ts:2935](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2935)
+Defined in: [query-builder/select-query-builder.ts:2970](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2970)
 
 ## Type Parameters
 

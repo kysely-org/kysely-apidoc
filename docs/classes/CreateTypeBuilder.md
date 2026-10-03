@@ -66,7 +66,7 @@ what the provided function returns.
 
 Defined in: [schema/create-type-builder.ts:33](https://github.com/kysely-org/kysely/blob/master/src/schema/create-type-builder.ts#L33)
 
-Creates an anum type.
+Creates an enum type.
 
 ### Examples
 

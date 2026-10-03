@@ -8,7 +8,7 @@
 
 > **RightJoinedBuilder**\<`DB`, `TB`, `O`, `A`, `R`\> = [`DeleteQueryBuilder`](../classes/DeleteQueryBuilder.md)\<[`RightJoinedDB`](RightJoinedDB-2.md)\<`DB`, `TB`, `A`, `R`\>, `TB` \| `A`, `O`\>
 
-Defined in: [query-builder/delete-query-builder.ts:1242](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1242)
+Defined in: [query-builder/delete-query-builder.ts:1247](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1247)
 
 ## Type Parameters
 

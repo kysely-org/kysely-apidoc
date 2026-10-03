@@ -6,7 +6,7 @@
 
 # Interface: UpdateQueryBuilderProps
 
-Defined in: [query-builder/update-query-builder.ts:1245](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1245)
+Defined in: [query-builder/update-query-builder.ts:1253](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1253)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [query-builder/update-query-builder.ts:1245](https://github.com/kyse
 
 > `readonly` **executor**: [`QueryExecutor`](QueryExecutor.md)
 
-Defined in: [query-builder/update-query-builder.ts:1248](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1248)
+Defined in: [query-builder/update-query-builder.ts:1256](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1256)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [query-builder/update-query-builder.ts:1248](https://github.com/kyse
 
 > `readonly` **queryId**: [`QueryId`](QueryId.md)
 
-Defined in: [query-builder/update-query-builder.ts:1246](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1246)
+Defined in: [query-builder/update-query-builder.ts:1254](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1254)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [query-builder/update-query-builder.ts:1246](https://github.com/kyse
 
 > `readonly` **queryNode**: [`UpdateQueryNode`](UpdateQueryNode.md)
 
-Defined in: [query-builder/update-query-builder.ts:1247](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1247)
+Defined in: [query-builder/update-query-builder.ts:1255](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1255)

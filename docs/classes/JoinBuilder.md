@@ -46,7 +46,7 @@ Defined in: [query-builder/join-builder.ts:21](https://github.com/kysely-org/kys
 
 > **$call**\<`T`\>(`func`): `T`
 
-Defined in: [query-builder/join-builder.ts:86](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L86)
+Defined in: [query-builder/join-builder.ts:87](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L87)
 
 Simply calls the provided function passing `this` as the only argument. `$call` returns
 what the provided function returns.
@@ -108,7 +108,7 @@ See [WhereInterface.where](../interfaces/WhereInterface.md#where) for documentat
 
 #### Call Signature
 
-> **on**(`expression`): `JoinBuilder`\<`DB`, `TB`\>
+> **on**\<`E`\>(`expression`): `JoinBuilder`\<`DB`, `TB`\>
 
 Defined in: [query-builder/join-builder.ts:37](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L37)
 
@@ -117,11 +117,17 @@ Just like [WhereInterface.where](../interfaces/WhereInterface.md#where) but adds
 
 See [WhereInterface.where](../interfaces/WhereInterface.md#where) for documentation and examples.
 
+##### Type Parameters
+
+###### E
+
+`E` *extends* [`ExpressionOrFactory`](../types/ExpressionOrFactory.md)\<`DB`, `TB`, [`SqlBool`](../types/SqlBool.md)\>
+
 ##### Parameters
 
 ###### expression
 
-[`ExpressionOrFactory`](../types/ExpressionOrFactory.md)\<`DB`, `TB`, [`SqlBool`](../types/SqlBool.md)\>
+`E`
 
 ##### Returns
 
@@ -131,20 +137,30 @@ See [WhereInterface.where](../interfaces/WhereInterface.md#where) for documentat
 
 ### onRef()
 
-> **onRef**(`lhs`, `op`, `rhs`): `JoinBuilder`\<`DB`, `TB`\>
+> **onRef**\<`LRE`, `RRE`\>(`lhs`, `op`, `rhs`): `JoinBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/join-builder.ts:55](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L55)
+Defined in: [query-builder/join-builder.ts:57](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L57)
 
 Just like [WhereInterface.whereRef](../interfaces/WhereInterface.md#whereref) but adds an item to the join's
 `on` clause instead.
 
 See [WhereInterface.whereRef](../interfaces/WhereInterface.md#whereref) for documentation and examples.
 
+#### Type Parameters
+
+##### LRE
+
+`LRE` *extends* `string` \| [`Expression`](../interfaces/Expression.md)\<`any`\> \| [`DynamicReferenceBuilder`](DynamicReferenceBuilder.md)\<`any`\> \| [`SelectQueryBuilderExpression`](../interfaces/SelectQueryBuilderExpression.md)\<`Record`\<`string`, `any`\>\> \| [`OperandExpressionFactory`](../types/OperandExpressionFactory.md)\<`DB`, `TB`, `any`\>
+
+##### RRE
+
+`RRE` *extends* `string` \| [`Expression`](../interfaces/Expression.md)\<`any`\> \| [`DynamicReferenceBuilder`](DynamicReferenceBuilder.md)\<`any`\> \| [`SelectQueryBuilderExpression`](../interfaces/SelectQueryBuilderExpression.md)\<`Record`\<`string`, `any`\>\> \| [`OperandExpressionFactory`](../types/OperandExpressionFactory.md)\<`DB`, `TB`, `any`\>
+
 #### Parameters
 
 ##### lhs
 
-[`ReferenceExpression`](../types/ReferenceExpression.md)\<`DB`, `TB`\>
+`LRE`
 
 ##### op
 
@@ -152,7 +168,7 @@ See [WhereInterface.whereRef](../interfaces/WhereInterface.md#whereref) for docu
 
 ##### rhs
 
-[`ReferenceExpression`](../types/ReferenceExpression.md)\<`DB`, `TB`\>
+`RRE`
 
 #### Returns
 
@@ -164,7 +180,7 @@ See [WhereInterface.whereRef](../interfaces/WhereInterface.md#whereref) for docu
 
 > **onTrue**(): `JoinBuilder`\<`DB`, `TB`\>
 
-Defined in: [query-builder/join-builder.ts:72](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L72)
+Defined in: [query-builder/join-builder.ts:73](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L73)
 
 Adds `on true`.
 
@@ -178,7 +194,7 @@ Adds `on true`.
 
 > **toOperationNode**(): [`JoinNode`](../interfaces/JoinNode.md)
 
-Defined in: [query-builder/join-builder.ts:90](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L90)
+Defined in: [query-builder/join-builder.ts:91](https://github.com/kysely-org/kysely/blob/master/src/query-builder/join-builder.ts#L91)
 
 #### Returns
 

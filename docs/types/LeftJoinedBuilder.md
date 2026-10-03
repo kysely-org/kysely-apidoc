@@ -8,7 +8,7 @@
 
 > **LeftJoinedBuilder**\<`DB`, `TB`, `O`, `A`, `R`\> = `A` *extends* keyof `DB` ? [`SelectQueryBuilder`](../interfaces/SelectQueryBuilder.md)\<[`LeftJoinedDB`](LeftJoinedDB.md)\<`DB`, `A`, `R`\>, `TB` \| `A`, `O`\> : [`SelectQueryBuilder`](../interfaces/SelectQueryBuilder.md)\<`DB` & [`ShallowRecord`](ShallowRecord.md)\<`A`, [`Nullable`](Nullable.md)\<`R`\>\>, `TB` \| `A`, `O`\>
 
-Defined in: [query-builder/select-query-builder.ts:2836](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2836)
+Defined in: [query-builder/select-query-builder.ts:2865](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2865)
 
 ## Type Parameters
 

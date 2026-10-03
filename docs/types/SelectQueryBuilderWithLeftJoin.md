@@ -6,9 +6,9 @@
 
 # Type Alias: SelectQueryBuilderWithLeftJoin\<DB, TB, O, TE\>
 
-> **SelectQueryBuilderWithLeftJoin**\<`DB`, `TB`, `O`, `TE`\> = `TE` *extends* `` `${infer T} as ${infer A}` `` ? `T` *extends* keyof `DB` ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `A`, `DB`\[`T`\]\> : `never` : `TE` *extends* keyof `DB` ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `TE`, `DB`\[`TE`\]\> : `TE` *extends* [`AliasedExpression`](../interfaces/AliasedExpression.md)\<infer QO, infer QA\> ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `QA`, `QO`\> : `TE` *extends* (`qb`) => [`AliasedExpression`](../interfaces/AliasedExpression.md)\<infer QO, infer QA\> ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `QA`, `QO`\> : `never`
+> **SelectQueryBuilderWithLeftJoin**\<`DB`, `TB`, `O`, `TE`\> = [`TableExpression`](TableExpression.md)\<`DB`, `TB`\> *extends* `TE` ? [`JoinResultForUnknownTable`](JoinResultForUnknownTable.md)\<`O`\> : `TE` *extends* `` `${infer T} as ${infer A}` `` ? `T` *extends* keyof `DB` ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `A`, `DB`\[`T`\]\> : `never` : `TE` *extends* keyof `DB` ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `TE`, `DB`\[`TE`\]\> : `TE` *extends* [`AliasedExpression`](../interfaces/AliasedExpression.md)\<infer QO, infer QA\> ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `QA`, `QO`\> : `TE` *extends* (`qb`) => [`AliasedExpression`](../interfaces/AliasedExpression.md)\<infer QO, infer QA\> ? [`LeftJoinedBuilder`](LeftJoinedBuilder.md)\<`DB`, `TB`, `O`, `QA`, `QO`\> : `never`
 
-Defined in: [query-builder/select-query-builder.ts:2819](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2819)
+Defined in: [query-builder/select-query-builder.ts:2845](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2845)
 
 ## Type Parameters
 

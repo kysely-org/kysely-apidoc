@@ -2554,7 +2554,7 @@ Defined in: [query-builder/select-query-builder.ts:899](https://github.com/kysel
 
 ### limit()
 
-> **limit**(`limit`): `SelectQueryBuilder`\<`DB`, `TB`, `O`\>
+> **limit**\<`VE`\>(`limit`): `SelectQueryBuilder`\<`DB`, `TB`, `O`\>
 
 Defined in: [query-builder/select-query-builder.ts:1168](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L1168)
 
@@ -2598,11 +2598,17 @@ The generated SQL (PostgreSQL):
 select "first_name" from "person" limit $1 offset $2
 ```
 
+#### Type Parameters
+
+##### VE
+
+`VE` *extends* [`ValueExpression`](../types/ValueExpression.md)\<`DB`, `TB`, `number` \| `bigint` \| `null`\>
+
 #### Parameters
 
 ##### limit
 
-[`ValueExpression`](../types/ValueExpression.md)\<`DB`, `TB`, `number` \| `bigint` \| `null`\>
+`VE`
 
 #### Returns
 
@@ -2706,7 +2712,7 @@ Adds the `nowait` modifier to a select query on supported databases.
 
 ### offset()
 
-> **offset**(`offset`): `SelectQueryBuilder`\<`DB`, `TB`, `O`\>
+> **offset**\<`VE`\>(`offset`): `SelectQueryBuilder`\<`DB`, `TB`, `O`\>
 
 Defined in: [query-builder/select-query-builder.ts:1194](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L1194)
 
@@ -2731,11 +2737,17 @@ The generated SQL (PostgreSQL):
 select "first_name" from "person" limit $1 offset $2
 ```
 
+#### Type Parameters
+
+##### VE
+
+`VE` *extends* [`ValueExpression`](../types/ValueExpression.md)\<`DB`, `TB`, `number` \| `bigint`\>
+
 #### Parameters
 
 ##### offset
 
-[`ValueExpression`](../types/ValueExpression.md)\<`DB`, `TB`, `number` \| `bigint`\>
+`VE`
 
 #### Returns
 

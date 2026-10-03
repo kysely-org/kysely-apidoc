@@ -8,7 +8,7 @@
 
 > **RightJoinedBuilder**\<`DB`, `TB`, `O`, `A`, `R`\> = [`SelectQueryBuilder`](../interfaces/SelectQueryBuilder.md)\<[`RightJoinedDB`](RightJoinedDB.md)\<`DB`, `TB`, `A`, `R`\>, `TB` \| `A`, `O`\>
 
-Defined in: [query-builder/select-query-builder.ts:2872](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2872)
+Defined in: [query-builder/select-query-builder.ts:2904](https://github.com/kysely-org/kysely/blob/master/src/query-builder/select-query-builder.ts#L2904)
 
 ## Type Parameters
 

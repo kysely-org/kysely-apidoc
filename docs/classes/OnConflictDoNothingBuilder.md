@@ -6,7 +6,7 @@
 
 # Class: OnConflictDoNothingBuilder\<DB, _TB\>
 
-Defined in: [query-builder/on-conflict-builder.ts:285](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L285)
+Defined in: [query-builder/on-conflict-builder.ts:291](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L291)
 
 ## Type Parameters
 
@@ -28,7 +28,7 @@ Defined in: [query-builder/on-conflict-builder.ts:285](https://github.com/kysely
 
 > **new OnConflictDoNothingBuilder**\<`DB`, `_TB`\>(`props`): `OnConflictDoNothingBuilder`\<`DB`, `_TB`\>
 
-Defined in: [query-builder/on-conflict-builder.ts:291](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L291)
+Defined in: [query-builder/on-conflict-builder.ts:297](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L297)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [query-builder/on-conflict-builder.ts:291](https://github.com/kysely
 
 > **toOperationNode**(): [`OnConflictNode`](../interfaces/OnConflictNode.md)
 
-Defined in: [query-builder/on-conflict-builder.ts:295](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L295)
+Defined in: [query-builder/on-conflict-builder.ts:301](https://github.com/kysely-org/kysely/blob/master/src/query-builder/on-conflict-builder.ts#L301)
 
 #### Returns
 

@@ -6,7 +6,7 @@
 
 # Interface: DeleteQueryBuilderProps
 
-Defined in: [query-builder/delete-query-builder.ts:1151](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1151)
+Defined in: [query-builder/delete-query-builder.ts:1156](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1156)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [query-builder/delete-query-builder.ts:1151](https://github.com/kyse
 
 > `readonly` **executor**: [`QueryExecutor`](QueryExecutor.md)
 
-Defined in: [query-builder/delete-query-builder.ts:1154](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1154)
+Defined in: [query-builder/delete-query-builder.ts:1159](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1159)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [query-builder/delete-query-builder.ts:1154](https://github.com/kyse
 
 > `readonly` **queryId**: [`QueryId`](QueryId.md)
 
-Defined in: [query-builder/delete-query-builder.ts:1152](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1152)
+Defined in: [query-builder/delete-query-builder.ts:1157](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1157)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [query-builder/delete-query-builder.ts:1152](https://github.com/kyse
 
 > `readonly` **queryNode**: [`DeleteQueryNode`](DeleteQueryNode.md)
 
-Defined in: [query-builder/delete-query-builder.ts:1153](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1153)
+Defined in: [query-builder/delete-query-builder.ts:1158](https://github.com/kysely-org/kysely/blob/master/src/query-builder/delete-query-builder.ts#L1158)

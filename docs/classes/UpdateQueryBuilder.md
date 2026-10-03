@@ -62,7 +62,7 @@ Defined in: [query-builder/update-query-builder.ts:106](https://github.com/kysel
 
 > **$assertType**\<`T`\>(): `O` *extends* `T` ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `T`\> : [`KyselyTypeError`](../interfaces/KyselyTypeError.md)\<`"$assertType() call failed: The type passed in is not equal to the output type of the query."`\>
 
-Defined in: [query-builder/update-query-builder.ts:1115](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1115)
+Defined in: [query-builder/update-query-builder.ts:1123](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1123)
 
 Asserts that query's output row type equals the given type `T`.
 
@@ -186,7 +186,7 @@ db.updateTable('person')
 
 > **$castTo**\<`C`\>(): `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `C`\>
 
-Defined in: [query-builder/update-query-builder.ts:995](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L995)
+Defined in: [query-builder/update-query-builder.ts:1003](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1003)
 
 Change the output type of the query.
 
@@ -207,7 +207,7 @@ returns a copy of this `UpdateQueryBuilder` with a new output type.
 
 ### $if()
 
-> **$if**\<`O2`\>(`condition`, `func`): `O2` *extends* [`UpdateResult`](UpdateResult.md) ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, [`UpdateResult`](UpdateResult.md)\> : `O2` *extends* `O` & `E` ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `O` & `Partial`\<`E`\>\> : `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `Partial`\<`O2`\>\>
+> **$if**\<`O2`\>(`condition`, `func`): `unknown` *extends* `O2` ? `UpdateQueryBuilder`\<`any`, `any`, `any`, `O2`\> : `O2` *extends* [`UpdateResult`](UpdateResult.md) ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, [`UpdateResult`](UpdateResult.md)\> : `O2` *extends* `O` & `E` ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `O` & `Partial`\<`E`\>\> : `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `Partial`\<`O2`\>\>
 
 Defined in: [query-builder/update-query-builder.ts:972](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L972)
 
@@ -266,7 +266,7 @@ Promise<{
 
 #### Returns
 
-`O2` *extends* [`UpdateResult`](UpdateResult.md) ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, [`UpdateResult`](UpdateResult.md)\> : `O2` *extends* `O` & `E` ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `O` & `Partial`\<`E`\>\> : `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `Partial`\<`O2`\>\>
+`unknown` *extends* `O2` ? `UpdateQueryBuilder`\<`any`, `any`, `any`, `O2`\> : `O2` *extends* [`UpdateResult`](UpdateResult.md) ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, [`UpdateResult`](UpdateResult.md)\> : `O2` *extends* `O` & `E` ? `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `O` & `Partial`\<`E`\>\> : `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `Partial`\<`O2`\>\>
 
 ***
 
@@ -274,7 +274,7 @@ Promise<{
 
 > **$narrowType**\<`T`\>(): `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, [`NarrowPartial`](../types/NarrowPartial.md)\<`O`, `T`\>\>
 
-Defined in: [query-builder/update-query-builder.ts:1057](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1057)
+Defined in: [query-builder/update-query-builder.ts:1065](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1065)
 
 Narrows (parts of) the output type of the query.
 
@@ -451,7 +451,7 @@ select * from "person"
 
 > **compile**(): [`CompiledQuery`](../interfaces/CompiledQuery.md)\<[`SimplifyResult`](../types/SimplifyResult.md)\<`O`\>\>
 
-Defined in: [query-builder/update-query-builder.ts:1138](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1138)
+Defined in: [query-builder/update-query-builder.ts:1146](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1146)
 
 #### Returns
 
@@ -467,7 +467,7 @@ Defined in: [query-builder/update-query-builder.ts:1138](https://github.com/kyse
 
 > **execute**(`options?`): `Promise`\<[`SimplifyResult`](../types/SimplifyResult.md)\<`O`\>[]\>
 
-Defined in: [query-builder/update-query-builder.ts:1145](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1145)
+Defined in: [query-builder/update-query-builder.ts:1153](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1153)
 
 Executes the query and returns an array of rows.
 
@@ -493,7 +493,7 @@ Also see the [executeTakeFirst](../interfaces/Executable.md#executetakefirst) an
 
 > **executeTakeFirst**(`options?`): `Promise`\<[`SimplifySingleResult`](../types/SimplifySingleResult.md)\<`O`\>\>
 
-Defined in: [query-builder/update-query-builder.ts:1171](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1171)
+Defined in: [query-builder/update-query-builder.ts:1179](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1179)
 
 Executes the query and returns the first result or undefined if
 the query returned no result.
@@ -518,7 +518,7 @@ the query returned no result.
 
 > **executeTakeFirstOrThrow**(`errorConstructorOrOptions?`): `Promise`\<[`SimplifyResult`](../types/SimplifyResult.md)\<`O`\>\>
 
-Defined in: [query-builder/update-query-builder.ts:1179](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1179)
+Defined in: [query-builder/update-query-builder.ts:1187](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1187)
 
 Executes the query and returns the first result or throws if
 the query returned no result.
@@ -547,7 +547,7 @@ error.
 
 > **explain**\<`ER`\>(`format?`, `options?`): `Promise`\<`ER`[]\>
 
-Defined in: [query-builder/update-query-builder.ts:1228](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1228)
+Defined in: [query-builder/update-query-builder.ts:1236](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1236)
 
 Executes query with `explain` statement before the main query.
 
@@ -2287,7 +2287,7 @@ where
 
 > **stream**(`chunkSizeOrOptions?`): `AsyncIterableIterator`\<`O`\>
 
-Defined in: [query-builder/update-query-builder.ts:1206](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1206)
+Defined in: [query-builder/update-query-builder.ts:1214](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1214)
 
 Executes the query and streams the rows.
 
@@ -2334,7 +2334,7 @@ for await (const person of stream) {
 
 > **toOperationNode**(): [`UpdateQueryNode`](../interfaces/UpdateQueryNode.md)
 
-Defined in: [query-builder/update-query-builder.ts:1131](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1131)
+Defined in: [query-builder/update-query-builder.ts:1139](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1139)
 
 #### Returns
 
@@ -2870,7 +2870,7 @@ from "person"
 
 > **withPlugin**(`plugin`): `UpdateQueryBuilder`\<`DB`, `UT`, `TB`, `O`\>
 
-Defined in: [query-builder/update-query-builder.ts:1124](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1124)
+Defined in: [query-builder/update-query-builder.ts:1132](https://github.com/kysely-org/kysely/blob/master/src/query-builder/update-query-builder.ts#L1132)
 
 Returns a copy of this UpdateQueryBuilder instance with the given plugin installed.
 
