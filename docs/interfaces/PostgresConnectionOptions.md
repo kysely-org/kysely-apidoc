@@ -6,7 +6,7 @@
 
 # Interface: PostgresConnectionOptions
 
-Defined in: [dialect/postgres/postgres-driver.ts:150](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L150)
+Defined in: [dialect/postgres/postgres-driver.ts:171](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L171)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [dialect/postgres/postgres-driver.ts:150](https://github.com/kysely-
 
 > `optional` **controlClient?**: [`PostgresClientConstructor`](../types/PostgresClientConstructor.md)
 
-Defined in: [dialect/postgres/postgres-driver.ts:151](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L151)
+Defined in: [dialect/postgres/postgres-driver.ts:172](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L172)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [dialect/postgres/postgres-driver.ts:151](https://github.com/kysely-
 
 > **cursor**: [`PostgresCursorConstructor`](../types/PostgresCursorConstructor.md) \| `null`
 
-Defined in: [dialect/postgres/postgres-driver.ts:152](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L152)
+Defined in: [dialect/postgres/postgres-driver.ts:173](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L173)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [dialect/postgres/postgres-driver.ts:152](https://github.com/kysely-
 
 > **poolOptions**: `object`
 
-Defined in: [dialect/postgres/postgres-driver.ts:153](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L153)
+Defined in: [dialect/postgres/postgres-driver.ts:174](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L174)

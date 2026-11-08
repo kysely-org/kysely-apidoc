@@ -8,4 +8,4 @@
 
 > `const` **TRANSACTION\_ACCESS\_MODES**: readonly \[`"read only"`, `"read write"`\]
 
-Defined in: [driver/driver.ts:90](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L90)
+Defined in: [driver/driver.ts:94](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L94)

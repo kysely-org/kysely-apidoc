@@ -6,7 +6,7 @@
 
 # Interface: SqliteStatement
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:43](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L43)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:53](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L53)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [dialect/sqlite/sqlite-dialect-config.ts:43](https://github.com/kyse
 
 > `readonly` **reader**: `boolean`
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:44](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L44)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:54](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L54)
 
 ## Methods
 
@@ -22,7 +22,7 @@ Defined in: [dialect/sqlite/sqlite-dialect-config.ts:44](https://github.com/kyse
 
 > **all**(`parameters`): `unknown`[]
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:45](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L45)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:55](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L55)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ readonly `unknown`[]
 
 > **iterate**(`parameters`): `IterableIterator`\<`unknown`\>
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:50](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L50)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:60](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L60)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ readonly `unknown`[]
 
 > **run**(`parameters`): `object`
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:46](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L46)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:56](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L56)
 
 #### Parameters
 

@@ -18,7 +18,7 @@
     "Igal Klebanov <igalklebanov@gmail.com>"
   ],
   "devDependencies": {
-    "pagefind": "1.5.2",
+    "pagefind": "1.6.0",
     "typedoc": "0.28.18",
     "typedoc-plugin-markdown": "4.13.1",
     "typedoc-plugin-missing-exports": "4.1.2"

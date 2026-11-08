@@ -8,7 +8,7 @@
 
 > **isKyselyProps**(`obj`): `obj is KyselyProps`
 
-Defined in: [kysely.ts:774](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L774)
+Defined in: [kysely.ts:788](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L788)
 
 ## Parameters
 

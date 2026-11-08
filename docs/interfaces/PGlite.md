@@ -6,7 +6,7 @@
 
 # Interface: PGlite
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:38](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L38)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:48](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L48)
 
 This interface is the subset of the PGlite instance that kysely needs.
 
@@ -21,7 +21,7 @@ https://pglite.dev/docs/api
 
 > **closed**: `boolean`
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:40](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L40)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:50](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L50)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:40](https://github.com/kyse
 
 > **ready**: `boolean`
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:46](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L46)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:56](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L56)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:46](https://github.com/kyse
 
 > **waitReady**: `Promise`\<`void`\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:48](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L48)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:58](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L58)
 
 ## Methods
 
@@ -45,7 +45,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:48](https://github.com/kyse
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:39](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L39)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:49](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L49)
 
 #### Returns
 
@@ -57,7 +57,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:39](https://github.com/kyse
 
 > **query**\<`T`\>(`query`, `params?`, `options?`): `Promise`\<[`PGliteQueryResults`](PGliteQueryResults.md)\<`T`\>\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:41](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L41)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:51](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L51)
 
 #### Type Parameters
 
@@ -89,7 +89,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:41](https://github.com/kyse
 
 > **transaction**\<`T`\>(`callback`): `Promise`\<`T`\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:47](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L47)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:57](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L57)
 
 #### Type Parameters
 

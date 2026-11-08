@@ -6,7 +6,7 @@
 
 # Interface: MysqlPool
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:57](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L57)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:67](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L67)
 
 This interface is the subset of mysql2 driver's `Pool` class that
 kysely needs.
@@ -21,7 +21,7 @@ https://github.com/sidorares/node-mysql2#using-connection-pools
 
 > **end**(`callback`): `void`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:61](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L61)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:71](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L71)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:61](https://github.com/kysely
 
 > **getConnection**(`callback`): `void`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:58](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L58)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:68](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L68)
 
 #### Parameters
 

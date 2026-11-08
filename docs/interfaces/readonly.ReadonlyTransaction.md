@@ -34,7 +34,7 @@ Similar to [Transaction](../classes/Transaction.md) but read-only.
 
 > **dynamic**: [`DynamicModule`](../classes/DynamicModule.md)\<`DB`\>
 
-Defined in: [kysely.ts:156](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L156)
+Defined in: [kysely.ts:161](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L161)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [kysely.ts:156](https://github.com/kysely-org/kysely/blob/master/src
 
 > **fn**: [`FunctionModule`](FunctionModule.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:232](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L232)
+Defined in: [kysely.ts:237](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L237)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [kysely.ts:232](https://github.com/kysely-org/kysely/blob/master/src
 
 > **introspection**: [`DatabaseIntrospector`](DatabaseIntrospector.md)
 
-Defined in: [kysely.ts:163](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L163)
+Defined in: [kysely.ts:168](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L168)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [kysely.ts:163](https://github.com/kysely-org/kysely/blob/master/src
 
 > **isTransaction**: `true`
 
-Defined in: [kysely.ts:656](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L656)
+Defined in: [kysely.ts:670](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L670)
 
 #### Inherited from
 
@@ -156,7 +156,7 @@ Similar to [Transaction.$pickTables](../classes/Transaction.md#picktables) but r
 
 > **case**(): [`CaseBuilder`](../classes/CaseBuilder.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:172](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L172)
+Defined in: [kysely.ts:177](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L177)
 
 Creates a `case` statement/operator.
 
@@ -174,7 +174,7 @@ See [ExpressionBuilder.case](ExpressionBuilder.md#case) for more information.
 
 > **case**\<`V`\>(`value`): [`CaseBuilder`](../classes/CaseBuilder.md)\<`DB`, keyof `DB`, `V`\>
 
-Defined in: [kysely.ts:174](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L174)
+Defined in: [kysely.ts:179](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L179)
 
 Creates a `case` statement/operator.
 
@@ -206,7 +206,7 @@ See [ExpressionBuilder.case](ExpressionBuilder.md#case) for more information.
 
 > **connection**(): `never`
 
-Defined in: [kysely.ts:681](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L681)
+Defined in: [kysely.ts:695](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L695)
 
 #### Returns
 
@@ -252,7 +252,7 @@ not allowed with a read-only Kysely instance.
 
 > **destroy**(): `never`
 
-Defined in: [kysely.ts:690](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L690)
+Defined in: [kysely.ts:704](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L704)
 
 #### Returns
 
@@ -787,7 +787,7 @@ select (
 
 > **startTransaction**(): `never`
 
-Defined in: [kysely.ts:672](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L672)
+Defined in: [kysely.ts:686](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L686)
 
 #### Returns
 
@@ -807,7 +807,7 @@ calling the controlled transaction method for a Transaction is not supported
 
 > **transaction**(): `never`
 
-Defined in: [kysely.ts:663](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L663)
+Defined in: [kysely.ts:677](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L677)
 
 #### Returns
 

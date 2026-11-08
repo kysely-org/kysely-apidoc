@@ -6,7 +6,7 @@
 
 # Interface: Driver
 
-Defined in: [driver/driver.ts:10](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L10)
+Defined in: [driver/driver.ts:11](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L11)
 
 A Driver creates and releases [database connections](DatabaseConnection.md)
 and is also responsible for connection pooling (if the dialect supports pooling).
@@ -17,7 +17,7 @@ and is also responsible for connection pooling (if the dialect supports pooling)
 
 > **acquireConnection**(`options?`): `Promise`\<[`DatabaseConnection`](DatabaseConnection.md)\>
 
-Defined in: [driver/driver.ts:22](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L22)
+Defined in: [driver/driver.ts:23](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L23)
 
 Acquires a new connection from the pool.
 
@@ -37,7 +37,7 @@ Acquires a new connection from the pool.
 
 > **beginTransaction**(`connection`, `settings`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:29](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L29)
+Defined in: [driver/driver.ts:30](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L30)
 
 Begins a transaction.
 
@@ -61,9 +61,12 @@ Begins a transaction.
 
 > **commitTransaction**(`connection`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:37](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L37)
+Defined in: [driver/driver.ts:41](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L41)
 
 Commits a transaction.
+
+Throws [AbortedTransactionError](../classes/AbortedTransactionError.md) if the database confirms that
+the transaction was rolled back instead of committed.
 
 #### Parameters
 
@@ -81,7 +84,7 @@ Commits a transaction.
 
 > **destroy**(`options?`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:82](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L82)
+Defined in: [driver/driver.ts:86](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L86)
 
 Destroys the driver and releases all resources.
 
@@ -101,7 +104,7 @@ Destroys the driver and releases all resources.
 
 > **init**(`options?`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:17](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L17)
+Defined in: [driver/driver.ts:18](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L18)
 
 Initializes the driver.
 
@@ -124,7 +127,7 @@ methods should be callable.
 
 > **releaseConnection**(`connection`, `options?`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:74](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L74)
+Defined in: [driver/driver.ts:78](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L78)
 
 Releases a connection back to the pool.
 
@@ -148,7 +151,7 @@ Releases a connection back to the pool.
 
 > `optional` **releaseSavepoint**(`connection`, `savepointName`, `compileQuery`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:65](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L65)
+Defined in: [driver/driver.ts:69](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L69)
 
 Releases a savepoint within a transaction.
 
@@ -176,7 +179,7 @@ Releases a savepoint within a transaction.
 
 > `optional` **rollbackToSavepoint**(`connection`, `savepointName`, `compileQuery`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:56](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L56)
+Defined in: [driver/driver.ts:60](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L60)
 
 Rolls back to a savepoint within a transaction.
 
@@ -204,7 +207,7 @@ Rolls back to a savepoint within a transaction.
 
 > **rollbackTransaction**(`connection`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:42](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L42)
+Defined in: [driver/driver.ts:46](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L46)
 
 Rolls back a transaction.
 
@@ -224,7 +227,7 @@ Rolls back a transaction.
 
 > `optional` **savepoint**(`connection`, `savepointName`, `compileQuery`): `Promise`\<`void`\>
 
-Defined in: [driver/driver.ts:47](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L47)
+Defined in: [driver/driver.ts:51](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L51)
 
 Establishses a new savepoint within a transaction.
 

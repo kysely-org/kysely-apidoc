@@ -6,7 +6,7 @@
 
 # Interface: PostgresClient
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:88](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L88)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:98](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L98)
 
 This interface is the subset of pg driver's `Client` class that
 kysely needs.
@@ -21,7 +21,7 @@ https://node-postgres.com/apis/client
 
 > `optional` **processID?**: `number`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:92](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L92)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:102](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L102)
 
 ## Methods
 
@@ -29,7 +29,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:92](https://github.com/
 
 > **connect**(): `Promise`\<`PostgresClient`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:89](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L89)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:99](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L99)
 
 #### Returns
 
@@ -41,7 +41,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:89](https://github.com/
 
 > **end**(): `void`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:90](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L90)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:100](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L100)
 
 #### Returns
 
@@ -55,7 +55,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:90](https://github.com/
 
 > **query**\<`R`\>(`sql`, `parameters`): `Promise`\<[`PostgresQueryResult`](PostgresQueryResult.md)\<`R`\>\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:93](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L93)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:103](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L103)
 
 ##### Type Parameters
 
@@ -81,7 +81,7 @@ readonly `unknown`[]
 
 > **query**\<`R`\>(`cursor`): [`PostgresCursor`](PostgresCursor.md)\<`R`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:97](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L97)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:107](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L107)
 
 ##### Type Parameters
 

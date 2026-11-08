@@ -6,7 +6,7 @@
 
 # Interface: PostgresQueryResult\<R\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:148](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L148)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:158](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L158)
 
 This interface is the subset of pg driver's `Result` shape that kysely needs.
 
@@ -24,9 +24,9 @@ https://node-postgres.com/apis/result
 
 ### command
 
-> **command**: `"UPDATE"` \| `"DELETE"` \| `"INSERT"` \| `"SELECT"` \| `"MERGE"`
+> **command**: `"UPDATE"` \| `"DELETE"` \| `"INSERT"` \| `"SELECT"` \| `"MERGE"` \| `"COMMIT"` \| `"ROLLBACK"`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:149](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L149)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:159](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L159)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:149](https://github.com
 
 > **rowCount**: `number`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:150](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L150)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:161](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L161)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:150](https://github.com
 
 > **rows**: `R`[]
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:151](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L151)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:162](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L162)

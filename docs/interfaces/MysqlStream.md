@@ -6,7 +6,7 @@
 
 # Interface: MysqlStream
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:90](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L90)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:100](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L100)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:90](https://github.com/kysely
 
 > **\[asyncIterator\]**(): `any`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:94](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L94)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:104](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L104)
 
 #### Returns
 

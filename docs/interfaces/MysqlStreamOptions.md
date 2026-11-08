@@ -6,7 +6,7 @@
 
 # Interface: MysqlStreamOptions
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:85](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L85)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:95](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L95)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:85](https://github.com/kysely
 
 > `optional` **highWaterMark?**: `number`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:86](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L86)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:96](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L96)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:86](https://github.com/kysely
 
 > `optional` **objectMode?**: `true`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:87](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L87)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:97](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L97)

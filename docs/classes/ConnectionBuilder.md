@@ -6,7 +6,7 @@
 
 # Class: ConnectionBuilder\<DB\>
 
-Defined in: [kysely.ts:834](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L834)
+Defined in: [kysely.ts:848](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L848)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [kysely.ts:834](https://github.com/kysely-org/kysely/blob/master/src
 
 > **new ConnectionBuilder**\<`DB`\>(`props`): `ConnectionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:837](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L837)
+Defined in: [kysely.ts:851](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L851)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [kysely.ts:837](https://github.com/kysely-org/kysely/blob/master/src
 
 > **execute**\<`T`\>(`callback`, `options?`): `Promise`\<`T`\>
 
-Defined in: [kysely.ts:841](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L841)
+Defined in: [kysely.ts:855](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L855)
 
 #### Type Parameters
 

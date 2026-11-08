@@ -6,7 +6,7 @@
 
 # Class: PostgresDriver
 
-Defined in: [dialect/postgres/postgres-driver.ts:24](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L24)
+Defined in: [dialect/postgres/postgres-driver.ts:26](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L26)
 
 A Driver creates and releases [database connections](../interfaces/DatabaseConnection.md)
 and is also responsible for connection pooling (if the dialect supports pooling).
@@ -21,7 +21,7 @@ and is also responsible for connection pooling (if the dialect supports pooling)
 
 > **new PostgresDriver**(`config`): `PostgresDriver`
 
-Defined in: [dialect/postgres/postgres-driver.ts:29](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L29)
+Defined in: [dialect/postgres/postgres-driver.ts:31](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L31)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [dialect/postgres/postgres-driver.ts:29](https://github.com/kysely-o
 
 > **acquireConnection**(`options?`): `Promise`\<[`DatabaseConnection`](../interfaces/DatabaseConnection.md)\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:39](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L39)
+Defined in: [dialect/postgres/postgres-driver.ts:41](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L41)
 
 Acquires a new connection from the pool.
 
@@ -63,7 +63,7 @@ Acquires a new connection from the pool.
 
 > **beginTransaction**(`connection`, `settings`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:69](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L69)
+Defined in: [dialect/postgres/postgres-driver.ts:77](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L77)
 
 Begins a transaction.
 
@@ -91,9 +91,12 @@ Begins a transaction.
 
 > **commitTransaction**(`connection`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:90](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L90)
+Defined in: [dialect/postgres/postgres-driver.ts:98](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L98)
 
 Commits a transaction.
+
+Throws [AbortedTransactionError](AbortedTransactionError.md) if the database confirms that
+the transaction was rolled back instead of committed.
 
 #### Parameters
 
@@ -115,7 +118,7 @@ Commits a transaction.
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:141](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L141)
+Defined in: [dialect/postgres/postgres-driver.ts:162](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L162)
 
 Destroys the driver and releases all resources.
 
@@ -133,7 +136,7 @@ Destroys the driver and releases all resources.
 
 > **init**(`options?`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:33](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L33)
+Defined in: [dialect/postgres/postgres-driver.ts:35](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L35)
 
 Initializes the driver.
 
@@ -160,7 +163,7 @@ methods should be callable.
 
 > **releaseConnection**(`connection`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:137](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L137)
+Defined in: [dialect/postgres/postgres-driver.ts:158](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L158)
 
 Releases a connection back to the pool.
 
@@ -184,7 +187,7 @@ Releases a connection back to the pool.
 
 > **releaseSavepoint**(`connection`, `savepointName`, `compileQuery`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:124](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L124)
+Defined in: [dialect/postgres/postgres-driver.ts:145](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L145)
 
 Releases a savepoint within a transaction.
 
@@ -216,7 +219,7 @@ Releases a savepoint within a transaction.
 
 > **rollbackToSavepoint**(`connection`, `savepointName`, `compileQuery`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:111](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L111)
+Defined in: [dialect/postgres/postgres-driver.ts:132](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L132)
 
 Rolls back to a savepoint within a transaction.
 
@@ -248,7 +251,7 @@ Rolls back to a savepoint within a transaction.
 
 > **rollbackTransaction**(`connection`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:94](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L94)
+Defined in: [dialect/postgres/postgres-driver.ts:110](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L110)
 
 Rolls back a transaction.
 
@@ -256,7 +259,7 @@ Rolls back a transaction.
 
 ##### connection
 
-[`DatabaseConnection`](../interfaces/DatabaseConnection.md)
+[`PostgresConnection`](PostgresConnection.md)
 
 #### Returns
 
@@ -272,7 +275,7 @@ Rolls back a transaction.
 
 > **savepoint**(`connection`, `savepointName`, `compileQuery`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:98](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L98)
+Defined in: [dialect/postgres/postgres-driver.ts:119](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L119)
 
 Establishses a new savepoint within a transaction.
 
