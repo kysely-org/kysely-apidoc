@@ -14,3 +14,11 @@ GitHub Pages serves these as static files. Request the `.md` URL directly;
 The Markdown plugin is patched to skip directory links when copying media, matching
 TypeDoc's HTML renderer. This prevents empty links in the source README from copying
 the entire Kysely checkout into `docs/_media/`.
+
+
+Install dependencies in both repositories. The build expands inherited JSDoc in
+`../kysely/src` before running TypeDoc. This preparation is intended for the
+checkout used to generate documentation.
+
+The source copier records line offsets so links in both HTML and Markdown still
+point to the authored source lines.

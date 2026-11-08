@@ -10,7 +10,9 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "build": "typedoc && node scripts/post-process-docs.js && pagefind"
+    "build": "pnpm run prepare:source && typedoc && node scripts/post-process-docs.js && pagefind",
+    "prepare:source": "node ../kysely/scripts/copy-source-interface-documentation.cjs --in-place",
+    "test": "node --test scripts/source-documentation-lines.test.mjs"
   },
   "author": "Sami Koskim\u00e4ki <sami@jakso.me>",
   "license": "MIT",
