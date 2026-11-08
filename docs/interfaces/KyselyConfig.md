@@ -6,7 +6,7 @@
 
 # Interface: KyselyConfig
 
-Defined in: [kysely.ts:784](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L784)
+Defined in: [kysely.ts:798](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L798)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [kysely.ts:784](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **dialect**: [`Dialect`](Dialect.md)
 
-Defined in: [kysely.ts:785](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L785)
+Defined in: [kysely.ts:799](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L799)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [kysely.ts:785](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` `optional` **log?**: [`LogConfig`](../types/LogConfig.md)
 
-Defined in: [kysely.ts:831](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L831)
+Defined in: [kysely.ts:845](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L845)
 
 A list of log levels to log or a custom logger function.
 
@@ -72,4 +72,4 @@ const db = new Kysely<Database>({
 
 > `readonly` `optional` **plugins?**: [`KyselyPlugin`](KyselyPlugin.md)[]
 
-Defined in: [kysely.ts:786](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L786)
+Defined in: [kysely.ts:800](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L800)

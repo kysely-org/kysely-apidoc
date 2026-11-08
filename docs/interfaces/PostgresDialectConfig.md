@@ -101,10 +101,20 @@ Called every time a connection is acquired from the pool.
 
 > **pool**: [`PostgresPool`](PostgresPool.md) \| ((`options?`) => `Promise`\<[`PostgresPool`](PostgresPool.md)\>)
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:58](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L58)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:68](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L68)
 
 A postgres `Pool` instance or a function that returns one.
 
 If a function is provided, it's called once when the first query is executed.
+
+Once the driver has initialized, [Kysely.destroy](../classes/Kysely.md#destroy) calls `pool.end()`,
+whether the pool is supplied directly or returned by a function. If
+initialization hasn't started, `db.destroy()` does nothing, even if the
+supplied pool has been used outside Kysely.
+
+If Kysely is not the sole consumer of the pool, or the pool's lifecycle is
+managed elsewhere, skip `db.destroy()`. Let the application call `pool.end()`
+once all consumers, including Kysely, have finished. No separate cleanup of
+the `Kysely` instance is needed.
 
 https://node-postgres.com/apis/pool

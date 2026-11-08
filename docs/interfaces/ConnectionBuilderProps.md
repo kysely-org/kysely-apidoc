@@ -6,7 +6,7 @@
 
 # Interface: ConnectionBuilderProps
 
-Defined in: [kysely.ts:860](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L860)
+Defined in: [kysely.ts:874](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L874)
 
 ## Hierarchy
 
@@ -22,7 +22,7 @@ Defined in: [kysely.ts:860](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **config**: [`KyselyConfig`](KyselyConfig.md)
 
-Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L768)
+Defined in: [kysely.ts:782](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L782)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **dialect**: [`Dialect`](Dialect.md)
 
-Defined in: [kysely.ts:771](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L771)
+Defined in: [kysely.ts:785](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L785)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [kysely.ts:771](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **driver**: [`Driver`](Driver.md)
 
-Defined in: [kysely.ts:769](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L769)
+Defined in: [kysely.ts:783](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L783)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [kysely.ts:769](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **executor**: [`QueryExecutor`](QueryExecutor.md)
 
-Defined in: [kysely.ts:770](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L770)
+Defined in: [kysely.ts:784](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L784)
 
 #### Inherited from
 

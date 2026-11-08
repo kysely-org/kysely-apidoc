@@ -6,7 +6,7 @@
 
 # Class: ControlledTransactionBuilder\<DB\>
 
-Defined in: [kysely.ts:929](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L929)
+Defined in: [kysely.ts:947](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L947)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [kysely.ts:929](https://github.com/kysely-org/kysely/blob/master/src
 
 > **new ControlledTransactionBuilder**\<`DB`\>(`props`): `ControlledTransactionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:932](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L932)
+Defined in: [kysely.ts:950](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L950)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [kysely.ts:932](https://github.com/kysely-org/kysely/blob/master/src
 
 > **execute**(): `Promise`\<[`ControlledTransaction`](ControlledTransaction.md)\<`DB`, \[\]\>\>
 
-Defined in: [kysely.ts:952](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L952)
+Defined in: [kysely.ts:970](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L970)
 
 #### Returns
 
@@ -50,7 +50,7 @@ Defined in: [kysely.ts:952](https://github.com/kysely-org/kysely/blob/master/src
 
 > **setAccessMode**(`accessMode`): `ControlledTransactionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:936](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L936)
+Defined in: [kysely.ts:954](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L954)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [kysely.ts:936](https://github.com/kysely-org/kysely/blob/master/src
 
 > **setIsolationLevel**(`isolationLevel`): `ControlledTransactionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:943](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L943)
+Defined in: [kysely.ts:961](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L961)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: ControlledTransactionProps
 
-Defined in: [kysely.ts:1288](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1288)
+Defined in: [kysely.ts:1353](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1353)
 
 ## Hierarchy
 
@@ -22,7 +22,7 @@ Defined in: [kysely.ts:1288](https://github.com/kysely-org/kysely/blob/master/sr
 
 > `readonly` **config**: [`KyselyConfig`](KyselyConfig.md)
 
-Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L768)
+Defined in: [kysely.ts:782](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L782)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **connection**: [`ControlledConnection`](ControlledConnection.md)
 
-Defined in: [kysely.ts:1289](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1289)
+Defined in: [kysely.ts:1354](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1354)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [kysely.ts:1289](https://github.com/kysely-org/kysely/blob/master/sr
 
 > `readonly` **dialect**: [`Dialect`](Dialect.md)
 
-Defined in: [kysely.ts:771](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L771)
+Defined in: [kysely.ts:785](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L785)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [kysely.ts:771](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **driver**: [`Driver`](Driver.md)
 
-Defined in: [kysely.ts:769](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L769)
+Defined in: [kysely.ts:783](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L783)
 
 #### Inherited from
 
@@ -66,8 +66,16 @@ Defined in: [kysely.ts:769](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **executor**: [`QueryExecutor`](QueryExecutor.md)
 
-Defined in: [kysely.ts:770](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L770)
+Defined in: [kysely.ts:784](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L784)
 
 #### Inherited from
 
 [`KyselyProps`](KyselyProps.md).[`executor`](KyselyProps.md#executor)
+
+***
+
+### transactionState
+
+> `readonly` **transactionState**: [`ControlledTransactionState`](ControlledTransactionState.md)
+
+Defined in: [kysely.ts:1355](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L1355)

@@ -8,7 +8,7 @@
 
 > **FileMigrationProviderProps** = [`KyselyTypeError`](../interfaces/KyselyTypeError.md)\<`"import from 'kysely/migration' instead"`\>
 
-Defined in: [index.ts:423](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L423)
+Defined in: [index.ts:424](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L424)
 
 ## Deprecated
 

@@ -6,7 +6,7 @@
 
 # Class: TransactionBuilder\<DB\>
 
-Defined in: [kysely.ts:862](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L862)
+Defined in: [kysely.ts:876](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L876)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [kysely.ts:862](https://github.com/kysely-org/kysely/blob/master/src
 
 > **new TransactionBuilder**\<`DB`\>(`props`): `TransactionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:865](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L865)
+Defined in: [kysely.ts:879](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L879)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [kysely.ts:865](https://github.com/kysely-org/kysely/blob/master/src
 
 > **execute**\<`T`\>(`callback`): `Promise`\<`T`\>
 
-Defined in: [kysely.ts:883](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L883)
+Defined in: [kysely.ts:897](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L897)
 
 #### Type Parameters
 
@@ -62,7 +62,7 @@ Defined in: [kysely.ts:883](https://github.com/kysely-org/kysely/blob/master/src
 
 > **setAccessMode**(`accessMode`): `TransactionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:869](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L869)
+Defined in: [kysely.ts:883](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L883)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [kysely.ts:869](https://github.com/kysely-org/kysely/blob/master/src
 
 > **setIsolationLevel**(`isolationLevel`): `TransactionBuilder`\<`DB`\>
 
-Defined in: [kysely.ts:876](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L876)
+Defined in: [kysely.ts:890](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L890)
 
 #### Parameters
 

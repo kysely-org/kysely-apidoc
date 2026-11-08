@@ -6,12 +6,13 @@
 
 # Class: Transaction\<DB\>
 
-Defined in: [kysely.ts:645](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L645)
+Defined in: [kysely.ts:659](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L659)
 
 The main Kysely class.
 
 You should create one instance of `Kysely` per database using the [Kysely](Kysely.md)
-constructor. Each `Kysely` instance maintains its own connection pool.
+constructor. The dialect manages database connections and may use a shared
+pool or database instance.
 
 ### Examples
 
@@ -64,7 +65,7 @@ The database interface type. Keys of this type must be table names
 
 > **new Transaction**\<`DB`\>(`props`): `Transaction`\<`DB`\>
 
-Defined in: [kysely.ts:648](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L648)
+Defined in: [kysely.ts:662](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L662)
 
 #### Parameters
 
@@ -88,7 +89,7 @@ Defined in: [kysely.ts:648](https://github.com/kysely-org/kysely/blob/master/src
 
 > **get** **dynamic**(): [`DynamicModule`](DynamicModule.md)\<`DB`\>
 
-Defined in: [kysely.ts:156](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L156)
+Defined in: [kysely.ts:161](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L161)
 
 Returns a the [DynamicModule](DynamicModule.md) module.
 
@@ -111,7 +112,7 @@ passing in dynamic values for the queries.
 
 > **get** **fn**(): [`FunctionModule`](../interfaces/FunctionModule.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:232](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L232)
+Defined in: [kysely.ts:237](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L237)
 
 Returns a [FunctionModule](../interfaces/FunctionModule.md) that can be used to write somewhat type-safe function
 calls.
@@ -176,7 +177,7 @@ await db.selectFrom('person')
 
 > **get** **introspection**(): [`DatabaseIntrospector`](../interfaces/DatabaseIntrospector.md)
 
-Defined in: [kysely.ts:163](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L163)
+Defined in: [kysely.ts:168](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L168)
 
 Returns a [database introspector](../interfaces/DatabaseIntrospector.md).
 
@@ -196,7 +197,7 @@ Returns a [database introspector](../interfaces/DatabaseIntrospector.md).
 
 > **get** **isTransaction**(): `true`
 
-Defined in: [kysely.ts:656](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L656)
+Defined in: [kysely.ts:670](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L670)
 
 Returns true if this `Kysely` instance is a transaction.
 
@@ -218,7 +219,7 @@ You can also use `db instanceof Transaction`.
 
 > **get** **schema**(): [`SchemaModule`](SchemaModule.md)
 
-Defined in: [kysely.ts:146](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L146)
+Defined in: [kysely.ts:151](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L151)
 
 Returns the [SchemaModule](SchemaModule.md) module for building database schema.
 
@@ -236,7 +237,7 @@ Returns the [SchemaModule](SchemaModule.md) module for building database schema.
 
 > **\[asyncDispose\]**(): `Promise`\<`void`\>
 
-Defined in: [kysely.ts:640](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L640)
+Defined in: [kysely.ts:654](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L654)
 
 #### Returns
 
@@ -252,7 +253,7 @@ Defined in: [kysely.ts:640](https://github.com/kysely-org/kysely/blob/master/src
 
 > **$extendTables**\<`T`\>(): `Transaction`\<[`DrainOuterGeneric`](../types/DrainOuterGeneric.md)\<`DB` & `T`\>\>
 
-Defined in: [kysely.ts:742](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L742)
+Defined in: [kysely.ts:756](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L756)
 
 Similar to [Kysely.$extendTables](Kysely.md#extendtables) but returns the transaction.
 
@@ -276,7 +277,7 @@ Similar to [Kysely.$extendTables](Kysely.md#extendtables) but returns the transa
 
 > **$omitTables**\<`T`\>(): `Transaction`\<`DB` *extends* `object` ? `Omit`\<`DB`, `T`\> : `DB`\>
 
-Defined in: [kysely.ts:751](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L751)
+Defined in: [kysely.ts:765](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L765)
 
 Similar to [Kysely.$omitTables](Kysely.md#omittables) but returns the transaction.
 
@@ -300,7 +301,7 @@ Similar to [Kysely.$omitTables](Kysely.md#omittables) but returns the transactio
 
 > **$pickTables**\<`T`\>(): `Transaction`\<`DB` *extends* `object` ? `Pick`\<`DB`, `T`\> : `DB`\>
 
-Defined in: [kysely.ts:760](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L760)
+Defined in: [kysely.ts:774](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L774)
 
 Similar to [Kysely.$pickTables](Kysely.md#picktables) but returns the transaction.
 
@@ -326,7 +327,7 @@ Similar to [Kysely.$pickTables](Kysely.md#picktables) but returns the transactio
 
 > **case**(): [`CaseBuilder`](CaseBuilder.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:172](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L172)
+Defined in: [kysely.ts:177](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L177)
 
 Creates a `case` statement/operator.
 
@@ -344,7 +345,7 @@ See [ExpressionBuilder.case](../interfaces/ExpressionBuilder.md#case) for more i
 
 > **case**\<`V`\>(`value`): [`CaseBuilder`](CaseBuilder.md)\<`DB`, keyof `DB`, `V`\>
 
-Defined in: [kysely.ts:174](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L174)
+Defined in: [kysely.ts:179](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L179)
 
 Creates a `case` statement/operator.
 
@@ -376,7 +377,7 @@ See [ExpressionBuilder.case](../interfaces/ExpressionBuilder.md#case) for more i
 
 > **connection**(): `never`
 
-Defined in: [kysely.ts:681](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L681)
+Defined in: [kysely.ts:695](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L695)
 
 #### Returns
 
@@ -472,7 +473,7 @@ where `person`.`id` = ?
 
 > **destroy**(): `never`
 
-Defined in: [kysely.ts:690](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L690)
+Defined in: [kysely.ts:704](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L704)
 
 #### Returns
 
@@ -492,7 +493,7 @@ calling the destroy method for a Transaction is not supported
 
 > **executeQuery**\<`R`\>(`query`, `options?`): `Promise`\<[`QueryResult`](../interfaces/QueryResult.md)\<`R`\>\>
 
-Defined in: [kysely.ts:631](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L631)
+Defined in: [kysely.ts:645](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L645)
 
 Executes a given compiled query or query builder.
 
@@ -1117,7 +1118,7 @@ select (
 
 > **startTransaction**(): `never`
 
-Defined in: [kysely.ts:672](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L672)
+Defined in: [kysely.ts:686](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L686)
 
 #### Returns
 
@@ -1137,7 +1138,7 @@ calling the controlled transaction method for a Transaction is not supported
 
 > **transaction**(): `never`
 
-Defined in: [kysely.ts:663](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L663)
+Defined in: [kysely.ts:677](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L677)
 
 #### Returns
 
@@ -1354,7 +1355,7 @@ await db
 
 > **withoutPlugins**(): `Transaction`\<`DB`\>
 
-Defined in: [kysely.ts:709](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L709)
+Defined in: [kysely.ts:723](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L723)
 
 Similar to [Kysely.withoutPlugins](Kysely.md#withoutplugins) but returns the transaction.
 
@@ -1372,7 +1373,7 @@ Similar to [Kysely.withoutPlugins](Kysely.md#withoutplugins) but returns the tra
 
 > **withPlugin**(`plugin`): `Transaction`\<`DB`\>
 
-Defined in: [kysely.ts:699](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L699)
+Defined in: [kysely.ts:713](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L713)
 
 Similar to [Kysely.withPlugin](Kysely.md#withplugin) but returns the transaction.
 
@@ -1441,7 +1442,7 @@ See the [with](#with) method for examples and more documentation.
 
 > **withSchema**(`schema`): `Transaction`\<`DB`\>
 
-Defined in: [kysely.ts:719](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L719)
+Defined in: [kysely.ts:733](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L733)
 
 Similar to [Kysely.withSchema](Kysely.md#withschema) but returns the transaction.
 
@@ -1465,7 +1466,7 @@ Similar to [Kysely.withSchema](Kysely.md#withschema) but returns the transaction
 
 > **withTables**\<`T`\>(): `Transaction`\<[`DrainOuterGeneric`](../types/DrainOuterGeneric.md)\<`DB` & `T`\>\>
 
-Defined in: [kysely.ts:733](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L733)
+Defined in: [kysely.ts:747](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L747)
 
 Similar to [Kysely.withTables](Kysely.md#withtables) but returns the transaction.
 

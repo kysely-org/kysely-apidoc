@@ -6,7 +6,7 @@
 
 # Interface: MysqlOkPacket
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:97](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L97)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:107](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L107)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:97](https://github.com/kysely
 
 > **affectedRows**: `number`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:98](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L98)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:108](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L108)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:98](https://github.com/kysely
 
 > **changedRows**: `number`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:99](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L99)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:109](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L109)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:99](https://github.com/kysely
 
 > **insertId**: `number`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:100](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L100)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:110](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L110)

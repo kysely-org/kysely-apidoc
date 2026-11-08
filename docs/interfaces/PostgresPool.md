@@ -6,7 +6,7 @@
 
 # Interface: PostgresPool
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:71](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L71)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:81](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L81)
 
 This interface is the subset of pg driver's `Pool` class that
 kysely needs.
@@ -21,7 +21,7 @@ https://node-postgres.com/apis/pool
 
 > `optional` **Client?**: [`PostgresClientConstructor`](../types/PostgresClientConstructor.md)
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:73](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L73)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:83](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L83)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:73](https://github.com/
 
 > **options**: `object`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:77](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L77)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:87](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L87)
 
 ## Methods
 
@@ -37,7 +37,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:77](https://github.com/
 
 > **connect**(): `Promise`\<[`PostgresPoolClient`](PostgresPoolClient.md)\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:74](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L74)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:84](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L84)
 
 #### Returns
 
@@ -49,7 +49,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:74](https://github.com/
 
 > **end**(): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:75](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L75)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:85](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L85)
 
 #### Returns
 

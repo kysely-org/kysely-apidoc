@@ -104,6 +104,9 @@ Defined in: [driver/dummy-driver.ts:54](https://github.com/kysely-org/kysely/blo
 
 Commits a transaction.
 
+Throws [AbortedTransactionError](AbortedTransactionError.md) if the database confirms that
+the transaction was rolled back instead of committed.
+
 #### Returns
 
 `Promise`\<`void`\>

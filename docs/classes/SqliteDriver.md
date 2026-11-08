@@ -85,6 +85,9 @@ Defined in: [dialect/sqlite/sqlite-driver.ts:48](https://github.com/kysely-org/k
 
 Commits a transaction.
 
+Throws [AbortedTransactionError](AbortedTransactionError.md) if the database confirms that
+the transaction was rolled back instead of committed.
+
 #### Parameters
 
 ##### connection

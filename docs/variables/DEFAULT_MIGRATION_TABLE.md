@@ -8,7 +8,7 @@
 
 > `const` **DEFAULT\_MIGRATION\_TABLE**: [`KyselyTypeError`](../interfaces/KyselyTypeError.md)\<`"import from 'kysely/migration' instead"`\>
 
-Defined in: [index.ts:353](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L353)
+Defined in: [index.ts:354](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L354)
 
 ## Deprecated
 

@@ -6,7 +6,7 @@
 
 # Interface: PostgresCursor\<T\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:124](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L124)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:134](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L134)
 
 This interface is pg driver's `Cursor` class that kysely needs.
 
@@ -26,7 +26,7 @@ https://node-postgres.com/apis/cursor
 
 > **close**(): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:126](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L126)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:136](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L136)
 
 #### Returns
 
@@ -38,7 +38,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:126](https://github.com
 
 > **read**(`rowsCount`): `Promise`\<`T`[]\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:125](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L125)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:135](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L135)
 
 #### Parameters
 

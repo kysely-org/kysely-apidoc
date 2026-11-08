@@ -6,7 +6,7 @@
 
 # Interface: TransactionBuilderProps
 
-Defined in: [kysely.ts:924](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L924)
+Defined in: [kysely.ts:942](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L942)
 
 ## Hierarchy
 
@@ -22,7 +22,7 @@ Defined in: [kysely.ts:924](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` `optional` **accessMode?**: `"read only"` \| `"read write"`
 
-Defined in: [kysely.ts:925](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L925)
+Defined in: [kysely.ts:943](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L943)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [kysely.ts:925](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **config**: [`KyselyConfig`](KyselyConfig.md)
 
-Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L768)
+Defined in: [kysely.ts:782](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L782)
 
 #### Inherited from
 
@@ -42,7 +42,7 @@ Defined in: [kysely.ts:768](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **dialect**: [`Dialect`](Dialect.md)
 
-Defined in: [kysely.ts:771](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L771)
+Defined in: [kysely.ts:785](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L785)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [kysely.ts:771](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **driver**: [`Driver`](Driver.md)
 
-Defined in: [kysely.ts:769](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L769)
+Defined in: [kysely.ts:783](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L783)
 
 #### Inherited from
 
@@ -66,7 +66,7 @@ Defined in: [kysely.ts:769](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` **executor**: [`QueryExecutor`](QueryExecutor.md)
 
-Defined in: [kysely.ts:770](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L770)
+Defined in: [kysely.ts:784](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L784)
 
 #### Inherited from
 
@@ -78,4 +78,4 @@ Defined in: [kysely.ts:770](https://github.com/kysely-org/kysely/blob/master/src
 
 > `readonly` `optional` **isolationLevel?**: `"read uncommitted"` \| `"read committed"` \| `"repeatable read"` \| `"serializable"` \| `"snapshot"`
 
-Defined in: [kysely.ts:926](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L926)
+Defined in: [kysely.ts:944](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L944)

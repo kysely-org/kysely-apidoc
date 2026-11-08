@@ -48,7 +48,7 @@
 
 > **get** **dynamic**(): [`DynamicModule`](../classes/DynamicModule.md)\<`DB`\>
 
-Defined in: [kysely.ts:156](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L156)
+Defined in: [kysely.ts:161](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L161)
 
 Returns a the [DynamicModule](../classes/DynamicModule.md) module.
 
@@ -67,7 +67,7 @@ passing in dynamic values for the queries.
 
 > **get** **fn**(): [`FunctionModule`](../interfaces/FunctionModule.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:232](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L232)
+Defined in: [kysely.ts:237](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L237)
 
 Returns a [FunctionModule](../interfaces/FunctionModule.md) that can be used to write somewhat type-safe function
 calls.
@@ -128,7 +128,7 @@ await db.selectFrom('person')
 
 > **get** **isTransaction**(): `boolean`
 
-Defined in: [kysely.ts:614](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L614)
+Defined in: [kysely.ts:628](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L628)
 
 Returns true if this `Kysely` instance is a transaction.
 

@@ -89,6 +89,9 @@ Defined in: [dialect/mssql/mssql-driver.ts:81](https://github.com/kysely-org/kys
 
 Commits a transaction.
 
+Throws [AbortedTransactionError](AbortedTransactionError.md) if the database confirms that
+the transaction was rolled back instead of committed.
+
 #### Parameters
 
 ##### connection

@@ -8,7 +8,7 @@
 
 > **MigrationResult** = [`KyselyTypeError`](../interfaces/KyselyTypeError.md)\<`"import from 'kysely/migration' instead"`\>
 
-Defined in: [index.ts:381](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L381)
+Defined in: [index.ts:382](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L382)
 
 ## Deprecated
 

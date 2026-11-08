@@ -6,7 +6,7 @@
 
 # Interface: TransactionSettings
 
-Defined in: [driver/driver.ts:85](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L85)
+Defined in: [driver/driver.ts:89](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L89)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [driver/driver.ts:85](https://github.com/kysely-org/kysely/blob/mast
 
 > `readonly` `optional` **accessMode?**: `"read only"` \| `"read write"`
 
-Defined in: [driver/driver.ts:86](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L86)
+Defined in: [driver/driver.ts:90](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L90)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [driver/driver.ts:86](https://github.com/kysely-org/kysely/blob/mast
 
 > `readonly` `optional` **isolationLevel?**: `"read uncommitted"` \| `"read committed"` \| `"repeatable read"` \| `"serializable"` \| `"snapshot"`
 
-Defined in: [driver/driver.ts:87](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L87)
+Defined in: [driver/driver.ts:91](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L91)

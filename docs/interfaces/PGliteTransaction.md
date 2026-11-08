@@ -6,7 +6,7 @@
 
 # Interface: PGliteTransaction
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:70](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L70)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:80](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L80)
 
 ## Hierarchy
 
@@ -22,7 +22,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:70](https://github.com/kyse
 
 > **query**\<`T`\>(`query`, `params?`, `options?`): `Promise`\<[`PGliteQueryResults`](PGliteQueryResults.md)\<`T`\>\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:41](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L41)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:51](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L51)
 
 #### Type Parameters
 
@@ -58,7 +58,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:41](https://github.com/kyse
 
 > **rollback**(): `Promise`\<`void`\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:71](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L71)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:81](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L81)
 
 #### Returns
 

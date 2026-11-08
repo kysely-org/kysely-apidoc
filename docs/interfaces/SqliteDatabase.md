@@ -6,7 +6,7 @@
 
 # Interface: SqliteDatabase
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:38](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L38)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:48](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L48)
 
 This interface is the subset of better-sqlite3 driver's `Database` class that
 kysely needs.
@@ -21,7 +21,7 @@ https://github.com/JoshuaWise/better-sqlite3/blob/master/docs/api.md#new-databas
 
 > **close**(): `void`
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:39](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L39)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:49](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L49)
 
 #### Returns
 
@@ -33,7 +33,7 @@ Defined in: [dialect/sqlite/sqlite-dialect-config.ts:39](https://github.com/kyse
 
 > **prepare**(`sql`): [`SqliteStatement`](SqliteStatement.md)
 
-Defined in: [dialect/sqlite/sqlite-dialect-config.ts:40](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L40)
+Defined in: [dialect/sqlite/sqlite-dialect-config.ts:50](https://github.com/kysely-org/kysely/blob/master/src/dialect/sqlite/sqlite-dialect-config.ts#L50)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: MysqlPoolConnection
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:81](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L81)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:91](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L91)
 
 ## Hierarchy
 
@@ -22,7 +22,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:81](https://github.com/kysely
 
 > **config**: `object`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:65](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L65)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:75](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L75)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:65](https://github.com/kysely
 
 > **threadId**: `number`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:76](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L76)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:86](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L86)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:76](https://github.com/kysely
 
 > **connect**(`callback?`): `void`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:66](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L66)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:76](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L76)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:66](https://github.com/kysely
 
 > **destroy**(): `void`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:67](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L67)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:77](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L77)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:67](https://github.com/kysely
 
 > **query**(`sql`, `parameters`, `callback?`): `object`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:71](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L71)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:81](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L81)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [dialect/mysql/mysql-dialect-config.ts:71](https://github.com/kysely
 
 > **release**(): `void`
 
-Defined in: [dialect/mysql/mysql-dialect-config.ts:82](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L82)
+Defined in: [dialect/mysql/mysql-dialect-config.ts:92](https://github.com/kysely-org/kysely/blob/master/src/dialect/mysql/mysql-dialect-config.ts#L92)
 
 #### Returns
 

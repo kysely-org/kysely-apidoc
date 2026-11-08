@@ -15,6 +15,7 @@
 
 ## Classes
 
+- [AbortedTransactionError](classes/AbortedTransactionError.md)
 - [AggregateFunctionBuilder](classes/AggregateFunctionBuilder.md)
 - [AliasedAggregateFunctionBuilder](classes/AliasedAggregateFunctionBuilder.md)
 - [AliasedDynamicTableBuilder](classes/AliasedDynamicTableBuilder.md)
@@ -189,7 +190,7 @@
 - [ConnectionProvider](interfaces/ConnectionProvider.md)
 - [ControlledConnection](interfaces/ControlledConnection.md)
 - [ControlledTransactionProps](interfaces/ControlledTransactionProps.md)
-- [ControlledTransctionState](interfaces/ControlledTransctionState.md)
+- [ControlledTransactionState](interfaces/ControlledTransactionState.md)
 - [CreateIndexBuilderProps](interfaces/CreateIndexBuilderProps.md)
 - [CreateIndexNode](interfaces/CreateIndexNode.md)
 - [CreateSchemaBuilderProps](interfaces/CreateSchemaBuilderProps.md)
@@ -721,6 +722,7 @@
 - [createRawBuilder](functions/createRawBuilder.md)
 - [createSelectQueryBuilder](functions/createSelectQueryBuilder.md)
 - [expressionBuilder](functions/expressionBuilder.md)
+- [isAbortedTransactionError](functions/isAbortedTransactionError.md)
 - [isAliasedDynamicTableBuilder](functions/isAliasedDynamicTableBuilder.md)
 - [isAliasedExpression](functions/isAliasedExpression.md)
 - [~~isArithmeticOperator~~](functions/isArithmeticOperator.md)

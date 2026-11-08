@@ -8,7 +8,7 @@
 
 > **MigratorProps** = [`KyselyTypeError`](../interfaces/KyselyTypeError.md)\<`"import from 'kysely/migration' instead"`\>
 
-Defined in: [index.ts:395](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L395)
+Defined in: [index.ts:396](https://github.com/kysely-org/kysely/blob/master/src/index.ts#L396)
 
 ## Deprecated
 

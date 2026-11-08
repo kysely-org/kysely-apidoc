@@ -8,4 +8,4 @@
 
 > `const` **TRANSACTION\_ISOLATION\_LEVELS**: readonly \[`"read uncommitted"`, `"read committed"`, `"repeatable read"`, `"serializable"`, `"snapshot"`\]
 
-Defined in: [driver/driver.ts:94](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L94)
+Defined in: [driver/driver.ts:98](https://github.com/kysely-org/kysely/blob/master/src/driver/driver.ts#L98)

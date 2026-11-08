@@ -6,7 +6,7 @@
 
 # Class: PostgresConnection
 
-Defined in: [dialect/postgres/postgres-driver.ts:156](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L156)
+Defined in: [dialect/postgres/postgres-driver.ts:177](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L177)
 
 A single connection to the database engine.
 
@@ -22,7 +22,7 @@ These are created by an instance of [Driver](../interfaces/Driver.md).
 
 > **new PostgresConnection**(`client`, `options`): `PostgresConnection`
 
-Defined in: [dialect/postgres/postgres-driver.ts:162](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L162)
+Defined in: [dialect/postgres/postgres-driver.ts:184](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L184)
 
 #### Parameters
 
@@ -40,11 +40,23 @@ Defined in: [dialect/postgres/postgres-driver.ts:162](https://github.com/kysely-
 
 ## Methods
 
+### \[PRIVATE\_MARK\_FOR\_DISCARD\_METHOD\]()
+
+> **\[PRIVATE\_MARK\_FOR\_DISCARD\_METHOD\]**(): `void`
+
+Defined in: [dialect/postgres/postgres-driver.ts:314](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L314)
+
+#### Returns
+
+`void`
+
+***
+
 ### \[PRIVATE\_RELEASE\_METHOD\]()
 
 > **\[PRIVATE\_RELEASE\_METHOD\]**(): `void`
 
-Defined in: [dialect/postgres/postgres-driver.ts:278](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L278)
+Defined in: [dialect/postgres/postgres-driver.ts:310](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L310)
 
 #### Returns
 
@@ -56,7 +68,7 @@ Defined in: [dialect/postgres/postgres-driver.ts:278](https://github.com/kysely-
 
 > **cancelQuery**(`controlConnectionProvider`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:167](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L167)
+Defined in: [dialect/postgres/postgres-driver.ts:189](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L189)
 
 Used by executors to cancel the inflight query on the database side.
 
@@ -80,7 +92,7 @@ Used by executors to cancel the inflight query on the database side.
 
 > **collectSessionInfo**(): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:176](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L176)
+Defined in: [dialect/postgres/postgres-driver.ts:198](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L198)
 
 Used by executors to prepare the connection for operations on the database side.
 
@@ -98,7 +110,7 @@ Used by executors to prepare the connection for operations on the database side.
 
 > **executeQuery**\<`O`\>(`compiledQuery`): `Promise`\<[`QueryResult`](../interfaces/QueryResult.md)\<`O`\>\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:200](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L200)
+Defined in: [dialect/postgres/postgres-driver.ts:224](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L224)
 
 #### Type Parameters
 
@@ -126,7 +138,7 @@ Defined in: [dialect/postgres/postgres-driver.ts:200](https://github.com/kysely-
 
 > **killSession**(`controlConnectionProvider`): `Promise`\<`void`\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:230](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L230)
+Defined in: [dialect/postgres/postgres-driver.ts:260](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L260)
 
 Used by executors to kill the session on the database side.
 
@@ -150,7 +162,7 @@ Used by executors to kill the session on the database side.
 
 > **streamQuery**\<`O`\>(`compiledQuery`, `chunkSize`): `AsyncIterableIterator`\<[`QueryResult`](../interfaces/QueryResult.md)\<`O`\>\>
 
-Defined in: [dialect/postgres/postgres-driver.ts:239](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L239)
+Defined in: [dialect/postgres/postgres-driver.ts:269](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-driver.ts#L269)
 
 #### Type Parameters
 

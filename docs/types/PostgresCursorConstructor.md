@@ -8,7 +8,7 @@
 
 > **PostgresCursorConstructor** = \<`T`\>(`sql`, `parameters`) => [`PostgresCursor`](../interfaces/PostgresCursor.md)\<`T`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:136](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L136)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:146](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L146)
 
 This interface is pg driver's `Cursor` class constructor that kysely needs.
 

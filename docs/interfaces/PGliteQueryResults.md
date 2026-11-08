@@ -6,7 +6,7 @@
 
 # Interface: PGliteQueryResults\<T\>
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:60](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L60)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:70](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L70)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:60](https://github.com/kyse
 
 > `optional` **affectedRows?**: `number`
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:61](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L61)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:71](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L71)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:61](https://github.com/kyse
 
 > `optional` **blob?**: `Blob`
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:62](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L62)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:72](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L72)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:62](https://github.com/kyse
 
 > **fields**: `object`[]
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:63](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L63)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:73](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L73)
 
 #### dataTypeID
 
@@ -52,4 +52,4 @@ Defined in: [dialect/pglite/pglite-dialect-config.ts:63](https://github.com/kyse
 
 > **rows**: `T`[]
 
-Defined in: [dialect/pglite/pglite-dialect-config.ts:67](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L67)
+Defined in: [dialect/pglite/pglite-dialect-config.ts:77](https://github.com/kysely-org/kysely/blob/master/src/dialect/pglite/pglite-dialect-config.ts#L77)

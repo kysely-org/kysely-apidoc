@@ -60,7 +60,7 @@ db.deleteFrom('person') // typescript compiler error!
 
 > **dynamic**: [`DynamicModule`](../classes/DynamicModule.md)\<`DB`\>
 
-Defined in: [kysely.ts:156](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L156)
+Defined in: [kysely.ts:161](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L161)
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ Defined in: [kysely.ts:156](https://github.com/kysely-org/kysely/blob/master/src
 
 > **fn**: [`FunctionModule`](FunctionModule.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:232](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L232)
+Defined in: [kysely.ts:237](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L237)
 
 #### Inherited from
 
@@ -84,7 +84,7 @@ Defined in: [kysely.ts:232](https://github.com/kysely-org/kysely/blob/master/src
 
 > **introspection**: [`DatabaseIntrospector`](DatabaseIntrospector.md)
 
-Defined in: [kysely.ts:163](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L163)
+Defined in: [kysely.ts:168](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L168)
 
 #### Inherited from
 
@@ -96,7 +96,7 @@ Defined in: [kysely.ts:163](https://github.com/kysely-org/kysely/blob/master/src
 
 > **isTransaction**: `boolean`
 
-Defined in: [kysely.ts:614](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L614)
+Defined in: [kysely.ts:628](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L628)
 
 #### Inherited from
 
@@ -188,7 +188,7 @@ Similar to [Kysely.$pickTables](../classes/Kysely.md#picktables) but read-only.
 
 > **case**(): [`CaseBuilder`](../classes/CaseBuilder.md)\<`DB`, keyof `DB`\>
 
-Defined in: [kysely.ts:172](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L172)
+Defined in: [kysely.ts:177](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L177)
 
 Creates a `case` statement/operator.
 
@@ -206,7 +206,7 @@ See [ExpressionBuilder.case](ExpressionBuilder.md#case) for more information.
 
 > **case**\<`V`\>(`value`): [`CaseBuilder`](../classes/CaseBuilder.md)\<`DB`, keyof `DB`, `V`\>
 
-Defined in: [kysely.ts:174](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L174)
+Defined in: [kysely.ts:179](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L179)
 
 Creates a `case` statement/operator.
 
@@ -278,11 +278,20 @@ not allowed with a read-only Kysely instance.
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [kysely.ts:605](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L605)
+Defined in: [kysely.ts:619](https://github.com/kysely-org/kysely/blob/master/src/kysely.ts#L619)
 
 Releases all resources and disconnects from the database.
 
-You need to call this when you are done using the `Kysely` instance.
+Call this when you are done using the `Kysely` instance and Kysely is
+responsible for closing its connections, pool, or database instance.
+
+If the pool or database instance is shared with other consumers or its
+lifecycle is managed elsewhere, skip this call. Let the application close it
+once all consumers, including Kysely, have finished. No separate cleanup of
+the `Kysely` instance is needed.
+
+The driver is initialized lazily. If initialization hasn't started, this
+method does nothing.
 
 #### Returns
 

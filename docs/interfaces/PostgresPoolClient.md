@@ -6,7 +6,7 @@
 
 # Interface: PostgresPoolClient
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:110](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L110)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:120](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L120)
 
 This interface is the subset of pg driver's `Client` class that
 is returned by the `Pool` class, and that kysely needs.
@@ -29,7 +29,7 @@ https://node-postgres.com/apis/pool#releasing-clients
 
 > `optional` **processID?**: `number`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:92](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L92)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:102](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L102)
 
 #### Inherited from
 
@@ -43,7 +43,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:92](https://github.com/
 
 > **query**\<`R`\>(`sql`, `parameters`): `Promise`\<[`PostgresQueryResult`](PostgresQueryResult.md)\<`R`\>\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:93](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L93)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:103](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L103)
 
 ##### Type Parameters
 
@@ -73,7 +73,7 @@ readonly `unknown`[]
 
 > **query**\<`R`\>(`cursor`): [`PostgresCursor`](PostgresCursor.md)\<`R`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:97](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L97)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:107](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L107)
 
 ##### Type Parameters
 
@@ -99,9 +99,15 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:97](https://github.com/
 
 ### release()
 
-> **release**(): `void`
+> **release**(`destroy?`): `void`
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:114](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L114)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:124](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L124)
+
+#### Parameters
+
+##### destroy?
+
+`boolean`
 
 #### Returns
 

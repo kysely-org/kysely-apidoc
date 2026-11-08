@@ -6,7 +6,7 @@
 
 # Interface: PostgresStream\<T\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:154](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L154)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:165](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L165)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [dialect/postgres/postgres-dialect-config.ts:154](https://github.com
 
 > **\[asyncIterator\]**(): `AsyncIterableIterator`\<`T`\>
 
-Defined in: [dialect/postgres/postgres-dialect-config.ts:155](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L155)
+Defined in: [dialect/postgres/postgres-dialect-config.ts:166](https://github.com/kysely-org/kysely/blob/master/src/dialect/postgres/postgres-dialect-config.ts#L166)
 
 #### Returns
 
